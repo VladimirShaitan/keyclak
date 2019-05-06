@@ -185,3 +185,22 @@ function save_profile_fields( $user_id ) {
     update_user_meta( $user_id, 'garant', $_POST['user_garant'] );
     update_user_meta( $user_id, 'revenu_garant', $_POST['user_revenu_garant'] );
 }
+
+
+add_role(
+    'locataire',
+    __( 'Locataire' ),
+    array(
+        'read'         => true,  // true allows this capability
+        'edit_posts'   => false,
+    )
+);
+
+add_role(
+    'proprietaire',
+    __( 'Proprietaire' ),
+    array(
+        'read'         => true,  // true allows this capability
+        'edit_posts'   => false,
+    )
+);

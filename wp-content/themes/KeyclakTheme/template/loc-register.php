@@ -1,13 +1,7 @@
 <?php
-
 /*
-
-Template name: Locataire Registration
-
+ Template name: Locataire Registration
 */
-
-
-
 get_header();
 
 ?>
