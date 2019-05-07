@@ -1774,6 +1774,10 @@ button {
             display: flex;
             flex-flow: row nowrap;
             margin: 103px 0 18px 57px;
+            @include mediaDesctop($w950) {
+                flex-flow: column nowrap;
+                margin: 103px 15px 18px;
+            }
 
             .left-info-container {
                 margin-right: 56px;
@@ -1786,11 +1790,18 @@ button {
                 @include mediaDesctop($w1024) {
                     margin-right: 15px;
                 }
+                @include mediaDesctop($w950) {
+                    width: 100%;
+                    margin: 0 0 25px;
+                }
 
                 .apartmet-image {
                     margin: 0 0 33px;
                     @include mediaDesctop($w1440) {
                         width: 90%;
+                    }
+                    @include mediaDesctop($w950) {
+                        width: 100%;
                     }
 
                     img {
@@ -1825,14 +1836,20 @@ button {
                 .user-info-modal {
                     display: flex;
                     flex-flow: row nowrap;
+                    @include mediaDesctop($w425) {
+                        flex-flow: column nowrap;
+                    }
 
                     .user-pic {
-                        margin-right: 44px;
+                        margin: 0 44px 0px 0px;
                         @include mediaDesctop($w1366) {
-                            margin-right: 35px;
+                            margin: 0 35px 0px 0px;
                         }
                         @include mediaDesctop($w1024) {
-                            margin-right: 25px;
+                            margin: 0 25px 0px 0px;
+                        }
+                        @include mediaDesctop($w425) {
+                            margin: 0 0px 25px 0px;
                         }
 
                         img {
@@ -1850,12 +1867,25 @@ button {
                             font-size: 27px;
                             font-weight: 500;
                             line-height: 27px;
+                            @include mediaDesctop($w740) {
+                                margin: 0 0 40px;
+                            }
+                            @include mediaDesctop($w568) {
+                                font-size: 20px;
+                            }
                         }
 
                         .navigation-panel {
                             display: flex;
                             flex-flow: row wrap;
                             align-items: center;
+                            @include mediaDesctop($w568) {
+                                flex-flow: column wrap;
+                                align-items: flex-start;
+                            }
+                            @include mediaDesctop($w425) {
+                                align-items: center;
+                            }
 
                             .nav-button {
                                 box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
@@ -1873,6 +1903,19 @@ button {
                                 }
                                 @include mediaDesctop($w1200) {
                                     margin: 0 14px 25px 0;
+                                }
+                                @include mediaDesctop($w950) {
+                                    margin: 0 24px 0px 0;
+                                }
+                                @include mediaDesctop($w850) {
+                                    margin: 0 10px 0px 0;
+                                }
+                                @include mediaDesctop($w850) {
+                                    margin: 0 20px 20px 0;
+                                }
+                                @include mediaDesctop($w425) {
+                                    margin: 0 0px 20px 0;
+                                    padding: 11px 51px 7px;
                                 }
 
                                 &:last-child {
@@ -2059,6 +2102,12 @@ button {
                                 @include mediaDesctop($w1200) {
                                     font-size: 20px;
                                 }
+                                @include mediaDesctop($w950) {
+                                    font-size: 22px;
+                                }
+                                @include mediaDesctop($w425) {
+                                    font-size: 18px;
+                                }
 
                                 &.data {
                                     color: gray;
@@ -2075,6 +2124,12 @@ button {
                         @include mediaDesctop($w1024) {
                             margin: 10px 0px 0 68px;
                         }
+                        @include mediaDesctop($w950) {
+                            margin: 10px 0px 0 98px;
+                        }
+                        @include mediaDesctop($w425) {
+                            margin: 10px 0px 0 68px;
+                        }
 
                         li {
                             display: flex;
@@ -2088,7 +2143,13 @@ button {
                                 font-size: 22px;
                             }
                             @include mediaDesctop($w1200) {
-                                font-size: 20px;
+                                font-size: 20px; 
+                            }
+                            @include mediaDesctop($w950) {
+                                font-size: 22px; 
+                            }
+                            @include mediaDesctop($w425) {
+                                font-size: 18px;
                             }
 
                             &:last-child {
@@ -2100,6 +2161,12 @@ button {
                                 margin-right: 15px;
                                 @include mediaDesctop($w1024) {
                                     width: 150px;
+                                }
+                                @include mediaDesctop($w950) {
+                                    width: 175px;
+                                }
+                                @include mediaDesctop($w425) {
+                                    width: 140px;
                                 }
                             }
 

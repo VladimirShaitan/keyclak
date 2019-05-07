@@ -966,3 +966,41 @@ input:checked+i:before{
         right: 0px;
     }
 }
+@media only screen and (max-width: 568px) {
+    .header-container {
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 21px 42px 50px 42px;
+    }
+
+    .user-info {
+        margin: 0 0 25px;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .round-user-photo {
+        margin: 0;
+    }
+
+    .logo-span {
+        padding: 0px 0 30px;
+    }
+
+    .logo-span img {
+        width: 100%;
+    }
+
+    .btn-mes {
+        font-size: 24px;
+    }
+
+    .header-sign-out-btn {
+        font-size: 24px;
+    }
+
+    .round-notifications {
+        right: -19px;
+    }
+
+}

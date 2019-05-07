@@ -23,10 +23,6 @@ get_header('profile');
                     <!-- <img src="../images/apartment.jpg" alt=""> -->
                     <img src="/wp-content/uploads/2019/04/apartment.jpg" alt="">
                 </div>
-                <a href="" class="save-apartment">
-                    <i class="icon hearth"></i>
-                    <span>Mettre ce bien en favoris</span>
-                </a>
                 <div class="user-info-modal">
                     <div class="user-pic">
                         <!-- <img src="../images/icons/user-pic-2-small.png" alt=""> -->
