@@ -1,3 +1,18 @@
+jQuery(document).ready( function() {
+    window.$ = window.jQuery;
+
+    $("#ubload-btn-left").change(function(){
+        var filename = $(this).val().replace(/.*\\/, "");
+        $(".upload-text-btn").html(filename);
+    });
+
+    $("#ubload-btn-right").change(function(){
+        var filename = $(this).val().replace(/.*\\/, "");
+        $(".upload-text-btn-right").html(filename);
+    });
+
+});
+
 window.onload = function() {
 
     // Dropdown Menu

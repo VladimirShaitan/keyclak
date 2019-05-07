@@ -1,0 +1,6 @@
+class registration {
+	constructor(){
+
+	};
+
+}
