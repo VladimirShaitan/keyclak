@@ -2629,7 +2629,7 @@ button {
 
 @media only screen and (max-width: 1024px) {
   .main-content-container .content-container-wrapper .apartments-info-wrapper .right-info-container .main-list .sub-list li .static {
-    margin: 10px 0px 0 68px;
+    width: 150px;
   }
 }
 
