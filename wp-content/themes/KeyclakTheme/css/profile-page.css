@@ -501,24 +501,6 @@ button {
   position: absolute;
   bottom: -8px;
   right: 17px;
-  top:unset;
-  left: unset;
-}
-.main-content-container .content-container-wrapper .profile-info-container .profile-photo-container #user-profile-img {
-  width: 100%;
-  position: relative;
-  width: 190px;
-  height: 190px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 7px 0 24px;
-
-}
-.main-content-container .content-container-wrapper .profile-info-container .profile-photo-container .social-link {
-  display: inline-block;
-  position: absolute;
-  left: 15.5%;
-  top: 18%;
 }
 
 .main-content-container .content-container-wrapper .profile-info-container .profile-photo-container .user-navigation-panel {
@@ -532,7 +514,6 @@ button {
   font-weight: 400;
   line-height: 35.91px;
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .main-content-container .content-container-wrapper .profile-info-container .profile-data-wrapper {
@@ -616,7 +597,7 @@ button {
   flex-flow: row nowrap;
   justify-content: space-between;
   text-align: left;
-  margin: 0 0 5px;
+  margin: 0 0 36px;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -637,9 +618,6 @@ button {
   font-size: 30px;
   font-weight: 300;
   line-height: 36px;
-}
-.main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div label,.main-content-container .content-container-wrapper .profile-info-container .profile-sub-data label {
-  font-weight: 300;
 }
 
 @media only screen and (max-width: 1765px) {
@@ -774,17 +752,6 @@ button {
   margin: 0 0px 30px;
   font-size: 30px;
   font-weight: 400;
-  display: flex;
-  /*align-items: baseline;*/
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-.right-side.revenu_garant {
-  width: 60%;
-}
-.main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string .left-side {
-  margin-right: 10px;
 }
 
 @media only screen and (max-width: 1765px) {
@@ -2302,6 +2269,18 @@ button {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .main-content-container .content-container-wrapper .apartments-info-wrapper .left-info-container {
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-content-container .content-container-wrapper .apartments-info-wrapper .left-info-container {
+    margin-right: 15px;
+  }
+}
+
 .main-content-container .content-container-wrapper .apartments-info-wrapper .left-info-container .apartmet-image {
   margin: 0 0 33px;
 }
@@ -2346,6 +2325,24 @@ button {
   margin-right: 44px;
 }
 
+@media only screen and (max-width: 1366px) {
+  .main-content-container .content-container-wrapper .apartments-info-wrapper .left-info-container .user-info-modal .user-pic {
+    margin-right: 35px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-content-container .content-container-wrapper .apartments-info-wrapper .left-info-container .user-info-modal .user-pic {
+    margin-right: 25px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-content-container .content-container-wrapper .apartments-info-wrapper .left-info-container .user-info-modal .user-pic img {
+    width: 100%;
+  }
+}
+
 .main-content-container .content-container-wrapper .apartments-info-wrapper .left-info-container .user-info-modal .user-info {
   flex-flow: column;
 }
@@ -2375,7 +2372,20 @@ button {
 
 @media only screen and (max-width: 1400px) {
   .main-content-container .content-container-wrapper .apartments-info-wrapper .left-info-container .user-info-modal .user-info .navigation-panel .nav-button {
-    margin: 0 24px 15px 0;
+    margin: 0 24px 0px 0;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .main-content-container .content-container-wrapper .apartments-info-wrapper .left-info-container .user-info-modal .user-info .navigation-panel .nav-button {
+    margin: 0 14px 0px 0;
+    padding: 11px 42px 7px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-content-container .content-container-wrapper .apartments-info-wrapper .left-info-container .user-info-modal .user-info .navigation-panel .nav-button {
+    margin: 0 14px 25px 0;
   }
 }
 
@@ -2560,12 +2570,30 @@ button {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .main-content-container .content-container-wrapper .apartments-info-wrapper .right-info-container .main-list li .apartment-info span {
+    font-size: 20px;
+  }
+}
+
 .main-content-container .content-container-wrapper .apartments-info-wrapper .right-info-container .main-list li .apartment-info span.data {
   color: gray;
 }
 
 .main-content-container .content-container-wrapper .apartments-info-wrapper .right-info-container .main-list .sub-list {
   margin: 10px 0px 0 98px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-content-container .content-container-wrapper .apartments-info-wrapper .right-info-container .main-list .sub-list {
+    margin: 10px 0px 0 78px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-content-container .content-container-wrapper .apartments-info-wrapper .right-info-container .main-list .sub-list {
+    margin: 10px 0px 0 68px;
+  }
 }
 
 .main-content-container .content-container-wrapper .apartments-info-wrapper .right-info-container .main-list .sub-list li {
@@ -2584,6 +2612,12 @@ button {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .main-content-container .content-container-wrapper .apartments-info-wrapper .right-info-container .main-list .sub-list li {
+    font-size: 20px;
+  }
+}
+
 .main-content-container .content-container-wrapper .apartments-info-wrapper .right-info-container .main-list .sub-list li:last-child {
   margin-bottom: 0;
 }
@@ -2591,6 +2625,12 @@ button {
 .main-content-container .content-container-wrapper .apartments-info-wrapper .right-info-container .main-list .sub-list li .static {
   width: 175px;
   margin-right: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-content-container .content-container-wrapper .apartments-info-wrapper .right-info-container .main-list .sub-list li .static {
+    margin: 10px 0px 0 68px;
+  }
 }
 
 .main-content-container .content-container-wrapper .apartments-info-wrapper .right-info-container .main-list .sub-list li .rating {
@@ -3035,44 +3075,4 @@ button {
 
 .main-content-container .content-container-wrapper .document-list-container .document-item .document-name.center-phrase {
   margin: 14px 0 0;
-}
-#ere_profile_plupload_container {
-  display: none;
-}
-.label-user-profile-photo {
-  cursor: pointer;
-}
-#profile-image {
-  border-radius: 50% !important;
-  overflow: hidden;
-}
-.main-content-container .content-container-wrapper .profile-info-container .form-control,
-.main-content-container .content-container-wrapper .profile-info-container .form-control::placeholder {
-  border-radius: 15px;
-  border: 1px solid #fff;
-  font-size: 20px;
-  font-family: 'Avenir';
-  font-weight: 900;
-  color: #000;
-  background-color: #fff;
-  box-shadow: unset;
-  line-height: 1;
-}
-.main-content-container .content-container-wrapper .profile-info-container .form-control.active {
-  border: 1px solid #75ff71;
-}
-
-.main-content-container .content-container-wrapper .profile-info-container .btn.btn-primary {
-  margin: 0 auto;
-  background-color: rgb(0, 0, 0);
-  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.24);
-  border:0;
-  outline: 0;
-  border-radius: 20px;
-  padding: 10px 50px;
-  line-height: 1;
-  font-size: 18px;
-  font-family: 'Avenir';
-  font-weight: 300;
-  margin-top: 30px;
 }

@@ -1,0 +1,1 @@
+@keyframes itemToken{0%,100%{transform:scale(1)}25%,75%{transform:scale(1.15)}50%{transform:scale(1)}}@keyframes circleToken{0%{opacity:.5;transform:scale(1)}100%{opacity:0;transform:scale(2)}}@keyframes circleAdvantage{0%{opacity:.25;transform:scale(1)}100%{opacity:0;transform:scale(2)}}

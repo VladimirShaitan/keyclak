@@ -1,0 +1,61 @@
+$w1920: 1920px;
+$w1880: 1880px;
+$w1840: 1840px;
+$w1765: 1765px;
+$w1680: 1680px;
+$w1600: 1600px;
+$w1550: 1550px;
+$w1440: 1440px;
+$w1400: 1400px;
+$w1366: 1366px;
+$w1280: 1280px;
+$w1200: 1200px;
+$w1150: 1150px;
+$w1024: 1024px;
+
+$w950: 950px;
+$w850: 850px;
+$w800: 800px;
+$w768: 768px;
+$w740: 740px;
+$w640: 640px;
+$w568: 568px;
+$w425: 425px;
+$w360: 360px;
+$w320: 320px;
+
+$h500: 500px; 
+
+@mixin mediaDesctop($width) {
+  @media only screen and (max-width: #{$width}) {
+    @content;
+  }
+} 
+
+@mixin mediaDesctopTablet($width1, $width2) {
+  @media only screen and (min-width: #{$width1}) and (max-width: #{$width2}) {
+    @content;
+  }
+}
+
+@mixin mediaMobileHorizontal($width, $height) {
+  @media only screen and (max-width: #{$width}) and (max-height: #{$height}) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@keyframes itemToken {
+  0%, 100% {transform: scale(1);}
+  25%, 75% {transform: scale(1.15);}
+  50% {transform: scale(1);}
+}
+
+@keyframes circleToken {
+  0% {opacity: .5; transform: scale(1);}
+  100% {opacity: 0; transform: scale(2);}
+}
+
+@keyframes circleAdvantage {
+  0% {opacity: .25; transform: scale(1);}
+  100% {opacity: 0; transform: scale(2);}
+}           
