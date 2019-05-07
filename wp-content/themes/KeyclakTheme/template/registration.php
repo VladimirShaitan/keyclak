@@ -21,6 +21,4 @@ if($form_type === 'locataire_registration'){ $template .= 'locataire';} else {$t
         </div>
     </div>
 </div>
-
 <?php get_footer(); ?>
-

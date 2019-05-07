@@ -5,27 +5,27 @@
             <div class="left-field-blocks">
                 <div class="input-main">
                     <label>Nom</label>
-                    <input name="lastname" type="text" required>
+                    <input name="lastname" type="text"  >
                 </div>
 
                 <div class="input-main">
                     <label>Prènom</label>
-                    <input name="firstname" type="text" required>
+                    <input name="firstname" type="text"  >
                 </div>
 
                 <div class="input-main">
                     <label>Adresse email</label>
-                    <input name="email" type="email" required>
+                    <input name="email" type="email"  >
                 </div>
 
                 <div class="input-main">
                     <label>Mot de passe</label>
-                    <input name="password" type="password" required>
+                    <input name="password" type="password"  >
                 </div>
 
                 <div class="input-main last-input">
                     <label>Confirmation mot de passe</label>
-                    <input type="password" required>
+                    <input type="password"  >
                 </div>
 
                 <div class="input-main">
@@ -34,7 +34,7 @@
                             <span class="upload-text-btn">
                                 + ajouter une photo de profil
                             </span>
-                            <input type="file" id="upload-btn-left" name="file-photo">
+                            <input type="file" id="upload-btn-left" name="file-photo" accept="image/*" multiple="false">
                         </label>
                     </div>
                 </div>
@@ -43,17 +43,17 @@
             <div class="right-field-blocks">
                 <div class="input-main">
                     <label>Numéro de téléphone</label>
-                    <input type="tel" class="right-first-input" required>
+                    <input type="tel" class="right-first-input"  >
                 </div>
 
                 <div class="input-main">
                     <label>Statut</label>
-                    <input name="statut" type="text" required>
+                    <input name="statut" type="text"  >
                 </div>
 
                 <div class="input-main">
                     <label>Revenu (net mensuel)</label>
-                    <input name="revenu" type="text" required>
+                    <input name="revenu" type="text"  >
                 </div>
 
                 <div class="input-main radio-block">
@@ -61,7 +61,7 @@
                     <div class="radio-block-wp">
                         <div class="radio-oui">
                             <label>
-                                <input type="radio" name="garant-true" checked="checked" />
+                                <input type="radio" name="garant" data-eneabled="true" checked="checked" />
                                 <i></i>
                                 <span>oui</span>
                             </label>
@@ -70,7 +70,7 @@
 
                         <div class="radio-non">
                             <label>
-                                <input type="radio" name="garant-false" />
+                                <input type="radio" name="garant" data-eneabled="false"/>
                                 <i></i>
                                 <span>non</span>
                             </label>
@@ -82,21 +82,21 @@
 
                 <div class="input-main">
                     <label>Statut du Garant</label>
-                    <input name="statut_du_garant" type="text" required>
+                    <input name="statut_du_garant" type="text"  >
                 </div>
 
                 <div class="input-main last-input">
                     <label>Revenu du garant (net mensuel)</label>
-                    <input name="revenu_du_garant" type="text" required>
+                    <input name="revenu_du_garant" type="text"  >
                 </div>
 
                 <div class="input-main">
-                    <div class="file-upload">
+                    <div class="file-upload video_upload">
                         <label class="right-btn">
                             <span class="upload-text-btn">
                                 + ajoter une vidéo de présentation
                             </span>
-                            <input type="file" id="upload-btn-right" name="file-video">
+                            <input type="hidden" id="upload-btn-right" name="file-video">
                         </label>
                     </div>
                 </div>

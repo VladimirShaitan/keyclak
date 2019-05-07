@@ -23,6 +23,8 @@ function include_styles(){
 
 add_action( 'wp_footer', 'include_scripts' );
 function include_scripts() {
+    echo '<script>let ajaxurl = "' . admin_url('admin-ajax.php') . '";</script>';
+    wp_enqueue_script( 'password-strength-meter' );
     wp_enqueue_script('helper',  get_stylesheet_directory_uri() . '/scripts/helper.js');
     wp_enqueue_script('classes',  get_stylesheet_directory_uri() . '/scripts/classes.js');
     wp_enqueue_script('flickity_js',  get_stylesheet_directory_uri() . '/scripts/flickity.js', array('jquery'));
@@ -116,3 +118,11 @@ add_role(
         'edit_posts'   => false,
     )
 );
+
+
+add_action('wp_ajax_nopriv_register_user', 'register_user');
+add_action('wp_ajax_register_user', 'register_user');
+function register_user(){
+    print_r($_POST);
+    wp_die();
+}

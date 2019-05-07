@@ -25,7 +25,23 @@ HTMLElement.prototype.parentFinder = function(clName){
 }
 
 function ajax_handler(action_obj, callback){
-	jQuery.post(ajaxurl, action_obj, function(data){
-		callback(JSON.parse(data));
+	// jQuery.post(ajaxurl, action_obj, function(data){
+	// 	callback(JSON.parse(data));
+	// });
+
+	jQuery.ajax({
+		  url: ajaxurl,
+		  method: "POST",
+		  data: action_obj,
+		  dataType: "html"
+	
+	}).success(function(data) {
+		callback(data);
+		// console.log(data)
+
+	}).fail(function( jqXHR, textStatus ) {
+	  
+	  alert( "Request failed: " + textStatus );
+	
 	});
 }

@@ -624,7 +624,10 @@
   height: unset;
   background-color: #fff;
 }
-
+.main-content-container .content-container-wrapper .register-page-container .middle-content-container .form-black-bg .inscription-form .form-rows-wrapper .input-main input[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
 @media only screen and (max-width: 1024px) {
   .main-content-container .content-container-wrapper .register-page-container .middle-content-container .form-black-bg .inscription-form .form-rows-wrapper .input-main input {
     padding: 7px 10px 8px;
