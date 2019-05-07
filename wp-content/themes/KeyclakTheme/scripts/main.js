@@ -219,23 +219,17 @@ jQuery( "#clickme" ).click(function() {
 
 /************************************* CUSTOM SELECT ********************************************/
 
-
-
-
-
-
-
-
-
 //Slider on Agenda
-const flkty = new Flickity('.main-gallery', {
-    //options
-    cellAlign: 'left',
-    contain: true,
-    wrapAround: true,
-    draggable: false,
-    adaptiveHeight: true
-});
+if(qs('.main-gallery' != null)){
+    const flkty = new Flickity('.main-gallery', {
+        //options
+        cellAlign: 'left',
+        contain: true,
+        wrapAround: true,
+        draggable: false,
+        adaptiveHeight: true
+    });
+}
 
 
 //Init the Calendar
