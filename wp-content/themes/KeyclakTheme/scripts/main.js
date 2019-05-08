@@ -222,7 +222,6 @@ jQuery( "#clickme" ).click(function() {
 //Slider on Agenda
 if(qs('.main-gallery') != null){
     const flkty = new Flickity('.main-gallery', {
-        //options
         cellAlign: 'left',
         contain: true,
         wrapAround: true,

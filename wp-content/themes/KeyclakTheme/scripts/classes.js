@@ -47,33 +47,36 @@ class registration {
 	pass_handler = () => {
 		this.form.addEventListener('input', (e) => {
 			if (e.target.type === 'password') {
-				
-				let pass_first = qsa('input[type="password"]')[0].value;
-				let pass_second = qsa('input[type="password"]')[1].value; 
-				let pass_strength = wp.passwordStrength.meter(pass_first, [], pass_second);
+
+				let pass_first = qsa('input[type="password"]')[0];
+				let pass_second = qsa('input[type="password"]')[1]; 
+				let pass_strength = wp.passwordStrength.meter(pass_first.value, [], pass_second.value);
 				let error_block = e.target.parentElement.qs('.error');  
+				console.log(pass_strength);
 
-				if(pass_strength === 2 && e.target.name === 'password'){
-					error_block.innerHTML = 'Bad password';
-				} else if(pass_strength === 3 && e.target.name === 'password') {
-					error_block.innerHTML = 'Good password';
-		        	this.clear_error_message(error_block);
-				} else if(pass_strength === 4 && e.target.name === 'password') {
-					error_block.innerHTML = 'Strong password';
-				    this.clear_error_message(error_block);
-				} else if(pass_strength ===  5 && e.target.name != 'password'){
-					error_block.innerHTML = 'Mismatch passwords';
-				} else {
+
+				if(pass_strength === 2 && e.target.name != ''){
+					error_block.innerHTML = 'Mot de passe faible';
+					e.target.form.qs('input[type=submit]').setAttribute('disabled', 'disabled');
+				} else if( pass_strength === 3 || pass_strength === 4 || e.target.value === '' ) {
 					error_block.innerHTML = '';
-				}
+					pass_first.parentElement.qs('.error').innerHTML = '';
+					pass_second.parentElement.qs('.error').innerHTML = '';
+					
+					if(pass_first.value != '' && pass_second.value != ''){
+						e.target.form.qs('input[type=submit]').removeAttribute('disabled');
+					}
 
+				} else if(pass_strength ===  5 ){
+					error_block.innerHTML = 'Mot de passe non identique';
+					e.target.form.qs('input[type=submit]').setAttribute('disabled', 'disabled');
+				} else if (e.target.name != '') {
+					error_block.innerHTML = 'Mot de passe trop court';
+					e.target.form.qs('input[type=submit]').setAttribute('disabled', 'disabled');
+				}
 
 			}
 		})
 	};
-
-	clear_error_message = (error_block) => {
-		setTimeout(() => {error_block.innerHTML = ''}, 2500);
-	}
 
 }
