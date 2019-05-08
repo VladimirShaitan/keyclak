@@ -45,15 +45,102 @@ get_header('profile');
                     <div class="next-date">Prochain RDV: jeudi 27 décembre, 17h</div>
                 </div>
                 <div class="candidats-slider-wrapper">
-                    <div class="nav-slider-btn left">
-                        <!-- <img src="../images/icons/left-arrow.png" alt=""> -->
-                        <img src="/wp-content/uploads/2019/04/left-arrow.png" alt="">
-                    </div>
+                    
 
                     <div class="content-slider-wrapper">
                         <div class="slider-title">Les candidats</div>
-                        <div class="content-slider-inner">
-                            <div class="content-slider-item">
+                        <div class="main-gallery">
+                            <div class="gallery-cell">
+                                <div class="candidats-row">
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-1.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-1.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-1.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-1.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-1.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="candidats-row">
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-2.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-2.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-2.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-2.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-2.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="candidats-row">
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-3.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-3.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-3.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-3.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-3.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-3.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="gallery-cell">
+                                <div class="candidats-row">
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-1.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-1.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-1.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-1.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-1.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="candidats-row">
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-2.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-2.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-2.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-2.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-2.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="candidats-row">
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-3.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-3.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-3.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-3.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <!-- <img src="../images/icons/candidat-3.png" alt=""> -->
+                                        <img src="/wp-content/uploads/2019/04/candidat-3.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="gallery-cell">
                                 <div class="candidats-row">
                                     <a href="">
                                         <!-- <img src="../images/icons/candidat-1.png" alt=""> -->
@@ -100,10 +187,7 @@ get_header('profile');
                         </div>
                     </div>
 
-                    <div class="nav-slider-btn right" >
-                        <!-- <img src="../images/icons/right-arrow.png" alt=""> -->
-                        <img src="/wp-content/uploads/2019/04/right-arrow.png" alt="">
-                    </div>
+                    
                 </div>
             </div>
 
@@ -113,7 +197,7 @@ get_header('profile');
                 </a>
                 <label class="switch">
                     <input type="checkbox" checked>
-                    <span class="slider"></span>
+                    <span class="slider-field"></span>
                 </label>
             </div>
         </div>

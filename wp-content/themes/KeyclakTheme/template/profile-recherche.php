@@ -39,141 +39,120 @@ get_header('profile');
         </div>
 
         <div class="main-slider-wrapper">
-            <div class="nav-slider-btn left" id="slider-left">
-                <!-- <img src="../images/icons/left-arrow.png" alt=""> -->
-                <img src="/wp-content/uploads/2019/04/left-arrow.png" alt="">
-            </div>
-
             <div class="content-slider-wrapper">
                 <div class="slider-title">
                     Mes favoris
                 </div>
-                <div class="content-slider-inner" id="slider-polosa">
-                    <div class="content-slider-item">
+                <div class="main-gallery">
+                    <div class="gallery-cell">
                         <div class="slider-info-wrapper">
-                            <div class="info-container">
-                                <ul>
-                                    <li class="info-text bold">Bertrand G.</li>
-                                    <li class="info-text">Studio Paris 14</li>
-                                    <li class="info-text">Rue La Fayette</li>
-                                    <li class="info-text">Surface : <span>42m2</span></li>
-                                    <li class="info-text">Étage : <span>5ème</span></li>
-                                    <li class="info-text">Ascenseur : <span>Non</span></li>
-                                    <li class="info-text">Transports : <span>Ligne 7 et 9</span></li>
-                                    <li class="info-text">Loyer : <span>1100 €</span></li>
-                                </ul>
-                            </div>
-                            <div class="photo-container">
-                                <!-- <img src="../images/house-2.png" alt=""> -->
-                                <img src="/wp-content/uploads/2019/04/house-2.png" alt="">
+                            <div class="tablet-container">
+                                <div class="info-container">
+                                    <ul>
+                                        <li class="info-text date">Jeudi 27 désembre, 17h</li>
+                                        <li class="info-text">Gregoire V.</li>
+                                        <li class="info-text">Rue La Fayette</li>
+                                        <li class="info-text">Surface : <span>42m2</span></li>
+                                        <li class="info-text">Étage : <span>5ème</span></li>
+                                        <li class="info-text">Ascenseur : <span>Non</span></li>
+                                        <li class="info-text">Transports : <span>Ligne 7 et 9</span></li>
+                                        <li class="info-text">Loyer : <span>1100 €</span></li>
+                                    </ul>
+                                </div>
+                                <div class="photo-container">
+                                    <!-- <img src="../images/house.png" alt=""> -->
+                                    <img src="/wp-content/uploads/2019/04/house.png" alt="">
+                                </div>
                             </div>
                             <div class="map-container">
-                                <!-- <img src="../images/map-2.png" alt=""> -->
-                                <img src="/wp-content/uploads/2019/04/map-2.png" alt="">
-                            </div>
-                            <div class="close-slider-container">
-                                <a href="" class="close-btn">
-                                    <i class="icon close"></i>
-                                </a>
+                                <!-- <img src="../images/map.png" alt=""> -->
+                                <img src="/wp-content/uploads/2019/04/map.png" alt="">
                             </div>
                         </div>
                     </div>
 
-                    <div class="content-slider-item">
+                    <div class="gallery-cell">
                         <div class="slider-info-wrapper">
-                            <div class="info-container">
-                                <ul>
-                                    <li class="info-text bold">Bertrand G.</li>
-                                    <li class="info-text">Studio Paris 14</li>
-                                    <li class="info-text">Rue La Fayette</li>
-                                    <li class="info-text">Surface : <span>42m2</span></li>
-                                    <li class="info-text">Étage : <span>5ème</span></li>
-                                    <li class="info-text">Ascenseur : <span>Non</span></li>
-                                    <li class="info-text">Transports : <span>Ligne 7 et 9</span></li>
-                                    <li class="info-text">Loyer : <span>1100 €</span></li>
-                                </ul>
-                            </div>
-                            <div class="photo-container">
-                                <!-- <img src="../images/house-2.png" alt=""> -->
-                                <img src="/wp-content/uploads/2019/04/house-2.png" alt="">
+                            <div class="tablet-container">
+                                <div class="info-container">
+                                    <ul>
+                                        <li class="info-text date">Jeudi 27 désembre, 17h</li>
+                                        <li class="info-text">Gregoire V.</li>
+                                        <li class="info-text">Rue La Fayette</li>
+                                        <li class="info-text">Surface : <span>42m2</span></li>
+                                        <li class="info-text">Étage : <span>5ème</span></li>
+                                        <li class="info-text">Ascenseur : <span>Non</span></li>
+                                        <li class="info-text">Transports : <span>Ligne 7 et 9</span></li>
+                                        <li class="info-text">Loyer : <span>1100 €</span></li>
+                                    </ul>
+                                </div>
+                                <div class="photo-container">
+                                    <!-- <img src="../images/house.png" alt=""> -->
+                                    <img src="/wp-content/uploads/2019/04/house.png" alt="">
+                                </div>
                             </div>
                             <div class="map-container">
-                                <!-- <img src="../images/map-2.png" alt=""> -->
-                                <img src="/wp-content/uploads/2019/04/map-2.png" alt="">
-                            </div>
-                            <div class="close-slider-container">
-                                <a href="" class="close-btn">
-                                    <i class="icon close"></i>
-                                </a>
+                                <!-- <img src="../images/map.png" alt=""> -->
+                                <img src="/wp-content/uploads/2019/04/map.png" alt="">
                             </div>
                         </div>
                     </div>
 
-                    <div class="content-slider-item">
+                    <div class="gallery-cell">
                         <div class="slider-info-wrapper">
-                            <div class="info-container">
-                                <ul>
-                                    <li class="info-text bold">Bertrand G.</li>
-                                    <li class="info-text">Studio Paris 14</li>
-                                    <li class="info-text">Rue La Fayette</li>
-                                    <li class="info-text">Surface : <span>42m2</span></li>
-                                    <li class="info-text">Étage : <span>5ème</span></li>
-                                    <li class="info-text">Ascenseur : <span>Non</span></li>
-                                    <li class="info-text">Transports : <span>Ligne 7 et 9</span></li>
-                                    <li class="info-text">Loyer : <span>1100 €</span></li>
-                                </ul>
-                            </div>
-                            <div class="photo-container">
-                                <!-- <img src="../images/house-2.png" alt=""> -->
-                                <img src="/wp-content/uploads/2019/04/house-2.png" alt="">
+                            <div class="tablet-container">
+                                <div class="info-container">
+                                    <ul>
+                                        <li class="info-text date">Jeudi 27 désembre, 17h</li>
+                                        <li class="info-text">Gregoire V.</li>
+                                        <li class="info-text">Rue La Fayette</li>
+                                        <li class="info-text">Surface : <span>42m2</span></li>
+                                        <li class="info-text">Étage : <span>5ème</span></li>
+                                        <li class="info-text">Ascenseur : <span>Non</span></li>
+                                        <li class="info-text">Transports : <span>Ligne 7 et 9</span></li>
+                                        <li class="info-text">Loyer : <span>1100 €</span></li>
+                                    </ul>
+                                </div>
+                                <div class="photo-container">
+                                    <!-- <img src="../images/house.png" alt=""> -->
+                                    <img src="/wp-content/uploads/2019/04/house.png" alt="">
+                                </div>
                             </div>
                             <div class="map-container">
-                                <!-- <img src="../images/map-2.png" alt=""> -->
-                                <img src="/wp-content/uploads/2019/04/map-2.png" alt="">
-                            </div>
-                            <div class="close-slider-container">
-                                <a href="" class="close-btn">
-                                    <i class="icon close"></i>
-                                </a>
+                                <!-- <img src="../images/map.png" alt=""> -->
+                                <img src="/wp-content/uploads/2019/04/map.png" alt="">
                             </div>
                         </div>
                     </div>
 
-                    <div class="content-slider-item">
+                    <div class="gallery-cell">
                         <div class="slider-info-wrapper">
-                            <div class="info-container">
-                                <ul>
-                                    <li class="info-text bold">Bertrand G.</li>
-                                    <li class="info-text">Studio Paris 14</li>
-                                    <li class="info-text">Rue La Fayette</li>
-                                    <li class="info-text">Surface : <span>42m2</span></li>
-                                    <li class="info-text">Étage : <span>5ème</span></li>
-                                    <li class="info-text">Ascenseur : <span>Non</span></li>
-                                    <li class="info-text">Transports : <span>Ligne 7 et 9</span></li>
-                                    <li class="info-text">Loyer : <span>1100 €</span></li>
-                                </ul>
+                            <div class="tablet-container">
+                                <div class="info-container">
+                                    <ul>
+                                        <li class="info-text date">Jeudi 27 désembre, 17h</li>
+                                        <li class="info-text">Gregoire V.</li>
+                                        <li class="info-text">Rue La Fayette</li>
+                                        <li class="info-text">Surface : <span>42m2</span></li>
+                                        <li class="info-text">Étage : <span>5ème</span></li>
+                                        <li class="info-text">Ascenseur : <span>Non</span></li>
+                                        <li class="info-text">Transports : <span>Ligne 7 et 9</span></li>
+                                        <li class="info-text">Loyer : <span>1100 €</span></li>
+                                    </ul>
+                                </div>
+                                <div class="photo-container">
+                                    <!-- <img src="../images/house.png" alt=""> -->
+                                    <img src="/wp-content/uploads/2019/04/house.png" alt="">
+                                </div>
                             </div>
-                            <div class="photo-container">
-                                <!-- <img src="../images/house-2.png" alt=""> -->
-                                <img src="/wp-content/uploads/2019/04/house-2.png" alt="">
-                            </div>
+                            
                             <div class="map-container">
-                                <!-- <img src="../images/map-2.png" alt=""> -->
-                                <img src="/wp-content/uploads/2019/04/map-2.png" alt="">
-                            </div>
-                            <div class="close-slider-container">
-                                <a href="" class="close-btn">
-                                    <i class="icon close"></i>
-                                </a>
+                                <!-- <img src="../images/map.png" alt=""> -->
+                                <img src="/wp-content/uploads/2019/04/map.png" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="nav-slider-btn right" id="slider-right">
-                <!-- <img src="../images/icons/right-arrow.png" alt=""> -->
-                <img src="/wp-content/uploads/2019/04/right-arrow.png" alt="">
             </div>
         </div>
 

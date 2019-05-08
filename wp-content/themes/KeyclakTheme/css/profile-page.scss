@@ -1468,6 +1468,9 @@ button {
                 font-size: 36px;
                 font-weight: 900;
                 line-height: 36px;
+                @include mediaDesctop($w425) {
+                    font-size: 27px;
+                }
             }
 
             ul {
@@ -1475,6 +1478,9 @@ button {
                 flex-flow: row nowrap;
                 align-items: center;
                 margin: 0 0 40px;
+                @include mediaDesctop($w950) {
+                    flex-flow: column nowrap
+                }
 
                 li {
                     display: inline-block;
@@ -1483,6 +1489,20 @@ button {
                     font-weight: 300;
                     line-height: 24px;
                     position: relative;
+                    @include mediaDesctop($w1200) {
+                        font-size: 22px;
+                    }
+                    @include mediaDesctop($w1150) {
+                        font-size: 20px;
+                    }
+                    @include mediaDesctop($w1024) {
+                        font-size: 18px;
+                    }
+                    @include mediaDesctop($w950) {
+                        font-size: 24px;
+                        margin: 15px 0;
+                    }
+
                     &:after {
                         content: '';
                         position: absolute;
@@ -1495,6 +1515,11 @@ button {
                         right: -20px;
                         bottom: 0;
                         margin: auto;
+                        @include mediaDesctop($w950) {
+                            top: 55px;
+                            right: 0px;
+                            left: 0;
+                        }
                     }
 
                     &:last-child {
@@ -1516,6 +1541,9 @@ button {
                     font-weight: 300;
                     line-height: 18px;
                     text-decoration: underline;
+                    @include mediaDesctop($w425) {
+                        font-size: 16px;
+                    }
                 }
             }
         }
@@ -1531,31 +1559,72 @@ button {
                 font-size: 36px;
                 font-weight: 900;
                 line-height: 28px;
+                @include mediaDesctop($w425) {
+                    font-size: 27px;
+                }
             }
 
             form {
                 width: 75%;
                 margin: 0 auto 31px;
+                @include mediaDesctop($w1440) {
+                    width: 80%;
+                }
+                @include mediaDesctop($w1150) {
+                    width: 85%;
+                }
 
                 .top-searh-fields, .bot-searh-fields {
                     display: flex;
                     flex-flow: row nowrap;
                     justify-content: flex-start;
+                    @include mediaDesctop($w950) {
+                        flex-flow: column nowrap;
+                        align-items: center;
+                    }
                 }
 
                 .top-searh-fields {
-                    // justify-content: space-between;
                     margin: 0 0 25px;
+                    @include mediaDesctop($w950) {
+                        margin: 0 0 30px;
+                    }
 
                     label {
                         &:nth-child(2) {
                             width: 62%;
                             max-width: 803px;
                             margin: 0 45px 0 30px;
+                            @include mediaDesctop($w1550) {
+                                width: 52%;
+                            }
+                            @include mediaDesctop($w1200) {
+                                margin: 0 35px 0 30px;
+                            }
+                            @include mediaDesctop($w950) {
+                                margin: 35px 0;
+                                width: 100%;
+                                max-width: 400px;
+                            }
+                            @include mediaDesctop($w568) {
+                                max-width: 350px;
+                            }
+                            @include mediaDesctop($w425) {
+                                max-width: 300px;
+                            }
                         }
                         &:nth-child(1), &:nth-child(3) {
-                            width: 15%;
+                            width: 100%;
                             max-width: 211px;
+                            @include mediaDesctop($w950) {
+                                max-width: 400px;
+                            }
+                            @include mediaDesctop($w568) {
+                                max-width: 350px;
+                            }
+                            @include mediaDesctop($w425) {
+                                max-width: 300px;
+                            }
                         }
                     }
                 }
@@ -1565,15 +1634,41 @@ button {
                         padding: 18px 15px 15px;
 
                         &:first-child {
-                            width: 26%;
+                            width: 100%;
                             max-width: 355px;
-                            margin-right: 40px;
+                            margin: 0 40px 0 0;
+                            @include mediaDesctop($w1550) {
+                                margin: 0 30px 0 0;
+                            }
+                            @include mediaDesctop($w950) {
+                                margin: 0 0px 30px 0;
+                                max-width: 400px;
+                            }
+                            @include mediaDesctop($w568) {
+                                max-width: 350px;
+                            }
+                            @include mediaDesctop($w425) {
+                                max-width: 300px;
+                            }
                         }
                         
                         &:nth-child(2), &:nth-child(3), &:nth-child(4) {
-                            width: 15%;
-                            max-width: 200%;
-                            margin-right: 33px;
+                            width: 100%;
+                            max-width: 200px;
+                            margin: 0 33px 0 0;
+                            @include mediaDesctop($w1550) {
+                                margin: 0 25px 0 0;
+                            }
+                            @include mediaDesctop($w950) {
+                                margin: 0 0 30px 0;
+                                max-width: 400px;
+                            }
+                            @include mediaDesctop($w568) {
+                                max-width: 350px;
+                            }
+                            @include mediaDesctop($w425) {
+                                max-width: 300px;
+                            }
                         }
                     }
                 }
@@ -1608,6 +1703,9 @@ button {
                         font-size: 18px;
                         font-weight: 300;
                         cursor: pointer;
+                        @include mediaDesctop($w1550) {
+                            font-size: 16px;
+                        }
                     }
 
                     .icon {
@@ -1657,6 +1755,10 @@ button {
                         border: none;
                         padding: 0;
                         cursor: pointer;
+                        @include mediaDesctop($w1366) {
+                            max-width: 250px;
+                            width: 100%;
+                        }
                         span {
                             color: #010101;
                             font-size: 16px;
@@ -1702,9 +1804,29 @@ button {
                 align-items: center;
                 width: 50%;
                 border: 2px solid #75ff71;
+                @include mediaDesctop($w1024) {
+                    width: 100%;
+                }
 
                 &:nth-child(3), &:nth-child(4) {
                     flex-flow: row-reverse nowrap;
+                }
+
+                &:nth-child(even) {
+                    @include mediaDesctop($w1024) {
+                        flex-flow: row-reverse nowrap;
+                    }
+                    @include mediaDesctop($w568) {
+                        flex-flow: column nowrap;
+                    }
+                }
+                &:nth-child(odd) {
+                    @include mediaDesctop($w1024) {
+                        flex-flow: row nowrap;
+                    }
+                    @include mediaDesctop($w568) {
+                        flex-flow: column nowrap;
+                    }
                 }
 
                 .image-container {
@@ -1712,6 +1834,11 @@ button {
                     height: 100%;
                     background-repeat: no-repeat;
                     background-size: cover;
+                    @include mediaDesctop($w568) {
+                        width: 100%;
+                        height: 450px;
+                    }
+
                     &.result-1 {
                         // background-image: url('../images/search-res-1.jpg');
                         background-image: url('/wp-content/uploads/2019/04/search-res-1.jpg');
@@ -1728,17 +1855,52 @@ button {
                         // background-image: url('../images/search-res-4.jpg');
                         background-image: url('/wp-content/uploads/2019/04/search-res-4.jpg');
                     }
+
+                    
                 }
 
                 .result-info {
                     width: 50%;
                     padding: 50px 0 34px 52px;
+                    @include mediaDesctop($w1280) {
+                        padding: 50px 0 34px 40px;
+                    }
+                    @include mediaDesctop($w1150) {
+                        padding: 40px 0 34px 35px;
+                    }
+                    @include mediaDesctop($w1024) {
+                        padding: 50px 0 34px 52px;
+                    }
+                    @include mediaDesctop($w768) {
+                        padding: 40px 0 34px 35px;
+                    }
+                    @include mediaDesctop($w568) {
+                        width: 100%;
+                    }
 
                     .title {
                         margin: 0 0 56px;
                         font-size: 30px;
                         font-weight: 500;
                         line-height: 30px;
+                        @include mediaDesctop($w1366) {
+                            font-size: 27px;
+                        }
+                        @include mediaDesctop($w1280) {
+                            font-size: 24px;
+                        }
+                        @include mediaDesctop($w1150) {
+                            margin: 0 0 36px;
+                            font-size: 22px;
+                        }
+                        @include mediaDesctop($w1024) {
+                            margin: 0 0 56px;
+                            font-size: 24px;
+                        }
+                        @include mediaDesctop($w1024) {
+                            margin: 0 0 36px;
+                            font-size: 20px;
+                        }
                     }
 
                     ul {
@@ -1749,6 +1911,21 @@ button {
                             font-size: 24px;
                             font-weight: 300;
                             line-height: 24px;
+                            @include mediaDesctop($w1366) {
+                                font-size: 22px;
+                            }
+                            @include mediaDesctop($w1280) {
+                                font-size: 20px;
+                            }
+                            @include mediaDesctop($w1150) {
+                                font-size: 18px;
+                            }
+                            @include mediaDesctop($w1024) {
+                                font-size: 22px;
+                            }
+                            @include mediaDesctop($w768) {
+                                font-size: 18px;
+                            }
                         }
                     }
 
@@ -1758,12 +1935,33 @@ button {
                         border-radius: 28px;
                         background-color: #000000;
                         padding: 8px 37px 12px;
+                        @include mediaDesctop($w1366) {
+                            padding: 8px 30px 10px;
+                        }
+                        @include mediaDesctop($w1280) {
+                            padding: 8px 25px;
+                        }
 
                         span {
                             color: #ffffff;
                             font-size: 24px;
                             font-weight: 300;
                             line-height: 36px;
+                            @include mediaDesctop($w1366) {
+                                font-size: 22px;
+                            }
+                            @include mediaDesctop($w1280) {
+                                font-size: 20px;
+                            }
+                            @include mediaDesctop($w1150) {
+                                font-size: 18px;
+                            }
+                            @include mediaDesctop($w1024) {
+                                font-size: 22px;
+                            }
+                            @include mediaDesctop($w768) {
+                                font-size: 18px;
+                            }
                         }
                     }
                 }
@@ -2305,6 +2503,7 @@ button {
                     display: flex;
                     flex-flow: row nowrap;
                     align-items: center;
+                    padding: 0 60px;
 
                     .nav-slider-btn {
                         cursor: pointer;
@@ -2317,8 +2516,9 @@ button {
                     }
 
                     .content-slider-wrapper {
-                        overflow: hidden;
+                        // overflow: hidden;
                         max-width: 375px;
+
                         .slider-title {
                             margin: 0 0 26px;
                             font-size: 30px;
@@ -2326,17 +2526,15 @@ button {
                             line-height: 30px;
                         }
 
-                        .content-slider-inner {
-                            display: flex;
-                            flex-flow: row nowrap;
-                            justify-content: flex-start;
+                        .main-gallery {
+                            display: block;
                             position: relative;
                             left: 0;
                             transition: all ease .8s;
                             width: 100%;
                             min-width: 373px;
 
-                            .content-slider-item {
+                            .gallery-cell {
                                 display: flex;
                                 flex-flow: column nowrap;
                                 width: 100%;
@@ -2352,6 +2550,17 @@ button {
                                         display: inline-block;
                                     }
                                 }
+                            }
+                        }
+
+                        .flickity-prev-next-button {
+                            top: 46%;
+                            
+                            &.previous {
+                                left: -60px;
+                            }
+                            &.next {
+                                right: -60px;
                             }
                         }
                     }
@@ -2405,7 +2614,7 @@ button {
                         
                     }
 
-                    .slider {
+                    .slider-field {
                         position: absolute;
                         cursor: pointer;
                         top: 0;
