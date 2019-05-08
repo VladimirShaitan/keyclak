@@ -56,7 +56,7 @@ function profile_fields( $user ) {
     $user_revenu = get_the_author_meta( 'revenu', $user->ID );
     $user_garant = get_the_author_meta( 'garant', $user->ID );
     $user_revenu_garant = get_the_author_meta( 'revenu_garant', $user->ID );
-
+    $user_profile_picture = get_the_author_meta( 'profile_picture', $user->ID );
     ?>
     <table class="form-table">
         <tr>
@@ -80,6 +80,12 @@ function profile_fields( $user ) {
             <td>
                 <input type="text" id="user_revenu_garant" name="user_revenu_garant" value="<?php echo esc_attr( $user_revenu_garant ); ?>" class="regular-text"
                 />
+            </td>
+        </tr>
+        <tr>
+            <th><label for="user_profile_picture"><?php esc_html_e( 'Profile picture', 'crf' ); ?></label></th>
+            <td>
+                <img width="100" src="<?php echo esc_attr( $user_profile_picture ); ?>">
             </td>
         </tr>
     </table>
@@ -123,6 +129,52 @@ add_role(
 add_action('wp_ajax_nopriv_register_user', 'register_user');
 add_action('wp_ajax_register_user', 'register_user');
 function register_user(){
-    print_r($_POST);
+    $file_exist = false;
+    $errors = array();
+    if($_FILES['file-photo']['size'] > 0){$file_exist = true;}
+
+    if($file_exist){
+        $file = & $_FILES['file-photo'];
+        $overrides = [ 'test_form' => false ];
+        $movefile = wp_handle_upload($file, $overrides, null );
+        if(!empty($movefile['error'])){
+            $errors['file'] = "Cannot upload file";
+        }
+    }
+
+    if(!is_email($_POST['email'])){
+        $errors['email'] =  'address is incorrect';
+    } else {
+        if(email_exists($_POST['email'])){
+            $errors['email'] =  'This email already registered';
+        }
+    }
+
+    if(!empty($errors)){
+        wp_send_json($errors);
+    }
+    
+
+    $userdata = array(
+        'user_pass'       => $_POST['password'], // обязательно
+        'user_login'      => $_POST['email'], // обязательно
+        'user_nicename'   => $_POST['first-name'] . ' ' . $_POST['last-name'],
+        'user_email'      => $_POST['email'],
+        'display_name'    => $_POST['first-name'] . ' ' . $_POST['last-name'],
+        'nickname'        => $_POST['first-name'] . ' ' . $_POST['last-name'],
+        'first_name'      => $_POST['first-name'],
+        'last_name'       => $_POST['last-name'],
+        'rich_editing'    => 'false',
+        'role'            => $_POST['user_role'],
+        'show_admin_bar_front' => false,
+        'use_ssl' => true,
+    );
+    $user_id = wp_insert_user($userdata);
+
+    if(!is_wp_error($user_id)){
+        update_user_meta($user_id, 'profile_picture', $movefile['url']);
+    }
+    print_r($user_id);
     wp_die();
+    // 
 }
