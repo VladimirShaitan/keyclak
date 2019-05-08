@@ -5,27 +5,32 @@
             <div class="left-field-blocks">
                 <div class="input-main">
                     <label>Nom</label>
-                    <input name="lastname" type="text"  >
+                    <input name="lastname" type="text">
+                    <div class="error"></div>
                 </div>
 
                 <div class="input-main">
                     <label>Prènom</label>
-                    <input name="firstname" type="text"  >
+                    <input name="firstname" type="text">
+                    <div class="error"></div>
                 </div>
 
                 <div class="input-main">
                     <label>Adresse email</label>
-                    <input name="email" type="email"  >
+                    <input name="email" type="email">
+                    <div class="error"></div>
                 </div>
 
                 <div class="input-main">
                     <label>Mot de passe</label>
-                    <input name="password" type="password"  >
+                    <input name="password" type="password">
+                    <div class="error"></div>
                 </div>
 
                 <div class="input-main last-input">
                     <label>Confirmation mot de passe</label>
-                    <input type="password"  >
+                    <input type="password">
+                    <div class="error"></div>
                 </div>
 
                 <div class="input-main">
@@ -43,17 +48,20 @@
             <div class="right-field-blocks">
                 <div class="input-main">
                     <label>Numéro de téléphone</label>
-                    <input type="tel" class="right-first-input"  >
+                    <input type="tel" class="right-first-input" >
+                    <div class="error"></div>
                 </div>
 
                 <div class="input-main">
                     <label>Statut</label>
                     <input name="statut" type="text"  >
+                    <div class="error"></div>
                 </div>
 
                 <div class="input-main">
                     <label>Revenu (net mensuel)</label>
                     <input name="revenu" type="text"  >
+                    <div class="error"></div>
                 </div>
 
                 <div class="input-main radio-block">
@@ -83,11 +91,13 @@
                 <div class="input-main">
                     <label>Statut du Garant</label>
                     <input name="statut_du_garant" type="text"  >
+                    <div class="error"></div>
                 </div>
 
                 <div class="input-main last-input">
                     <label>Revenu du garant (net mensuel)</label>
                     <input name="revenu_du_garant" type="text"  >
+                    <div class="error"></div>
                 </div>
 
                 <div class="input-main">

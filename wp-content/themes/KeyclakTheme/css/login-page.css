@@ -583,7 +583,9 @@
   margin-bottom: 25px;
   text-align: left;
 }
-
+.main-content-container .content-container-wrapper .register-page-container .middle-content-container .form-black-bg .inscription-form .form-rows-wrapper .error{
+  height: 0;
+}
 .main-content-container .content-container-wrapper .register-page-container .middle-content-container .form-black-bg .inscription-form .form-rows-wrapper .input-main label {
   color: #75ff71;
   margin-bottom: 4px;

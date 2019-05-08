@@ -220,7 +220,7 @@ jQuery( "#clickme" ).click(function() {
 /************************************* CUSTOM SELECT ********************************************/
 
 //Slider on Agenda
-if(qs('.main-gallery' != null)){
+if(qs('.main-gallery') != null){
     const flkty = new Flickity('.main-gallery', {
         //options
         cellAlign: 'left',
