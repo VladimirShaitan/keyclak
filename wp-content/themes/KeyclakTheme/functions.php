@@ -123,7 +123,11 @@ add_role(
 add_action('wp_ajax_nopriv_register_user', 'register_user');
 add_action('wp_ajax_register_user', 'register_user');
 function register_user(){
-    print_r($_POST);
-    print_r($_FILES);
-    wp_die();
+    // print_r($_POST);
+    // print_r($_FILES);
+
+    $file = & $_FILES['file-photo'];
+    $overrides = [ 'test_form' => false ];
+    $movefile = wp_handle_upload($file, $overrides, null );
+    wp_send_json($movefile);
 }

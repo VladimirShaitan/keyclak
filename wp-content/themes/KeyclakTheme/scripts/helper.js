@@ -24,26 +24,6 @@ HTMLElement.prototype.parentFinder = function(clName){
 	}
 }
 
-// function ajax_handler(action_obj, callback){
-
-// 	jQuery.ajax({
-// 		  url: ajaxurl,
-// 		  method: "POST",
-// 		  data: action_obj,
-// 		  dataType: "html"
-	
-// 	}).success(function(data) {
-// 		callback(data);
-// 		// console.log(data)
-
-// 	}).fail(function( jqXHR, textStatus ) {
-	  
-// 	  alert( "Request failed: " + textStatus );
-	
-// 	});
-// }
-
-
 function ajax_handler(form_id, action, callback, err_callback) {
 		var form = jQuery(form_id)[0];
 	    var data = new FormData(form);

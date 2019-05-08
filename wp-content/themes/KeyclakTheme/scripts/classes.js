@@ -12,7 +12,7 @@ class registration {
 	setEvent = () => {
 		this.form.addEventListener('submit', (e) => {
 			e.preventDefault();
-			ajax_handler(this.form_id, 'register_user', alert);
+			ajax_handler(this.form_id, 'register_user');
 			console.log(jQuery(this.form).serialize());
 		});
 
