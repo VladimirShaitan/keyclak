@@ -23,13 +23,13 @@
 
                 <div class="input-main">
                     <label>Mot de passe</label>
-                    <input name="password" type="password" required>
+                    <input name="password" type="password" autocomplete="off" required>
                     <div class="error"></div>
                 </div>
 
                 <div class="input-main last-input">
                     <label>Confirmation mot de passe</label>
-                    <input type="password" required>
+                    <input type="password" autocomplete="off" required>
                     <div class="error"></div>
                 </div>
 
@@ -116,5 +116,6 @@
         <div class="inscription-form-submit">
             <input type="submit" value="Inscription" class="submit-btn-green" disabled>
         </div>
+        <input type="hidden" name="user_role" value="locataire">
     </form>
 </div>	

@@ -124,5 +124,6 @@ add_action('wp_ajax_nopriv_register_user', 'register_user');
 add_action('wp_ajax_register_user', 'register_user');
 function register_user(){
     print_r($_POST);
+    print_r($_FILES);
     wp_die();
 }

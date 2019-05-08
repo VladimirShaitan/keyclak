@@ -24,24 +24,45 @@ HTMLElement.prototype.parentFinder = function(clName){
 	}
 }
 
-function ajax_handler(action_obj, callback){
-	// jQuery.post(ajaxurl, action_obj, function(data){
-	// 	callback(JSON.parse(data));
-	// });
+// function ajax_handler(action_obj, callback){
 
-	jQuery.ajax({
-		  url: ajaxurl,
-		  method: "POST",
-		  data: action_obj,
-		  dataType: "html"
+// 	jQuery.ajax({
+// 		  url: ajaxurl,
+// 		  method: "POST",
+// 		  data: action_obj,
+// 		  dataType: "html"
 	
-	}).success(function(data) {
-		callback(data);
-		// console.log(data)
+// 	}).success(function(data) {
+// 		callback(data);
+// 		// console.log(data)
 
-	}).fail(function( jqXHR, textStatus ) {
+// 	}).fail(function( jqXHR, textStatus ) {
 	  
-	  alert( "Request failed: " + textStatus );
+// 	  alert( "Request failed: " + textStatus );
 	
-	});
+// 	});
+// }
+
+
+function ajax_handler(form_id, action, callback, err_callback) {
+		var form = jQuery(form_id)[0];
+	    var data = new FormData(form);
+	    data.append("action", action);
+
+	    jQuery.ajax({
+	        type: "POST",
+	        enctype: 'multipart/form-data',
+	        url: ajaxurl,
+	        data: data,
+	        processData: false,
+	        contentType: false,
+	        cache: false,
+	        timeout: 600000,
+	        success: function (data) {
+	        	callback(data);
+	        },
+	        error: function (e) {
+	        	err_callback(e);
+	        }
+	    });
 }

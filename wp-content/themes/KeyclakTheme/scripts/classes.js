@@ -12,11 +12,7 @@ class registration {
 	setEvent = () => {
 		this.form.addEventListener('submit', (e) => {
 			e.preventDefault();
-			let data = {
-				action: 'register_user',
-				registration_data:jQuery(this.form).serialize()
-			};
-			ajax_handler(data, alert);
+			ajax_handler(this.form_id, 'register_user', alert);
 			console.log(jQuery(this.form).serialize());
 		});
 
@@ -62,7 +58,7 @@ class registration {
 					error_block.innerHTML = '';
 					pass_first.parentElement.qs('.error').innerHTML = '';
 					pass_second.parentElement.qs('.error').innerHTML = '';
-					
+
 					if(pass_first.value != '' && pass_second.value != ''){
 						e.target.form.qs('input[type=submit]').removeAttribute('disabled');
 					}
