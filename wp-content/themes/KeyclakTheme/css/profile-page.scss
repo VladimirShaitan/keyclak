@@ -1861,14 +1861,92 @@ button {
 
                     .user-info {
                         flex-flow: column;
+
+                        &.non-owner {
+                            @include mediaDesctop($w1150) {
+                                align-items: center;
+                            }
+
+                            .navigation-panel {
+                                align-items: flex-end;
+                                @include mediaDesctop($w1150) {
+                                   flex-flow: column nowrap;
+                                    align-items: center;
+                                }
+                                @include mediaDesctop($w950) {
+                                    flex-flow: row nowrap;
+                                }
+                                @include mediaDesctop($w740) {
+                                    flex-flow: column nowrap;
+                                }
+
+                                .nav-button {
+                                    padding: 8px 15px 7px;
+                                    background-color: #000000;
+                                    @include mediaDesctop($w1280) {
+                                        padding: 8px 10px 7px;
+                                    }
+                                    @include mediaDesctop($w1200) {
+                                        margin: 0 14px 0px 0;
+                                    }
+                                    @include mediaDesctop($w1150) {
+                                        font-size: 16px;
+                                        margin: 0;
+                                        padding: 8px 15px 7px;
+                                    }
+                                    @include mediaDesctop($w950) {
+                                        margin: 0 14px 0px 0;
+                                    }
+                                    @include mediaDesctop($w740) {
+                                        margin: 0;
+                                    }
+
+                                    span {
+                                        color: #ffffff;
+                                        @include mediaDesctop($w1280) {
+                                            font-size: 16px;
+                                        }
+                                        @include mediaDesctop($w1150) {
+                                            font-size: 18px;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        background-color: #ffffff;
+                                        span {
+                                            color: #000000;
+                                        }
+                                    }
+                                }
+
+                                div {
+                                    margin: 0 24px 0 0;
+                                    color: #010101;
+                                    font-size: 24px;
+                                    font-weight: 300;
+                                    line-height: 35.9px;
+                                    @include mediaDesctop($w1280) {
+                                        margin: 0 14px 0px 0;
+                                    }
+                                    @include mediaDesctop($w1150) {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+
                         .user-name {
                             width: auto;
                             margin: 0 0 64px;
                             font-size: 27px;
                             font-weight: 500;
                             line-height: 27px;
+                            @include mediaDesctop($w1150) {
+                                font-size: 25px;
+                            }
                             @include mediaDesctop($w740) {
                                 margin: 0 0 40px;
+                                font-size: 22px;
                             }
                             @include mediaDesctop($w568) {
                                 font-size: 20px;
@@ -1933,32 +2011,6 @@ button {
                                     font-size: 18px;
                                     font-weight: 300;
                                     line-height: 18px;
-                                }
-                            }
-
-                            &.non-owner {
-                                align-items: flex-end;
-                                .nav-button {
-                                    padding: 8px 15px 7px;
-                                    background-color: #000000;
-                                    span {
-                                        color: #ffffff;
-                                    }
-
-                                    &:hover {
-                                        background-color: #ffffff;
-                                        span {
-                                            color: #000000;
-                                        }
-                                    }
-                                }
-
-                                div {
-                                    margin: 0 24px 0 0;
-                                    color: #010101;
-                                    font-size: 24px;
-                                    font-weight: 300;
-                                    line-height: 35.9px;
                                 }
                             }
                         }

@@ -32,9 +32,9 @@ get_header('profile');
                         <!-- <img src="../images/icons/user-pic-2-small.png" alt=""> -->
                         <img src="/wp-content/uploads/2019/04/user-pic-2-small.png" alt="">
                     </div>
-                    <div class="user-info">
+                    <div class="user-info non-owner">
                         <div class="user-name">Le propriétaire Bertrand G.</div>
-                        <div class="navigation-panel non-owner">
+                        <div class="navigation-panel">
                             <a href="" class="nav-button">
                                 <span>Demander une visite</span>
                             </a>
@@ -54,7 +54,7 @@ get_header('profile');
                         <div class="icons-wrap"><i class="icon house"></i></div>
                         <div class="apartment-info">
                             <span>Type de bien :</span>
-                            <span class="data"></span>
+                            <span class="data">Appartement</span>
                         </div>
                     </li>
 
@@ -62,7 +62,7 @@ get_header('profile');
                         <div class="icons-wrap"><i class="icon key"></i></div>
                         <div class="apartment-info">
                             <span>Location :</span>
-                            <span class="data"></span>
+                            <span class="data">Paris</span>
                         </div>
                     </li>
 
@@ -70,7 +70,7 @@ get_header('profile');
                         <div class="icons-wrap"><i class="icon house-2"></i></div>
                         <div class="apartment-info">
                             <span>Colocation :</span>
-                            <span class="data"></span>
+                            <span class="data">Noi</span>
                         </div>
                     </li>
 
@@ -78,7 +78,7 @@ get_header('profile');
                         <div class="icons-wrap"><i class="icon people"></i></div>
                         <div class="apartment-info">
                             <span>Nombre de coloc maximum :</span>
-                            <span class="data"></span>
+                            <span class="data">+8</span>
                         </div>
                     </li>
 
@@ -86,7 +86,7 @@ get_header('profile');
                         <div class="icons-wrap"><i class="icon window"></i></div>
                         <div class="apartment-info">
                             <span>Nombre de salle(s) d’eau:</span>
-                            <span class="data"></span>
+                            <span class="data">2</span>
                         </div>
                     </li>
 
@@ -94,7 +94,7 @@ get_header('profile');
                         <div class="icons-wrap"><i class="icon money"></i></div>
                         <div class="apartment-info">
                             <span>Loyer :</span>
-                            <span class="data"></span>
+                            <span class="data">1900 avec charge</span>
                         </div>
                     </li>
 
@@ -110,7 +110,7 @@ get_header('profile');
                         <div class="icons-wrap"><i class="icon paper"></i></div>
                         <div class="apartment-info">
                             <span>Surface du bien :</span>
-                            <span class="data"></span>
+                            <span class="data">75m²</span>
                         </div>
                     </li>
 
@@ -118,7 +118,7 @@ get_header('profile');
                         <div class="icons-wrap"><i class="icon stairway"></i></div>
                         <div class="apartment-info">
                             <span>Étage :</span>
-                            <span class="data"></span>
+                            <span class="data">RDC</span>
                         </div>
                     </li>
 
@@ -126,7 +126,7 @@ get_header('profile');
                         <div class="icons-wrap"><i class="icon house-3"></i></div>
                         <div class="apartment-info">
                             <span>Nombre de pièces :</span>
-                            <span class="data"></span>
+                            <span class="data">5</span>
                         </div>
                     </li>
 
@@ -142,7 +142,7 @@ get_header('profile');
                         <div class="icons-wrap"><i class="icon emblem"></i></div>
                         <div class="apartment-info">
                             <span>Commoditès :</span>
-                            <span class="data"></span>
+                            <span class="data">Ascenseur, Balcon, Cave</span>
                         </div>
                     </li>
 
@@ -150,7 +150,7 @@ get_header('profile');
                         <div class="icons-wrap"><i class="icon bed"></i></div>
                         <div class="apartment-info">
                             <span>Nombre de chambre :</span>
-                            <span class="data"></span>
+                            <span class="data">2</span>
                         </div>
                     </li>
 
@@ -158,7 +158,7 @@ get_header('profile');
                         <div class="icons-wrap"><i class="icon sun"></i></div>
                         <div class="apartment-info">
                             <span>Orientation :</span>
-                            <span class="data"></span>
+                            <span class="data">Nord-Ouest</span>
                         </div>
                     </li>
 
@@ -166,7 +166,7 @@ get_header('profile');
                         <div class="icons-wrap"><i class="icon thermometr"></i></div>
                         <div class="apartment-info">
                             <span>Chauffage :</span>
-                            <span class="data"></span>
+                            <span class="data">Gaz, Electrique</span>
                         </div>
                     </li>
 
@@ -174,7 +174,7 @@ get_header('profile');
                         <div class="icons-wrap"><i class="icon kitchen"></i></div>
                         <div class="apartment-info">
                             <span>Cuisine :</span>
-                            <span class="data"></span>
+                            <span class="data">Ouverte, Equipée</span>
                         </div>
                     </li>
 
@@ -182,7 +182,7 @@ get_header('profile');
                         <div class="icons-wrap"><i class="icon bath"></i></div>
                         <div class="apartment-info">
                             <span>Équipement salle d’eau :</span>
-                            <span class="data"></span>
+                            <span class="data">Douche, baignoire</span>
                         </div>
                     </li>
 
