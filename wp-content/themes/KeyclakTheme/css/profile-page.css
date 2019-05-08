@@ -3240,7 +3240,8 @@ button {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  margin: 100px 0;
+  margin: 100px auto;
+  width: 90%;
 }
 
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-title-container {
@@ -3273,8 +3274,19 @@ button {
 }
 
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .image-container {
-  margin-left: 97px;
-  margin-right: 125px;
+  margin: 0 125px 0 0px;
+}
+
+@media only screen and (max-width: 1840px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .image-container {
+    margin: 0 105px 0 0px;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .image-container {
+    margin: 0 85px 0 0px;
+  }
 }
 
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .info-container {
@@ -3299,6 +3311,12 @@ button {
   flex-flow: row nowrap;
   align-items: center;
   padding: 0 60px;
+}
+
+@media only screen and (max-width: 1840px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper {
+    padding: 0 50px;
+  }
 }
 
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .nav-slider-btn {
@@ -3398,17 +3416,17 @@ button {
   height: 0;
 }
 
-.main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-navigation-container .switch input:checked + .slider {
+.main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-navigation-container .switch input:checked + .slider-field {
   background-color: #0e9100;
 }
 
-.main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-navigation-container .switch input:checked + .slider:before {
+.main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-navigation-container .switch input:checked + .slider-field:before {
   -webkit-transform: translateX(28px);
   -ms-transform: translateX(28px);
   transform: translateX(28px);
 }
 
-.main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-navigation-container .switch input:focus + .slider {
+.main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-navigation-container .switch input:focus + .slider-field {
   box-shadow: 0 0 1px #2196F3;
 }
 

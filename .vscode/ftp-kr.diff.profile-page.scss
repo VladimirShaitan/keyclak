@@ -2446,8 +2446,7 @@ button {
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
-            margin: 100px auto;
-            width: 90%;
+            margin: 100px 0;
 
             .annonces-title-container {
                 display: flex;
@@ -2478,13 +2477,8 @@ button {
                 margin: 0 0 33px;
 
                 .image-container {
-                    margin: 0 125px 0 0px;
-                    @include mediaDesctop($w1840) {
-                        margin: 0 105px 0 0px;
-                    }
-                    @include mediaDesctop($w1800) {
-                        margin: 0 85px 0 0px;
-                    } 
+                        margin-left: 97px;
+                        margin-right: 125px;
                 }
 
                 .info-container {
@@ -2510,9 +2504,6 @@ button {
                     flex-flow: row nowrap;
                     align-items: center;
                     padding: 0 60px;
-                    @include mediaDesctop($w1840) {
-                        padding: 0 50px;
-                    }
 
                     .nav-slider-btn {
                         cursor: pointer;
@@ -2525,9 +2516,8 @@ button {
                     }
 
                     .content-slider-wrapper {
-                        // overflow: hidden;
+                        overflow: hidden;
                         max-width: 375px;
-
                         .slider-title {
                             margin: 0 0 26px;
                             font-size: 30px;
@@ -2559,17 +2549,6 @@ button {
                                         display: inline-block;
                                     }
                                 }
-                            }
-                        }
-
-                        .flickity-prev-next-button {
-                            top: 46%;
-
-                            &.previous {
-                                left: -60px;
-                            }
-                            &.next {
-                                right: -60px;
                             }
                         }
                     }
@@ -2608,7 +2587,7 @@ button {
                         width: 0;
                         height: 0;
 
-                        &:checked + .slider-field {
+                        &:checked + .slider {
                             background-color: #0e9100;
 
                             &:before {
@@ -2617,7 +2596,7 @@ button {
                                 transform: translateX(28px);
                             }
                         }
-                        &:focus + .slider-field {
+                        &:focus + .slider {
                             box-shadow: 0 0 1px #2196F3;
                         }
                         
