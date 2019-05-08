@@ -1,5 +1,8 @@
 <div class="form-black-bg form-proprietaire">
     <form id="proprietaire" class="inscription-form">
+        <div class="preloader">
+            <img class="loader" src="">
+        </div>
         <div class="form-rows-wrapper">
             <div class="central-field-blocks">
                 <div class="input-main">
@@ -28,7 +31,7 @@
 
                 <div class="input-main last-input">
                     <label for="pasword-confirm">Confirmation mot de passe</label>
-                    <input type="password" name="pasword-confirm" id="pasword-confirm" autocomplete="off" required>
+                    <input type="password" id="pasword-confirm" autocomplete="off" required>
                     <div class="error"></div>
                 </div>
 
@@ -38,7 +41,7 @@
                             <span class="upload-text-btn">
                                 + ajouter une photo de profil
                             </span>
-                            <input type="file" name="file-photo" id="file-photo">
+                            <input type="file" name="file-photo" id="file-photo" accept="image/*" multiple="false">
                         </label>
                     </div>
                 </div>

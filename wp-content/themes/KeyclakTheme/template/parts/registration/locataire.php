@@ -2,6 +2,9 @@
     <form id="locataire-registration" class="inscription-form">
 
         <div class="form-rows-wrapper">
+            <div class="preloader">
+                <i class="fa fa-spinner fa-pulse fa-3x fa-fw" ></i>
+            </div>
             <div class="left-field-blocks">
                 <div class="input-main">
                     <label>Nom</label>
