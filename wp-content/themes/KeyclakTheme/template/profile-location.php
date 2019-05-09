@@ -26,7 +26,6 @@ get_header('profile');
             <div class="profile-info-container">
                 <div class="profile-photo-container">
                     <div class="user-profile-photo">
-                        <!-- <img src="../images/icons/user-pic-2.png" alt=""> -->
                         <img src="/wp-content/uploads/2019/03/user-pic-2.png" alt="">
                     </div>
                 </div>

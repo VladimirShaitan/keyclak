@@ -30,7 +30,6 @@ get_header('profile');
 
             <div class="annonces-content-container">
                 <div class="image-container">
-                    <!-- <img src="../images/apartment-2.jpg" alt=""> -->
                     <img src="/wp-content/uploads/2019/04/apartment-2.jpg" alt="">
                 </div>
                 <div class="info-container">
@@ -53,43 +52,34 @@ get_header('profile');
                             <div class="gallery-cell">
                                 <div class="candidats-row">
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-1.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-1.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-1.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-1.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-1.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-1.png" alt="">
                                     </a>
                                 </div>
                                 <div class="candidats-row">
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-2.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-2.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-2.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-2.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-2.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-2.png" alt="">
                                     </a>
                                 </div>
                                 <div class="candidats-row">
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-3.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-3.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-3.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-3.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-3.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-3.png" alt="">
                                     </a>
                                 </div>
@@ -98,43 +88,34 @@ get_header('profile');
                             <div class="gallery-cell">
                                 <div class="candidats-row">
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-1.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-1.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-1.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-1.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-1.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-1.png" alt="">
                                     </a>
                                 </div>
                                 <div class="candidats-row">
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-2.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-2.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-2.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-2.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-2.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-2.png" alt="">
                                     </a>
                                 </div>
                                 <div class="candidats-row">
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-3.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-3.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-3.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-3.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-3.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-3.png" alt="">
                                     </a>
                                 </div>
@@ -143,43 +124,34 @@ get_header('profile');
                             <div class="gallery-cell">
                                 <div class="candidats-row">
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-1.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-1.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-1.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-1.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-1.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-1.png" alt="">
                                     </a>
                                 </div>
                                 <div class="candidats-row">
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-2.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-2.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-2.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-2.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-2.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-2.png" alt="">
                                     </a>
                                 </div>
                                 <div class="candidats-row">
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-3.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-3.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-3.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-3.png" alt="">
                                     </a>
                                     <a href="">
-                                        <!-- <img src="../images/icons/candidat-3.png" alt=""> -->
                                         <img src="/wp-content/uploads/2019/04/candidat-3.png" alt="">
                                     </a>
                                 </div>

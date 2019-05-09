@@ -28,10 +28,8 @@ get_header('profile');
             <div class="profile-info-container">
                 <div class="profile-photo-container">
                     <div class="user-profile-photo">
-                        <!-- <img src="../images/icons/user-pic.png" alt=""> -->
                         <img src="/wp-content/uploads/2019/03/user-pic.png" alt="">
                         <a href="http://" class="social-link">
-                            <!-- <img src="../images/icons/linkedin.png" alt=""> -->
                             <img src="/wp-content/uploads/2019/03/linkedin.png" alt="">
                         </a>
                     </div>
@@ -117,10 +115,8 @@ get_header('profile');
             <div class="profile-info-container">
                 <div class="profile-photo-container">
                     <div class="user-profile-photo">
-                        <!-- <img src="../images/icons/user-pic.png" alt=""> -->
                         <img src="/wp-content/uploads/2019/03/user-pic.png" alt="">
                         <a href="http://" class="social-link">
-                            <!-- <img src="../images/icons/linkedin.png" alt=""> -->
                             <img src="/wp-content/uploads/2019/03/linkedin.png" alt="">
                         </a>
                     </div>
