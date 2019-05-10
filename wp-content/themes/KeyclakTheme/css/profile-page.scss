@@ -2448,6 +2448,7 @@ button {
             align-items: center;
             margin: 100px auto;
             width: 90%;
+            background-color: red; 
 
             .annonces-title-container {
                 display: flex;
@@ -2656,7 +2657,7 @@ button {
         
         //global style for navigate button and document-list container
         .document-hidden-list, .document-download {
-            display: flex;
+            display: flex; 
             flex-flow: row nowrap;
             align-items: flex-end;
             cursor: pointer;

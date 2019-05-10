@@ -3242,6 +3242,7 @@ button {
   align-items: center;
   margin: 100px auto;
   width: 90%;
+  background-color: red;
 }
 
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-title-container {
