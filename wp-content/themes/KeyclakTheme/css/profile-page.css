@@ -3242,7 +3242,24 @@ button {
   align-items: center;
   margin: 100px auto;
   width: 90%;
-  background-color: red;
+}
+
+@media only screen and (max-width: 1366px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper {
+    margin: 70px auto 120px;
+  }
 }
 
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-title-container {
@@ -3252,11 +3269,44 @@ button {
   margin: 0 0 90px;
 }
 
+@media only screen and (max-width: 640px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-title-container {
+    margin: 0 0 60px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-title-container {
+    flex-flow: column nowrap;
+  }
+}
+
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-title-container .title {
   font-size: 36px;
   font-weight: 900;
   line-height: 36px;
-  margin-right: 40px;
+  margin: 0 40px 0 0;
+}
+
+@media only screen and (max-width: 640px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-title-container .title {
+    font-size: 32px;
+    margin: 0 20px 0 0;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-title-container .title {
+    margin: 0 15px 0 0;
+    font-size: 27px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-title-container .title {
+    margin: 0 0px 20px 0;
+    font-size: 30px;
+  }
 }
 
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-title-container .add-button {
@@ -3267,6 +3317,24 @@ button {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 640px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-title-container .add-button {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-title-container .add-button {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-title-container .add-button {
+    font-size: 20px;
+  }
+}
+
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container {
   display: flex;
   flex-flow: row nowrap;
@@ -3274,7 +3342,18 @@ button {
   margin: 0 0 33px;
 }
 
+@media only screen and (max-width: 1280px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .image-container {
+  display: flex;
+  max-width: 670px;
+  max-height: 390px;
+  min-width: 480px;
   margin: 0 125px 0 0px;
 }
 
@@ -3290,21 +3369,130 @@ button {
   }
 }
 
+@media only screen and (max-width: 1680px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .image-container {
+    margin: 0 70px 0 0px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .image-container {
+    margin: 0 50px 0 0px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .image-container {
+    margin: 0 0px 50px 0px;
+    max-width: 100%;
+    min-height: 550px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .image-container {
+    min-height: 420px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .image-container {
+    min-width: 290px;
+  }
+}
+
+.main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .image-container img {
+  width: 100%;
+}
+
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .info-container {
   padding-top: 33px;
 }
 
+@media only screen and (max-width: 1440px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .info-container {
+    padding-top: 24px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .info-container {
+    padding-top: 33px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .info-container {
+    padding-top: 0px;
+    margin: 0 0 50px;
+  }
+}
+
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .info-container ul .info-text {
+  margin: 0 0 25px;
   font-size: 24px;
   font-weight: 300;
   line-height: 24px;
-  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .info-container ul .info-text {
+    margin: 0 0 20px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .info-container ul .info-text {
+    margin: 0 0 25px;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .info-container ul .info-text {
+    margin: 0 0 20px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .info-container ul .info-text {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .info-container ul .info-text {
+    margin: 0 0 20px;
+    font-size: 18px;
+  }
 }
 
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .info-container .next-date {
   font-size: 24px;
   font-weight: 900;
   line-height: 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .info-container .next-date {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .info-container .next-date {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .info-container .next-date {
+    font-size: 18px;
+  }
 }
 
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper {
@@ -3320,16 +3508,17 @@ button {
   }
 }
 
-.main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .nav-slider-btn {
-  cursor: pointer;
+@media only screen and (max-width: 950px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper {
+    padding: 0 30px;
+  }
 }
 
-.main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .nav-slider-btn.left {
-  margin-right: 54px;
-}
-
-.main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .nav-slider-btn.right {
-  margin-left: 54px;
+@media only screen and (max-width: 768px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper {
@@ -3343,6 +3532,30 @@ button {
   line-height: 30px;
 }
 
+@media only screen and (max-width: 1440px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .slider-title {
+    font-size: 27px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .slider-title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .slider-title {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .slider-title {
+    font-size: 22px;
+  }
+}
+
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .main-gallery {
   display: block;
   position: relative;
@@ -3350,6 +3563,42 @@ button {
   transition: all ease .8s;
   width: 100%;
   min-width: 373px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .main-gallery {
+    min-width: 323px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .main-gallery {
+    min-width: 373px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .main-gallery {
+    min-width: 323px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .main-gallery {
+    min-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .main-gallery {
+    min-width: 373px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .main-gallery {
+    min-width: 290px;
+  }
 }
 
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell {
@@ -3367,7 +3616,51 @@ button {
 }
 
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .candidats-row a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100px;
+  max-height: 98px;
+}
+
+.main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .candidats-row a img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1440px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .candidats-row a img {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .candidats-row a img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .candidats-row a img {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .candidats-row a img {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .candidats-row a img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .candidats-row a img {
+    width: 80%;
+  }
 }
 
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .flickity-prev-next-button {
@@ -3378,8 +3671,56 @@ button {
   left: -60px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .flickity-prev-next-button.previous {
+    left: -42px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .flickity-prev-next-button.previous {
+    left: -60px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .flickity-prev-next-button.previous {
+    left: -35px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .flickity-prev-next-button.previous {
+    left: -25px;
+  }
+}
+
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .flickity-prev-next-button.next {
   right: -60px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .flickity-prev-next-button.next {
+    right: -42px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .flickity-prev-next-button.next {
+    right: -60px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .flickity-prev-next-button.next {
+    right: -35px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-content-container .candidats-slider-wrapper .content-slider-wrapper .flickity-prev-next-button.next {
+    right: -25px;
+  }
 }
 
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-navigation-container {
@@ -3388,13 +3729,31 @@ button {
   align-items: center;
 }
 
+@media only screen and (max-width: 425px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-navigation-container {
+    flex-flow: column nowrap;
+  }
+}
+
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-navigation-container .nav-button {
   display: inline-block;
   padding: 10px 15px;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
   border-radius: 28px;
   background-color: #000000;
-  margin-right: 111px;
+  margin: 0 111px 0 0;
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-navigation-container .nav-button {
+    margin: 0 71px 0 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-navigation-container .nav-button {
+    margin: 0 0px 30px 0;
+  }
 }
 
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-navigation-container .nav-button span {
@@ -3402,6 +3761,13 @@ button {
   font-size: 24px;
   font-weight: 300;
   line-height: 36px;
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-navigation-container .nav-button span {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
 
 .main-content-container .content-container-wrapper .annonces-content-wrapper .annonces-navigation-container .switch {

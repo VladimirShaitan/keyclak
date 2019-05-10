@@ -32,7 +32,7 @@ get_header('profile');
                 <div class="image-container">
                     <img src="/wp-content/uploads/2019/04/apartment-2.jpg" alt="">
                 </div>
-                <div class="info-container">
+                <div class="info-container"> 
                     <ul>
                         <li class="info-text">Rue La Fayette</li>
                         <li class="info-text">Surface : <span>42m2</span></li>

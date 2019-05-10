@@ -2448,19 +2448,45 @@ button {
             align-items: center;
             margin: 100px auto;
             width: 90%;
-            background-color: red; 
+            @include mediaDesctop($w1366) {
+                width: 95%;
+            }
+            @include mediaDesctop($w768) {
+                width: 90%;
+            }
+            @include mediaDesctop($w640) {
+                margin: 70px auto 120px;
+            }
 
             .annonces-title-container {
                 display: flex;
                 flex-flow: row nowrap;
                 align-items: center;
                 margin: 0 0 90px;
+                @include mediaDesctop($w640) {
+                    margin: 0 0 60px;
+                }
+                @include mediaDesctop($w425) {
+                    flex-flow: column nowrap;
+                }
 
                 .title {
                     font-size: 36px;
                     font-weight: 900;
                     line-height: 36px;
-                    margin-right: 40px;
+                    margin: 0 40px 0 0;
+                    @include mediaDesctop($w640) {
+                        font-size: 32px;
+                        margin: 0 20px 0 0;
+                    }
+                    @include mediaDesctop($w568) {
+                        margin: 0 15px 0 0;
+                        font-size: 27px;
+                    }
+                    @include mediaDesctop($w425) {
+                        margin: 0 0px 20px 0;
+                        font-size: 30px;
+                    }
                 }
 
                 .add-button {
@@ -2469,6 +2495,15 @@ button {
                     font-weight: 300;
                     line-height: 24px;
                     text-decoration: underline;
+                    @include mediaDesctop($w640) {
+                        font-size: 22px;
+                    }
+                    @include mediaDesctop($w568) {
+                        font-size: 18px;
+                    }
+                    @include mediaDesctop($w425) {
+                        font-size: 20px;
+                    }
                 }
             }
 
@@ -2477,8 +2512,16 @@ button {
                 flex-flow: row nowrap;
                 width: 100%;//hotfix
                 margin: 0 0 33px;
+                @include mediaDesctop($w1280) {
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                }
 
                 .image-container {
+                    display: flex;
+                    max-width: 670px;
+                    max-height: 390px;
+                    min-width: 480px;
                     margin: 0 125px 0 0px;
                     @include mediaDesctop($w1840) {
                         margin: 0 105px 0 0px;
@@ -2486,16 +2529,69 @@ button {
                     @include mediaDesctop($w1800) {
                         margin: 0 85px 0 0px;
                     } 
+                    @include mediaDesctop($w1680) {
+                        margin: 0 70px 0 0px;
+                    } 
+                    @include mediaDesctop($w1440) {
+                        margin: 0 50px 0 0px;
+                    }
+                    @include mediaDesctop($w1280) {
+                        margin: 0 0px 50px 0px;
+                        max-width: 100%;
+                        min-height: 550px;
+                        width: 100%;
+                    }
+                    @include mediaDesctop($w950) {
+                        min-height: 420px;
+                    }
+                    @include mediaDesctop($w568) {
+                        min-width: 290px;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
                 }
 
                 .info-container {
-                        padding-top: 33px;//hotfix
+                    padding-top: 33px;//hotfix
+                    @include mediaDesctop($w1440) {
+                        padding-top: 24px;
+                    }
+                    @include mediaDesctop($w1280) {
+                        padding-top: 33px;
+                    }
+                    @include mediaDesctop($w768) {
+                        padding-top: 0px;
+                        margin: 0 0 50px;
+                    }
+
                     ul {
                         .info-text {
+                            margin: 0 0 25px;
                             font-size: 24px;
                             font-weight: 300;
                             line-height: 24px;
-                            margin-bottom: 25px;
+                            @include mediaDesctop($w1440) {
+                                margin: 0 0 20px;
+                                font-size: 22px;
+                            }
+                            @include mediaDesctop($w1280) {
+                                margin: 0 0 25px;
+                                font-size: 24px;
+                            }
+                            @include mediaDesctop($w1024) {
+                                margin: 0 0 20px;
+                                font-size: 22px;
+                            }
+                            @include mediaDesctop($w950) {
+                                margin: 0 0 20px;
+                                font-size: 20px;
+                            }
+                            @include mediaDesctop($w425) {
+                                margin: 0 0 20px;
+                                font-size: 18px;
+                            }
                         }
                     }
 
@@ -2503,6 +2599,15 @@ button {
                         font-size: 24px;
                         font-weight: 900;
                         line-height: 24px;
+                        @include mediaDesctop($w1024) {
+                            font-size: 22px;
+                        }
+                        @include mediaDesctop($w950) {
+                            font-size: 20px;
+                        }
+                        @include mediaDesctop($w425) {
+                            font-size: 18px;
+                        }
                     }
                 }
 
@@ -2514,15 +2619,12 @@ button {
                     @include mediaDesctop($w1840) {
                         padding: 0 50px;
                     }
-
-                    .nav-slider-btn {
-                        cursor: pointer;
-                        &.left {
-                            margin-right: 54px;
-                        }
-                        &.right {
-                            margin-left: 54px;
-                        }
+                    @include mediaDesctop($w950) {
+                        padding: 0 30px;
+                    }
+                    @include mediaDesctop($w768) {
+                        width: 100%;
+                        justify-content: center;
                     }
 
                     .content-slider-wrapper {
@@ -2534,6 +2636,18 @@ button {
                             font-size: 30px;
                             font-weight: 500;
                             line-height: 30px;
+                            @include mediaDesctop($w1440) {
+                                font-size: 27px;
+                            }
+                            @include mediaDesctop($w1280) {
+                                font-size: 30px;
+                            }
+                            @include mediaDesctop($w950) {
+                                font-size: 25px;
+                            }
+                            @include mediaDesctop($w568) {
+                                font-size: 22px;
+                            }
                         }
 
                         .main-gallery {
@@ -2543,6 +2657,24 @@ button {
                             transition: all ease .8s;
                             width: 100%;
                             min-width: 373px;
+                            @include mediaDesctop($w1600) {
+                                min-width: 323px;
+                            }
+                            @include mediaDesctop($w1280) {
+                                min-width: 373px;
+                            }
+                            @include mediaDesctop($w1024) {
+                                min-width: 323px;
+                            }
+                            @include mediaDesctop($w950) {
+                                min-width: 300px;
+                            }
+                            @include mediaDesctop($w768) {
+                                min-width: 373px;
+                            }
+                            @include mediaDesctop($w568) {
+                                min-width: 290px;
+                            }
 
                             .gallery-cell {
                                 display: flex;
@@ -2557,7 +2689,33 @@ button {
                                     margin: 0 0 29px;
 
                                     a {
-                                        display: inline-block;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        max-width: 100px;
+                                        max-height: 98px;
+
+                                        img {
+                                            width: 100%;
+                                            @include mediaDesctop($w1440) {
+                                                width: 90%;
+                                            }
+                                            @include mediaDesctop($w1280) {
+                                                width: 100%;
+                                            }
+                                            @include mediaDesctop($w1024) {
+                                                width: 90%;
+                                            }
+                                            @include mediaDesctop($w950) {
+                                                width: 85%;
+                                            }
+                                            @include mediaDesctop($w768) {
+                                                width: 100%;
+                                            }
+                                            @include mediaDesctop($w568) {
+                                                width: 80%;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -2568,9 +2726,33 @@ button {
 
                             &.previous {
                                 left: -60px;
+                                @include mediaDesctop($w1024) {
+                                    left: -42px;
+                                }
+                                @include mediaDesctop($w768) {
+                                    left: -60px;
+                                }
+                                @include mediaDesctop($w568) {
+                                    left: -35px;
+                                }
+                                @include mediaDesctop($w320) {
+                                    left: -25px;
+                                }
                             }
                             &.next {
                                 right: -60px;
+                                @include mediaDesctop($w1024) {
+                                    right: -42px;
+                                }
+                                @include mediaDesctop($w768) {
+                                    right: -60px;
+                                }
+                                @include mediaDesctop($w568) {
+                                    right: -35px;
+                                }
+                                @include mediaDesctop($w320) {
+                                    right: -25px;
+                                }
                             }
                         }
                     }
@@ -2581,6 +2763,9 @@ button {
                 display: flex;
                 flex-flow: row nowrap;
                 align-items: center;
+                @include mediaDesctop($w425) {
+                    flex-flow: column nowrap;
+                }
 
                 .nav-button {
                     display: inline-block;
@@ -2588,13 +2773,23 @@ button {
                     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
                     border-radius: 28px;
                     background-color: #000000;
-                    margin-right: 111px;
+                    margin: 0 111px 0 0;
+                    @include mediaDesctop($w568) {
+                        margin: 0 71px 0 0;
+                    }
+                    @include mediaDesctop($w425) {
+                        margin: 0 0px 30px 0;
+                    }
 
                     span {
                         color: #ffffff;
                         font-size: 24px;
                         font-weight: 300;
                         line-height: 36px;
+                        @include mediaDesctop($w568) {
+                            font-size: 22px;
+                            line-height: 30px;
+                        }
                     }
                 }
 
