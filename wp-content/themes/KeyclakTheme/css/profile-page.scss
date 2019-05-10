@@ -387,6 +387,7 @@ button {
                     flex-flow: column nowrap;
 
 					.navigation-link {
+                        cursor: pointer;
                         color: inherit;
                         font-size: 18px;
                         font-weight: 400;
@@ -410,11 +411,12 @@ button {
                 }
 
                 input {
-                    border: 1px solid #75ff71;
-                    padding: 0 5px;
-                    border-radius: 10px;
-                    &:read-only {
-                        border: transparent;
+                    border: none;
+                    &.active-field {
+                        border: 1px solid #75ff71;
+                        border-radius: 28px;
+                        padding: 7px 10px;
+                        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
                     }
                     
                 }
@@ -425,6 +427,9 @@ button {
 			.profile-main-data {
                 position: relative;
                 padding: 0 76px 0 0;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
                 @include mediaDesctop($w1840) {
                     padding: 0 66px 0 0;
                 }
@@ -463,6 +468,7 @@ button {
                         display: flex;
                         flex-flow: row nowrap;
                         justify-content: space-between;
+                        align-items: center;
                         text-align: left;
                         margin: 0 0 36px;
                         @include mediaDesctop($w1280) {
@@ -477,7 +483,8 @@ button {
                             min-width: 300px;
                             font-size: 30px;
                             font-weight: 300;
-                            line-height: 36px;
+                            // line-height: 36px;
+                            line-height: 1em;
                             @include mediaDesctop($w1765) {
                                 font-size: 28px;
                             }
@@ -531,12 +538,50 @@ button {
                                     margin: 0 0 0 0;
                                 }
                             }
-                            &.right-side { 
+                            &.right-side {
+                                min-width: 330px;
                                 font-weight: 900;
+                                @include mediaDesctop($w1680) {
+                                    min-width: 270px;
+                                }
+                                @include mediaDesctop($w1550) {
+                                    min-width: 250px;
+                                }
+                                @include mediaDesctop($w1440) {
+                                    min-width: 242px;
+                                }
+                                @include mediaDesctop($w1366) {
+                                    min-width: 220px;
+                                }
+                                @include mediaDesctop($w1150) {
+                                    min-width: 200px;
+                                }
+                                @include mediaDesctop($w1024) {
+                                    min-width: 220px;
+                                }
+                                @include mediaDesctop($w768) {
+                                    min-width: 2000px;
+                                }
                             }
                         }
 					}
-				}
+                }
+                
+                .modificate-btn-container {
+                    display: none;
+                    margin: 55px 0 0;
+                    padding: 16px 77px;
+                    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
+                    border-radius: 28px;
+                    background-color: #000000;
+                    cursor: pointer;
+
+                    span {
+                        color: #ffffff;
+                        font-size: 24px;
+                        font-weight: 300;
+                    }
+                }
 			}
 
             //right data container
