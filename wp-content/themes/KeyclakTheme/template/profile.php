@@ -42,43 +42,43 @@ get_header('profile');
                         <ul>
                             <li>
                                 <div class="left-side">Nom</div>
-                                <div class="right-side">Vanne</div>
+                                <input class="right-side" type="text" readonly value="Vanne">
                             </li>
                             <li>
                                 <div class="left-side">Prénom</div>
-                                <div class="right-side">Grégoire</div>
+                                <input class="right-side" type="text" readonly value="Grégoire">
                             </li>
                             <li>
                                 <div class="left-side">Adresse e-mail</div>
-                                <div class="right-side">gregoire@gmail.com</div>
+                                <input class="right-side" type="email" readonly value="gregoire@gmail.com">
                             </li>
                             <li>
                                 <div class="left-side">Numéro de téléphone</div>
-                                <div class="right-side">+33 6 59 08 61 43</div>
+                                <input class="right-side" type="tel" readonly value="+33 6 59 08 61 43">
                             </li>
                             <li>
                                 <div class="left-side">Mot de passe</div>
-                                <div class="right-side">**********</div>
+                                <input class="right-side" type="password" readonly value="somepassword">
                             </li>
                             <li>
                                 <div class="left-side">Vidéo de présentation</div>
-                                <div class="right-side">myvideo.mov</div>
+                                <input class="right-side" type="text" readonly value="myvideo.mov">
                             </li>
                         </ul>
                     </div>
                     <div class="profile-sub-data">
                         <div class="sub-data-wrapper">
                             <div class="sub-data-string">
-                                Statut : <span>Salarié en CDD</span>
+                                <span>Statut : </span><input type="text" value="Salarié en CDD" readonly>
                             </div>
                             <div class="sub-data-string">
-                                Revenu : <span>1500€</span>
+                                <span>Revenu :</span> <input type="text" value="1500€" readonly>
                             </div>
                             <div class="sub-data-string">
-                                Garant : <span>CDI</span>
+                                <span>Garant : </span><input type="text" value="CDI" readonly>
                             </div>
                             <div class="sub-data-string">
-                                Revenu garant : <span>3600€</span>
+                                <span>Revenu garant :</span> <input type="text" value="3600€" readonly>
                             </div>
                         </div>
                     </div>

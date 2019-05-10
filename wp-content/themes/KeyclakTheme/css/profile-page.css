@@ -535,6 +535,16 @@ button {
   }
 }
 
+.main-content-container .content-container-wrapper .profile-info-container .profile-data-wrapper input {
+  border: 1px solid #75ff71;
+  padding: 0 5px;
+  border-radius: 10px;
+}
+
+.main-content-container .content-container-wrapper .profile-info-container .profile-data-wrapper input:read-only {
+  border: transparent;
+}
+
 .main-content-container .content-container-wrapper .profile-info-container .profile-main-data {
   position: relative;
   padding: 0 76px 0 0;
@@ -612,7 +622,7 @@ button {
   }
 }
 
-.main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div {
+.main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input {
   width: 50%;
   min-width: 300px;
   font-size: 30px;
@@ -621,101 +631,101 @@ button {
 }
 
 @media only screen and (max-width: 1765px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input {
     font-size: 28px;
   }
 }
 
 @media only screen and (max-width: 1680px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input {
     min-width: 270px;
     font-size: 25px;
   }
 }
 
 @media only screen and (max-width: 1550px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input {
     min-width: 250px;
     font-size: 24px;
   }
 }
 
 @media only screen and (max-width: 1440px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input {
     min-width: 220px;
     font-size: 22px;
   }
 }
 
 @media only screen and (max-width: 1366px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input {
     min-width: 200px;
     font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 1150px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input {
     min-width: 180px;
     font-size: 18px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input {
     min-width: 200px;
     font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div {
-    min-width: 160px;
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input {
+    min-width: 180px;
     font-size: 16px;
   }
 }
 
-.main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.left-side {
+.main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.left-side, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input.left-side {
   margin: 0 157px 0 0;
 }
 
 @media only screen and (max-width: 1840px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.left-side {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.left-side, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input.left-side {
     margin: 0 137px 0 0;
   }
 }
 
 @media only screen and (max-width: 1680px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.left-side {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.left-side, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input.left-side {
     margin: 0 100px 0 0;
   }
 }
 
 @media only screen and (max-width: 1550px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.left-side {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.left-side, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input.left-side {
     margin: 0 70px 0 0;
   }
 }
 
 @media only screen and (max-width: 1440px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.left-side {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.left-side, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input.left-side {
     margin: 0 50px 0 0;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.left-side {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.left-side, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input.left-side {
     margin: 0 25px 0 0;
   }
 }
 
 @media only screen and (max-width: 360px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.left-side {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.left-side, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input.left-side {
     margin: 0 0 0 0;
   }
 }
 
-.main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.right-side {
+.main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.right-side, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input.right-side {
   font-weight: 900;
 }
 
@@ -749,61 +759,90 @@ button {
 }
 
 .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
   margin: 0 0px 30px;
+}
+
+.main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string span, .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string input {
   font-size: 30px;
   font-weight: 400;
 }
 
 @media only screen and (max-width: 1765px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string span, .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string input {
     font-size: 28px;
   }
 }
 
 @media only screen and (max-width: 1680px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string span, .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string input {
     font-size: 25px;
   }
 }
 
 @media only screen and (max-width: 1550px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string span, .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string input {
     font-size: 24px;
   }
 }
 
 @media only screen and (max-width: 1440px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string span, .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string input {
     font-size: 22px;
   }
 }
 
 @media only screen and (max-width: 1366px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string span, .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string input {
     font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 1150px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string span, .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string input {
     font-size: 18px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string span, .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string input {
     font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string span, .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string input {
     font-size: 16px;
   }
 }
 
 .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string span {
+  margin: 0 10px 0 0;
+}
+
+.main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string input {
+  width: 100%;
+  max-width: 250px;
   font-weight: 900;
+}
+
+@media only screen and (max-width: 1366px) {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string input {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string input {
+    width: 50%;
+    max-width: 200px;
+  }
+}
+
+.main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string:last-child input {
+  width: 30%;
 }
 
 .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .dropdown-doc-menu {

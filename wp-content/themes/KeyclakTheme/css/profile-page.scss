@@ -408,6 +408,16 @@ button {
                 @include mediaDesctop($w640) {
                     flex-flow: column nowrap;
                 }
+
+                input {
+                    border: 1px solid #75ff71;
+                    padding: 0 5px;
+                    border-radius: 10px;
+                    &:read-only {
+                        border: transparent;
+                    }
+                    
+                }
             }
             //END of profile-data-wrapper styles
 
@@ -462,7 +472,7 @@ button {
                             flex-flow: column nowrap;
                         }
 
-                        div {
+                        div, input {
                             width: 50%;
                             min-width: 300px;
                             font-size: 30px;
@@ -496,7 +506,7 @@ button {
                                 font-size: 20px;
                             }
                             @include mediaDesctop($w768) {
-                                min-width: 160px;
+                                min-width: 180px;
                                 font-size: 16px;
                             }
 
@@ -525,7 +535,6 @@ button {
                                 font-weight: 900;
                             }
                         }
-						
 					}
 				}
 			}
@@ -549,36 +558,61 @@ button {
 
                 .sub-data-wrapper {
                     .sub-data-string {
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-items: center;
                         margin: 0 0px 30px;
-                        font-size: 30px;
-                        font-weight: 400;
-                        @include mediaDesctop($w1765) {
-                            font-size: 28px;
-                        }
-                        @include mediaDesctop($w1680) {
-                            font-size: 25px;
-                        }
-                        @include mediaDesctop($w1550) {
-                            font-size: 24px;
-                        }
-                        @include mediaDesctop($w1440) {
-                            font-size: 22px;
-                        }
-                        @include mediaDesctop($w1366) {
-                            font-size: 20px; 
-                        }
-                        @include mediaDesctop($w1150) {
-                            font-size: 18px;
-                        }
-                        @include mediaDesctop($w1024) {
-                            font-size: 20px;
-                        }
-                        @include mediaDesctop($w768) {
-                            font-size: 16px;
+
+                        span, input {
+                            font-size: 30px;
+                            font-weight: 400;
+                            @include mediaDesctop($w1765) {
+                                font-size: 28px;
+                            }
+                            @include mediaDesctop($w1680) {
+                                font-size: 25px;
+                            }
+                            @include mediaDesctop($w1550) {
+                                font-size: 24px;
+                            }
+                            @include mediaDesctop($w1440) {
+                                font-size: 22px;
+                            }
+                            @include mediaDesctop($w1366) {
+                                font-size: 20px; 
+                            }
+                            @include mediaDesctop($w1150) {
+                                font-size: 18px;
+                            }
+                            @include mediaDesctop($w1024) {
+                                font-size: 20px;
+                            }
+                            @include mediaDesctop($w768) {
+                                font-size: 16px;
+                            }
                         }
 
-                        span { 
+                        span {
+                            margin: 0 10px 0 0;
+                        }
+
+                        input {
+                            width: 100%;
+                            max-width: 250px;
                             font-weight: 900;
+                            @include mediaDesctop($w1366) {
+                                width: 65%;
+                            }
+                            @include mediaDesctop($w1024) {
+                                width: 50%;
+                                max-width: 200px;
+                            }
+                        }
+
+                        &:last-child {
+                            input {
+                                width: 30%;
+                            }
                         }
                     }
                 }
