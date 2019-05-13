@@ -331,10 +331,12 @@ function showCalendar(month, year) {
 
 }
 
-jQuery('#modife-profile').click(function() {
-    jQuery('.profile-info-container .form-control').addClass('active').removeAttr('readonly');
+jQuery('#modificate_button').click(function () {
+    jQuery('.profile-info-container .user-field').addClass('active-field').removeAttr('readonly');
 })
-jQuery('#ere_update_profile').click(function() {
-    jQuery('.profile-info-container .form-control').removeClass('active').attr('readonly', 'true');
+jQuery('#save_modification').click(function () {
+    jQuery('.profile-info-container .user-field').removeClass('active-field').attr('readonly', 'true');
 })
+
+
 

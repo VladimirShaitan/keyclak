@@ -26,14 +26,14 @@ get_header('profile');
                 <div class="profile-photo-container">
                     <div class="user-profile-photo">
                         <img src="/wp-content/uploads/2019/03/user-pic.png" alt="">
-                        <a href="http://" class="social-link">
+                        <a href="https://www.linkedin.com" target="_blank" class="social-link">
                             <img src="/wp-content/uploads/2019/03/linkedin.png" alt="">
                         </a>
                     </div>
                     <div class="user-navigation-panel">
-                        <a href="#" class="navigation-link">Me déconnecter</a>
-                        <a href="#" class="navigation-link">Modifier mes informations</a>
-                        <a href="#" class="navigation-link">Supprimer mon compte</a>
+                        <span class="navigation-link">Me déconnecter</span>
+                        <span class="navigation-link" id="modificate_button">Modifier mes informations</span>
+                        <span class="navigation-link">Supprimer mon compte</span>
                     </div>
                 </div>
 
@@ -42,43 +42,47 @@ get_header('profile');
                         <ul>
                             <li>
                                 <div class="left-side">Nom</div>
-                                <input class="right-side" type="text" readonly value="Vanne">
+                                <input class="right-side user-field" type="text" readonly value="Vanne">
                             </li>
                             <li>
                                 <div class="left-side">Prénom</div>
-                                <input class="right-side" type="text" readonly value="Grégoire">
+                                <input class="right-side user-field" type="text" readonly value="Grégoire">
                             </li>
                             <li>
                                 <div class="left-side">Adresse e-mail</div>
-                                <input class="right-side" type="email" readonly value="gregoire@gmail.com">
+                                <input class="right-side user-field" type="email" readonly value="gregoire@gmail.com">
                             </li>
                             <li>
                                 <div class="left-side">Numéro de téléphone</div>
-                                <input class="right-side" type="tel" readonly value="+33 6 59 08 61 43">
+                                <input class="right-side user-field" type="tel" readonly value="+33 6 59 08 61 43">
                             </li>
                             <li>
                                 <div class="left-side">Mot de passe</div>
-                                <input class="right-side" type="password" readonly value="somepassword">
+                                <input class="right-side user-field" type="password" readonly value="somepassword">
                             </li>
                             <li>
                                 <div class="left-side">Vidéo de présentation</div>
-                                <input class="right-side" type="text" readonly value="myvideo.mov">
+                                <input class="right-side user-field" type="text" readonly value="myvideo.mov">
                             </li>
                         </ul>
+
+                        <div id="save_modification" class="modificate-btn-container">
+                            <span>Valider</span>
+                        </div>
                     </div>
                     <div class="profile-sub-data">
                         <div class="sub-data-wrapper">
                             <div class="sub-data-string">
-                                <span>Statut : </span><input type="text" value="Salarié en CDD" readonly>
+                                <span>Statut : </span><input class="user-field" type="text" value="Salarié en CDD" readonly>
                             </div>
                             <div class="sub-data-string">
-                                <span>Revenu :</span> <input type="text" value="1500€" readonly>
+                                <span>Revenu :</span> <input class="user-field" type="text" value="1500€" readonly>
                             </div>
                             <div class="sub-data-string">
-                                <span>Garant : </span><input type="text" value="CDI" readonly>
+                                <span>Garant : </span><input class="user-field" type="text" value="CDI" readonly>
                             </div>
                             <div class="sub-data-string">
-                                <span>Revenu garant :</span> <input type="text" value="3600€" readonly>
+                                <span>Revenu garant :</span> <input class="user-field" type="text" value="3600€" readonly>
                             </div>
                         </div>
                     </div>

@@ -509,6 +509,7 @@ button {
 }
 
 .main-content-container .content-container-wrapper .profile-info-container .profile-photo-container .user-navigation-panel .navigation-link {
+  cursor: pointer;
   color: inherit;
   font-size: 18px;
   font-weight: 400;
@@ -529,20 +530,21 @@ button {
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
   .main-content-container .content-container-wrapper .profile-info-container .profile-data-wrapper {
     flex-flow: column nowrap;
   }
 }
 
 .main-content-container .content-container-wrapper .profile-info-container .profile-data-wrapper input {
-  border: 1px solid #75ff71;
-  padding: 0 5px;
-  border-radius: 10px;
+  border: none;
 }
 
-.main-content-container .content-container-wrapper .profile-info-container .profile-data-wrapper input:read-only {
-  border: transparent;
+.main-content-container .content-container-wrapper .profile-info-container .profile-data-wrapper input.active-field {
+  border: 1px solid #75ff71;
+  border-radius: 28px;
+  padding: 7px 10px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
 }
 
 .main-content-container .content-container-wrapper .profile-info-container .profile-main-data {
@@ -568,7 +570,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
   .main-content-container .content-container-wrapper .profile-info-container .profile-main-data {
     padding: 0;
     width: 100%;
@@ -591,7 +593,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
   .main-content-container .content-container-wrapper .profile-info-container .profile-main-data:after {
     content: none;
   }
@@ -606,6 +608,7 @@ button {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: center;
   text-align: left;
   margin: 0 0 36px;
 }
@@ -627,7 +630,7 @@ button {
   min-width: 300px;
   font-size: 30px;
   font-weight: 300;
-  line-height: 36px;
+  line-height: 1em;
 }
 
 @media only screen and (max-width: 1765px) {
@@ -674,7 +677,6 @@ button {
 @media only screen and (max-width: 1024px) {
   .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input {
     min-width: 200px;
-    font-size: 20px;
   }
 }
 
@@ -726,7 +728,66 @@ button {
 }
 
 .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.right-side, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input.right-side {
+  min-width: 330px;
   font-weight: 900;
+}
+
+@media only screen and (max-width: 1680px) {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.right-side, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input.right-side {
+    min-width: 270px;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.right-side, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input.right-side {
+    min-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.right-side, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input.right-side {
+    min-width: 242px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.right-side, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input.right-side {
+    min-width: 220px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.right-side, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input.right-side {
+    min-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.right-side, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input.right-side {
+    min-width: 220px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li div.right-side, .main-content-container .content-container-wrapper .profile-info-container .profile-main-data ul li input.right-side {
+    min-width: 200px;
+  }
+}
+
+.main-content-container .content-container-wrapper .profile-info-container .profile-main-data .modificate-btn-container {
+  display: none;
+  margin: 55px 0 0;
+  padding: 16px 77px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
+  border-radius: 28px;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.main-content-container .content-container-wrapper .profile-info-container .profile-main-data .modificate-btn-container span {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data {
@@ -751,7 +812,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
   .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data {
     padding: 0;
     width: 100%;
@@ -803,12 +864,6 @@ button {
 @media only screen and (max-width: 1150px) {
   .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string span, .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string input {
     font-size: 18px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string span, .main-content-container .content-container-wrapper .profile-info-container .profile-sub-data .sub-data-wrapper .sub-data-string input {
-    font-size: 20px;
   }
 }
 
