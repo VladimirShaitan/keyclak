@@ -1,0 +1,718 @@
+@import 'vars.scss';
+
+.main-content-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    &.locataire-bg {
+        // background-image: url('../images/bg-loc.jpg');
+        background-image: url('/wp-content/uploads/2019/04/bg-loc.jpg');
+    }
+    &.propriétaire-bg {
+        // background-image: url('../images/bg-pro.jpg');
+        background-image: url('/wp-content/uploads/2019/03/bg-pro.jpg');
+    }
+
+    .content-container-wrapper {
+        justify-content: center;
+        @include mediaDesctop($w640) {
+            overflow-y: scroll; 
+            margin: 50px 0;
+        }
+
+        &.form-page {
+            margin: 0;
+        }
+
+        .login-page-container, .register-page-container {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            text-align: center;
+            margin: 0 0 60px; //for full-screen size
+
+            .title {
+                font-size: 2.5vw;
+                font-weight: 500;
+                line-height: 36px;
+                @include mediaDesctop($w1440) {
+                    margin: 0 0 5%;
+                    line-height: 31px;
+                    font-size: 34px;
+                }
+                @include mediaDesctop($w1280) {
+                    line-height: 33px;
+                    font-size: 32px;
+                }
+                @include mediaDesctop($w1024) {
+                    line-height: 30px;
+                    font-size: 30px;
+                }
+                @include mediaDesctop($w768) {
+                    line-height: 24px;
+                    font-size: 22px;
+                }
+                @include mediaDesctop($w568) {
+                    line-height: 20px;
+                    font-size: 20px;
+                }
+                @include mediaDesctop($w425) {
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+
+                span {
+                    font-weight: 500;
+                }
+            }
+
+            .subtitle {
+                font-size: 1.87vw;
+                font-weight: 400;
+                line-height: 36px;
+                @include mediaDesctop($w1280) {
+                    font-size: 27px;
+                }
+                @include mediaDesctop($w1024) {
+                    line-height: 38px;
+                    font-size: 27px;
+                }
+                @include mediaDesctop($w768) {
+                    font-size: 22px;
+                }
+                @include mediaDesctop($w568) {
+                    line-height: 24px;
+                    font-size: 20px;
+                }
+                @include mediaDesctop($w425) {
+                    line-height: 16px;
+                    font-size: 15px;
+                }
+            }
+
+            .middle-content-container {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+                position: relative;
+                // margin: 0 0 50px; 
+            }
+        }
+
+        .login-page-container {
+            
+            .title {
+                margin: 0 0 7%;
+            }
+
+            .middle-content-container {
+                margin-bottom: 7%;
+                @include mediaDesctop($w768) {
+                    flex-flow: column nowrap;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: -50%;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: 4px;
+                    height: 503px;
+                    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, #78ff74 50%, rgba(117, 255, 113, 0.98) 51%, rgba(255, 255, 255, 0) 100%);
+                
+                    @include mediaDesctop($w1440) {
+                        top: -25%;
+                        height: 390px;
+                    }
+                    @include mediaDesctop($w1280) {
+                        top: -10%;
+                        height: 350px;
+                    }
+                    @include mediaDesctop($w1024) {
+                        // top: -10%;
+                        height: 325px;
+                    }
+                    @include mediaDesctop($w768) {
+                        content: none;
+                    }
+                }
+
+                .left-content, .right-content {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    width: 50%;
+                    @include mediaDesctop($w768) {
+                        width: 100%;
+                    }
+                }
+                
+                .left-content {
+                    @include mediaDesctop($w768) {
+                        order: 2;
+                    }
+                    .text-container {
+                        text-align: center;
+                        max-width: 510px;
+                        font-size: 1.97vw;
+                        font-weight: 400;
+                        @include mediaDesctop($w1280) {
+                            max-width: 420px;
+                        }
+                        @include mediaDesctop($w1024) {
+                            max-width: 340px;
+                            font-size: 17px;
+                        }
+
+                        a {
+                            color: #000;
+                            font-weight: 900;
+                        }
+
+                        div {
+                            font-size: 1.25vw;
+                            margin-top: 17px;
+                            color: #000;
+                            @include mediaDesctop($w1440) {
+                                font-size: 24px;
+                            }
+                            @include mediaDesctop($w1280) {
+                                font-size: 20px;
+                            }
+                            @include mediaDesctop($w1024) {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+
+                .right-content {
+                    @include mediaDesctop($w768) {
+                        order: 1;
+                        margin-bottom: 8%;
+                    }
+                    .text-container {
+                        max-width: 240px;
+
+                        .form-title{
+                            width: 100%;
+                            display: block;
+                            margin-bottom: 13px;
+                            font-size: 30px;
+                            text-align: center;
+                            line-height: 1;
+                            @include mediaDesctop($w1440) {
+                                font-size: 25px;
+                            }
+                            @include mediaDesctop($w1024) {
+                                font-size: 23px;
+                            }
+                            @include mediaDesctop($w640) {
+                                font-size: 19px;
+                            }
+                        }
+
+                        .se-connecter-form {
+                            input {
+                                display: block;
+                                width: 100%;
+                                margin-bottom: 12px;
+                                padding: 15px 30px 13px 17px;
+                                border: none;
+                                outline: none;
+                                background-color: #0b0b0b;
+                                box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
+                                border-radius: 23px;
+                                font-size: 0.8vw;
+                                line-height: 1;
+                                font-weight: 300;
+                                color: #ffffff;
+                                &::placeholder {
+                                    color: #fff;
+                                    opacity: 1;
+                                }
+                                @include mediaDesctop($w1680) {
+                                    font-size: 16px;
+                                }
+                                @include mediaDesctop($w1440) {
+                                    padding: 12px 20px 10px 17px;
+                                    font-size: 18px;
+                                }
+                                @include mediaDesctop($w1280) {
+                                    font-size: 15px;
+                                }
+                                @include mediaDesctop($w1024) {
+                                    font-size: 15px;
+                                }
+                                @include mediaDesctop($w640) {
+                                    padding: 13px 20px 11px 17px;
+                                    font-size: 16px;
+                                }
+
+                                &.se-connecte-submit {
+                                    background-color: #75ff71;
+                                    border: 3px solid #75ff71;
+                                    margin-top: 20px;
+                                    padding: 12px 30px 10px 17px;
+                                    font-family: 'Comfortaa';
+                                    font-weight: 400;
+                                    padding-left: 0px;
+                                    padding-right: 0px;
+                                    color: #000000;
+                                    font-size: 1.05vw;
+                                    cursor: pointer;
+                                    &::placeholder {
+                                        color: #000;
+                                    }
+
+                                    @include mediaDesctop($w1440) {
+                                        font-size: 18px;
+                                    }
+                                    @include mediaDesctop($w1280) {
+                                        font-size: 16px;
+                                    }
+                                    @include mediaDesctop($w1024) {
+                                        font-size: 18px;
+                                    }
+                                    @include mediaDesctop($w640) {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+
+                            &.propriétaire {
+                                input {
+                                    &.se-connecte-submit {
+
+                                        background-color: #ffffff;
+                                    }
+                                }
+                            }
+                        }
+
+                        .p-facebook-under-form {
+                            margin-top: 22px;
+                            text-align: center;
+                            font-weight: 300;
+                            font-size: 17px;
+                            @include mediaDesctop($w640) {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .register-page-container {
+            @media screen and (max-height: 860px) {
+                overflow-y: scroll;
+                margin: 110px 0;
+            }
+
+            .title {
+                margin: 0 0 1.3%;
+            }
+
+            .subtitle {
+                font-size: 1.41vw;
+                margin: 0 0 2.65%;
+                @include mediaDesctop($w1280) {
+                    font-size: 27px;
+                }
+                @include mediaDesctop($w1024) {
+                    line-height: 38px;
+                    font-size: 27px;
+                }
+                @include mediaDesctop($w768) {
+                    font-size: 22px;
+                }
+                @include mediaDesctop($w568) {
+                    line-height: 24px;
+                    font-size: 20px;
+                }
+                @include mediaDesctop($w425) {
+                    line-height: 16px;
+                    font-size: 15px;
+                }
+            }
+
+            .middle-content-container {
+                @include mediaDesctop($w1024) {
+                    display: block;
+                }
+                @media screen and (max-height: 870px) {
+                    display: block;
+                }
+
+                .form-black-bg {
+                    padding: 16px 50px 28px;
+                    max-width: 955px;
+                    width: 100%;
+                    margin: 0 auto;
+                    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
+                    border-radius: 17px;
+                    background: rgba(14, 14, 14, 0.49);
+                    height: 100%;
+                    &.form-proprietaire {
+                        max-width: 448px;
+                    }
+
+                    @include mediaDesctop($w1024) {
+                        width: 80%;
+                        padding: 16px 35px 28px;
+                    }
+                    @include mediaDesctop($w425) {
+                        padding: 16px 20px 28px;
+                    }
+
+                    .inscription-form {
+                        display: inline-block;
+                        width: 100%;
+
+                        .form-rows-wrapper {
+                            display: flex;
+                            flex-flow: row nowrap;
+                            justify-content: space-between;
+                            margin: 0 0px 5px;
+                            @include mediaDesctop($w1024) {
+                                flex-flow: column nowrap;
+                                align-items: center;
+                            }
+
+                            .left-field-blocks, .right-field-blocks {
+                                width: 50%;
+                                max-width: 350px;
+                                @include mediaDesctop($w1024) {
+                                    width: 100%;
+                                }
+                            }
+
+                            .central-field-blocks {
+                                width: 100%;
+                            }
+
+                            .right-field-blocks {
+                                .input-main {
+                                    margin-bottom: 16px;
+                                }
+                            }
+
+                            .input-main {
+                                display: flex;
+                                flex-flow: column nowrap;
+                                margin-bottom: 25px;
+                                text-align: left;
+
+                                label {
+                                    color: #75ff71;
+                                    margin-bottom: 4px;
+                                    padding: 0 0 0 17px;
+                                    line-height: 1;
+                                    font-size: 22px;
+                                    font-weight: 300;
+                                    @include mediaDesctop($w1024) {
+                                        font-size: 19px;
+                                    }
+                                    @include mediaDesctop($w568) {
+                                        font-size: 18px;
+                                    }
+                                    @include mediaDesctop($w425) {
+                                        font-size: 16px;
+                                    }
+                                }
+
+                                input {
+                                    width: 100%;
+                                    padding: 9px 10px 10px;
+                                    border-radius: 17px;
+                                    border: 1px solid #bababa;
+                                    box-shadow: 0 5px 18px 3px rgba(0, 0, 0, 0.02);
+                                    outline: none;
+                                    font-family: 'Avenir';
+                                    font-size: 16px;
+                                    line-height: 17px;
+                                    @include mediaDesctop($w1024) {
+                                        padding: 7px 10px 8px;
+                                    }
+                                    @include mediaDesctop($w568) {
+                                        padding: 10px 10px 11px;
+                                    }
+                                    @include mediaDesctop($w425) {
+                                        padding: 7px 10px 8px;
+                                    }
+
+                                    &:disabled {
+                                        background-color: #ccc;
+                                        cursor: not-allowed;
+                                    }
+                                }
+
+                                .file-upload {
+                                    label {
+                                        @include mediaDesctop($w360) {
+                                            padding: 0 0 0 8px;
+                                        }
+                                        .upload-text-btn {
+                                            color: #75ff71;
+                                            margin-bottom: 4px;
+                                            line-height: 1;
+                                            font-size: 22px;
+                                            font-weight: 300;
+                                            cursor: pointer;
+                                            text-decoration: underline;
+                                            @include mediaDesctop($w568) {
+                                                font-size: 18px;
+                                            }
+                                            @include mediaDesctop($w425) {
+                                                font-size: 16px;
+                                            }
+                                        }
+
+                                        input {
+                                            display: none;
+                                        }
+
+                                        &.right-btn {
+                                            padding: 0;
+                                        }
+                                    }
+                                }
+
+                                &.radio-block {
+                                    display: flex;
+                                    flex-flow: row nowrap;
+                                    width: 100%;
+                                    margin-bottom: 0px;
+
+                                    label {
+                                        padding: 0 0 0 31px;
+                                        @include mediaDesctop($w425) {
+                                            padding: 0 0 0 17px;
+                                        }
+                                    }
+
+                                    .radio-block-wp {
+                                        display: flex;
+                                        flex-flow: row nowrap;
+                                        margin-top: -4px;
+                                        margin-left: 52px;
+                                        .radio-oui, .radio-non {
+                                            label {
+                                                padding: 0;
+                                                input {
+                                                    display: none;
+                                                    &:checked + i {
+                                                        background: #B8B8B8;
+
+                                                        &:before {
+                                                            transform: scale(1);
+                                                        }
+                                                    }
+                                                    
+                                                }
+
+                                                i {
+                                                    width: 15px;
+                                                    height: 15px;
+                                                    display: block;
+                                                    border-radius: 50%;
+                                                    position: relative;
+                                                    background: #000;
+                                                    &:before {
+                                                        content: '';
+                                                        position: absolute;
+                                                        top: 2px;
+                                                        left: 2px;
+                                                        bottom: 2px;
+                                                        right: 2px;
+                                                        background: #75ff71;
+                                                        border-radius: 50%;
+                                                        transform: scale(0);
+                                                        transition: 0.4s;
+                                                    }
+                                                }
+
+                                                span {
+                                                    color: #000000;
+                                                    font-size: 14px;
+                                                    font-weight: 300;
+                                                }
+                                            }
+                                        }
+
+                                        .radio-oui {
+                                            margin-right: 20px;
+                                        }
+                                    }
+                                }
+
+                                &.last-input {
+                                    margin-bottom: 5px;
+                                }
+                            }
+
+                            &.error {
+                                height: 0;
+                            }
+                        }
+
+                        .inscription-form-submit {
+                            .submit-btn-green {
+                                padding: 12px 47px;
+                                box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
+                                border-radius: 29px;
+                                border: 3px solid #75ff71;
+                                background-color: #ffffff;
+                                color: #000000;
+                                font-family: 'Comfortaa';
+                                font-size: 22px;
+                                font-weight: 400;
+                                line-height: 27.21px;
+                                outline: none;
+                                cursor: pointer;
+                                transition: all ease .3s;
+                                @include mediaDesctop($w568) {
+                                    padding: 8px 40px;
+                                    font-size: 19px;
+                                }
+                                @include mediaDesctop($w425) {
+                                    padding: 7px 35px;
+                                    font-size: 18px;
+                                }
+
+                                &:hover {
+                                    background-color: #75ff71;
+                                }
+
+                                &:disabled {
+                                    background: #ccc;
+                                    border-color: #ccc;
+                                    color: rgba(51, 51, 51, 0.5490196078431373);
+                                    cursor: not-allowed;
+
+                                    &:hover {
+                                        background: #ccc;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.p-facebook-under-form {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 12px;
+
+        &.facebook {
+            width: 28px;
+            height: 28px;
+            background-image: url('../images/icon/facebook-ico.png');
+
+            @include mediaDesctop($w1024) {
+                width: 24px;
+                height: 24px
+            }
+        }
+    }
+}
+
+.ere-login-wrap,
+.ere-register-wrap,
+.ere-reset-password-wrap {
+    max-width: unset;
+    margin: auto;
+    border: none;
+    padding: 0;
+}
+
+.se-connecter-form {
+    .form-control {
+        .error {
+            border:0!important;
+
+            &:focus, &.active {
+                border:0!important;
+            }
+        }
+    }
+
+    input {
+        &::-webkit-input-placeholder {
+            text-transform: initial!important;
+        }
+        &::-moz-placeholder {
+            text-transform: initial!important;
+        }
+        &::-ms-input-placeholder {
+            text-transform: initial!important;
+        }
+        &::-moz-placeholder {
+            text-transform: initial;
+        }
+    }
+
+    .checkbox, .ere-reset-password {
+        display: none;
+    }
+
+    .ere-login-wrap, .ere-register-wrap {
+        form {
+            padding-bottom: 20px;
+        }
+    }
+
+    .ere-register-wrap {
+        form {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.wp-social-login-widget {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.wp-social-login-provider-list {
+    padding: 0 10px;
+}
+.wp-social-login-provider-facebook {
+    img {
+        display: none;
+    }
+
+    .form-group {
+        &.control-term-condition {
+            display: none;
+        }
+    }
+
+    &:after {
+        content: '';
+        height: 28px;
+        width: 28px;
+        display: block;
+        background-image: url('/wp-content/uploads/2019/03/key-facebook.png');
+        background-repeat: no-repeat;
+    }
+}

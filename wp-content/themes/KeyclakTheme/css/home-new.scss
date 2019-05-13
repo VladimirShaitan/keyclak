@@ -1,0 +1,473 @@
+$w1920: 1920px;
+$w1680: 1680px;
+$w1600: 1600px;
+$w1550: 1550px;
+$w1440: 1440px;
+$w1366: 1366px;
+$w1280: 1280px;
+$w1200: 1200px;
+$w1024: 1024px;
+
+$w800: 800px;
+$w768: 768px;
+$w740: 740px;
+$w640: 640px;
+$w568: 568px;
+$w425: 425px;
+$w360: 360px;
+$w320: 320px;
+
+@mixin mediaDesctop($width) {
+  @media only screen and (max-width: #{$width}) {
+    @content;
+  }
+} 
+
+@mixin mediaDesctopTablet($width1, $width2) {
+  @media only screen and (min-width: #{$width1}) and (max-width: #{$width2}) {
+    @content;
+  }
+}
+
+@mixin mediaMobileHorizontal($width, $height) {
+  @media only screen and (max-width: $width) and (max-height: $height) and (orientation: landscape) {
+    @content;
+  }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+body {
+    font-family: 'Avenir';
+    font-size: 100%;
+}
+
+.main-header {
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 33px 0 0px 40px;
+    position: absolute;
+    top: 0;
+    transition: height .5s ease;
+    z-index: 2;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    z-index: 3;
+    @include mediaDesctop($w1680) {
+        padding: 25px 0 0px 30px;
+    }
+    @include mediaDesctop($w1366) {
+        padding: 23px 0 0px 30px;
+    }
+    @include mediaDesctop($w1280) {
+        padding: 20px 0 0px 25px;
+    }
+    @include mediaDesctop($w1024) {
+        padding: 15px 0 0px 18px;
+    }
+    @include mediaDesctop($w568) {
+        padding: 13px 0 0px 20px;
+    }
+    @include mediaDesctop($w320) {
+        padding: 8px 0 0px 8px;
+    }
+
+    a {
+        display: inline-block;
+        img {
+            @include mediaDesctop($w1680) {
+                width: 75%;
+            }
+            @include mediaDesctop($w1440) {
+                width: 70%;
+            }
+            @include mediaDesctop($w1280) {
+                width: 65%;
+            }
+            @include mediaDesctop($w1024) {
+                width: 55%;
+            }
+            @include mediaDesctop($w768) {
+                width: 55%;
+            }
+            @include mediaDesctop($w568) {
+                width: 50%;
+            }
+            @include mediaDesctop($w320) {
+                width: 40%;
+            }
+        }
+    }
+}
+
+.main-content-container {
+    position: relative;
+    overflow: hidden;
+
+    .content-container-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative;
+        
+        &.home-page {
+            @include mediaDesctop($w640) {
+                overflow: hidden;
+                margin: 0;
+            }
+        }
+        &.register-page {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .top-content-container, .bot-content-container {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            text-align: center;
+            height: 50vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 2;
+            position: relative;
+
+            .content-block {
+                .title {
+                    margin: 0 0px 49px;
+                    font-size: 2.5vw;
+                    font-weight: 300;
+                    line-height: 36px;
+                    @include mediaDesctop($w1440) {
+                        margin: 0 0px 30px;
+                        line-height: 31px;
+                        font-size: 30px;
+                    }
+                    @include mediaDesctop($w1280) {
+                        margin: 0 0px 30px;
+                        line-height: 31px;
+                        font-size: 30px;
+                    }
+                    @include mediaDesctop($w1024) {
+                        margin: 0 0px 29px;
+                        line-height: 26px;
+                        font-size: 26px;
+                    }
+                    @include mediaDesctop($w768) {
+                        margin: 0 0px 29px;
+                        line-height: 24px;
+                        font-size: 22px;
+                    }
+                    @include mediaDesctop($w568) {
+                        margin: 0 0px 26px;
+                        line-height: 20px;
+                        font-size: 20px;
+                    }
+                    @include mediaDesctop($w320) {
+                        margin: 0 0px 15px;
+                        font-size: 15px;
+                        line-height: 16px;
+                    }
+
+                    span {
+                        font-weight: 500;
+                    }
+                }
+
+                .button-link {
+                    display: inline-block;
+                    margin: 0 0 32px;
+                    padding: 22px 51px 15px;
+                    background-color: #ffffff;
+                    border-radius: 35px;
+                    transition: all ease .3s;
+                    @include mediaDesctop($w1440) {
+                        margin: 0 0 25px;
+                        padding: 16px 45px 14px;
+                    }
+                    @include mediaDesctop($w1024) {
+                        padding: 14px 45px 12px;
+                    }
+                    @include mediaDesctop($w768) {
+                        margin: 0 0 25px;
+                        padding: 12px 45px 11px;
+                    }
+                    @include mediaDesctop($w568) {
+                        margin: 0 0 22px;
+                        padding: 12px 51px 11px;
+                    }
+                    @include mediaDesctop($w320) {
+                        margin: 0 0 15px;
+                        padding: 8px 30px 9px;
+                    }
+                    
+                    .btn-text {
+                        color: #000000;
+                        font-family: 'Comfortaa';
+                        font-size: 1.87vw;
+                        font-weight: 400;
+                        line-height: 27.21px;
+                        @include mediaDesctop($w1440) {
+                            line-height: 25px;
+                            font-size: 25px;
+                        }
+                        @include mediaDesctop($w1280) {
+                            font-size: 24px;
+                        }
+                        @include mediaDesctop($w1024) {
+                            line-height: 23px;
+                            font-size: 22px;
+                        }
+                        @include mediaDesctop($w768) {
+                            line-height: 21px;
+                            font-size: 20px;
+                        }
+                        @include mediaDesctop($w568) {
+                            line-height: 20px;
+                            font-size: 18px;
+                        }
+                        @include mediaDesctop($w320) {
+                            line-height: 16px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                .subtitle {
+                    font-size: 1.87vw;
+                    font-weight: 400;
+                    line-height: 36px;
+                    @include mediaDesctop($w1280) {
+                        font-size: 27px;
+                    }
+                    @include mediaDesctop($w1024) {
+                        line-height: 38px;
+                        font-size: 27px;
+                    }
+                    @include mediaDesctop($w768) {
+                        font-size: 22px;
+                    }
+                    @include mediaDesctop($w568) {
+                        line-height: 24px;
+                        font-size: 20px;
+                    }
+                    @include mediaDesctop($w320) {
+                        line-height: 16px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        .top-content-container {
+            // background-image: url('../images/main-bg-top.jpg');
+            background-image: url('/wp-content/uploads/2019/03/main-bg-top.jpg');
+
+            .content-block {
+                .button-link {
+                    border: 3px solid #000000;
+                    padding: 22px 68px 15px;
+                    @include mediaDesctop($w1440) {
+                        margin: 0 0 25px;
+                        padding: 16px 60px 14px;
+                    }
+                    @include mediaDesctop($w1024) {
+                        padding: 14px 58px 12px;
+                    }
+                    @include mediaDesctop($w768) {
+                        margin: 0 0 25px;
+                        padding: 12px 57px 11px;
+                    }
+                    @include mediaDesctop($w568) {
+                        margin: 0 0 22px;
+                        padding: 12px 62px 11px;
+                    }
+                    @include mediaDesctop($w320) {
+                        margin: 0 0 15px;
+                        padding: 8px 39px 9px;
+                        border: 1px solid #000000;
+                    }
+
+                    &:hover {
+                        background-color: #0c0c0c;
+
+                        span {
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+        .bot-content-container {
+            // background-image: url('../images/main-bg-bot.jpg');
+            background-image: url('/wp-content/uploads/2019/03/main-bg-bot.jpg');
+
+            .content-block {
+                .button-link {
+                    border: 3px solid #75ff71;
+                    @include mediaDesctop($w320) {
+                        border: 1px solid #75ff71;
+                    }
+
+                    &:hover {
+                        background-color: #75ff71;
+                    }
+                }
+            }
+        }
+
+        .middle-line-icons {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+
+            .play-video-wrapper {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: flex-start;
+                width: 100%;
+                height: 164px;
+                // background-image: url(../images/icons/icons-new-bg.svg);
+                background-image: url('/wp-content/uploads/icons/icons-new-bg.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center;
+                position: relative;
+                bottom: -70px;
+                z-index: 5;
+                @include mediaDesctop($w1680) {
+                    height: 145px;
+                    bottom: -64px;
+                }
+                @include mediaDesctop($w1600) {
+                    height: 137px;
+                    bottom: -63px;
+                }
+                @include mediaDesctop($w1550) {
+                    bottom: -62px; 
+                }
+                @include mediaDesctop($w1440) {
+                    height: 125px;
+                    bottom: -60px;
+                }
+                @include mediaDesctop($w1366) {
+                    height: 117px;
+                    bottom: -59px;
+                }
+                @include mediaDesctop($w1280) {
+                    height: 112px;
+                    bottom: -58px;
+                }
+                @include mediaDesctop($w1200) {
+                    height: 104px;
+                    bottom: -56px;
+                }
+                @include mediaDesctop($w1024) {
+                    height: 90px;
+                    bottom: -52px;
+                }
+                @include mediaDesctop($w768) {
+                    height: 66px;
+                    bottom: -47px; 
+                }
+                @include mediaDesctop($w640) {
+                    height: 56px; 
+                    bottom: -44px; 
+                }
+                @include mediaDesctop($w568) {
+                    bottom: -42px; 
+                }
+                @include mediaDesctop($w425) {
+                    height: 38px;
+                    bottom: -39px;
+                }
+                @include mediaDesctop($w320) {
+                    bottom: -38px;
+                }
+
+                .play-button {
+                    margin-top: 1%;
+                    border: none;
+                    background: transparent;
+                    outline: none;
+                    display: flex;
+                    padding: 0;
+                    cursor: pointer;
+                    @include mediaDesctop($w1600) {
+                        margin-top: 0.8%;
+                    }
+                    @include mediaDesctop($w1280) {
+                        margin-top: 0.8%;
+                    }
+                    @include mediaDesctop($w1200) {
+                        margin-top: 0.7%;
+                    }
+                    @include mediaDesctop($w768) {
+                        margin-top: 0.2%;
+                    }
+
+                    .icon {
+                        display: inline-block;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        position: relative;
+
+                        &.play {
+                            width: 50px;
+                            height: 50px;
+                            // background-image: url('../images/icon/play.png');
+                            background-image: url('/wp-content/uploads/2019/04/play.png');
+                            @include mediaDesctop($w1280) {
+                                width: 46px;
+                                height: 46px;
+                            }
+                            @include mediaDesctop($w1024) {
+                                width: 43px;
+                                height: 43px;
+                            }
+                            @include mediaDesctop($w768) {
+                                width: 37px;
+                                height: 37px;
+                            }
+                            @include mediaDesctop($w568) {
+                                width: 31px;
+                                height: 31px;
+                            }
+                            @include mediaDesctop($w425) {
+                                width: 30px;
+                                height: 30px;
+                            }
+                            @include mediaDesctop($w320) {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+
+                
+            }
+
+            
+        }
+    }
+}

@@ -431,75 +431,95 @@ body {
   background-size: 100%;
   background-position: center;
   position: relative;
-  bottom: -64px;
+  bottom: -70px;
   z-index: 5;
 }
 
 @media only screen and (max-width: 1680px) {
   .main-content-container .content-container-wrapper .middle-line-icons .play-video-wrapper {
     height: 145px;
-    bottom: -61px;
+    bottom: -64px;
   }
 }
 
 @media only screen and (max-width: 1600px) {
   .main-content-container .content-container-wrapper .middle-line-icons .play-video-wrapper {
     height: 137px;
-    bottom: -59px;
+    bottom: -63px;
   }
 }
 
 @media only screen and (max-width: 1550px) {
   .main-content-container .content-container-wrapper .middle-line-icons .play-video-wrapper {
-    bottom: -58px;
+    bottom: -62px;
   }
 }
 
 @media only screen and (max-width: 1440px) {
   .main-content-container .content-container-wrapper .middle-line-icons .play-video-wrapper {
     height: 125px;
-    bottom: -55px;
+    bottom: -60px;
   }
 }
 
 @media only screen and (max-width: 1366px) {
   .main-content-container .content-container-wrapper .middle-line-icons .play-video-wrapper {
     height: 117px;
-    bottom: -52px;
+    bottom: -59px;
   }
 }
 
 @media only screen and (max-width: 1280px) {
   .main-content-container .content-container-wrapper .middle-line-icons .play-video-wrapper {
     height: 112px;
-    bottom: -51px;
+    bottom: -58px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
   .main-content-container .content-container-wrapper .middle-line-icons .play-video-wrapper {
     height: 104px;
-    bottom: -49px;
+    bottom: -56px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .main-content-container .content-container-wrapper .middle-line-icons .play-video-wrapper {
     height: 90px;
-    bottom: -46px;
+    bottom: -52px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .main-content-container .content-container-wrapper .middle-line-icons .play-video-wrapper {
     height: 66px;
-    bottom: -41px;
+    bottom: -47px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main-content-container .content-container-wrapper .middle-line-icons .play-video-wrapper {
+    height: 56px;
+    bottom: -44px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content-container .content-container-wrapper .middle-line-icons .play-video-wrapper {
+    bottom: -42px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main-content-container .content-container-wrapper .middle-line-icons .play-video-wrapper {
+    height: 38px;
+    bottom: -39px;
   }
 }
 
 @media only screen and (max-width: 320px) {
   .main-content-container .content-container-wrapper .middle-line-icons .play-video-wrapper {
-    bottom: -34px;
+    bottom: -38px;
   }
 }
 
