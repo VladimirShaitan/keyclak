@@ -333,9 +333,11 @@ function showCalendar(month, year) {
 
 jQuery('#modificate_button').click(function () {
     jQuery('.profile-info-container .user-field').addClass('active-field').removeAttr('readonly');
+    jQuery('.profile-wrapper .modificate-btn-container').addClass('visible');
 })
 jQuery('#save_modification').click(function () {
     jQuery('.profile-info-container .user-field').removeClass('active-field').attr('readonly', 'true');
+    jQuery('.profile-wrapper .modificate-btn-container').removeClass('visible');
 })
 
 

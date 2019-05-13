@@ -65,10 +65,6 @@ get_header('profile');
                                 <input class="right-side user-field" type="text" readonly value="myvideo.mov">
                             </li>
                         </ul>
-
-                        <div id="save_modification" class="modificate-btn-container">
-                            <span>Valider</span>
-                        </div>
                     </div>
                     <div class="profile-sub-data">
                         <div class="sub-data-wrapper">
@@ -86,6 +82,12 @@ get_header('profile');
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div id="save_modification" class="modificate-btn-container">
+                <div class="mod-button">
+                    <span>Valider</span>
                 </div>
             </div>
         </div>

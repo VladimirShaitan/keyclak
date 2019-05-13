@@ -328,7 +328,44 @@ button {
                 }
             }
 
-            
+            .modificate-btn-container {
+                display: none; //before you don't click on modificate-profile button they will be hidden
+                justify-content: center;
+                margin: 55px 0 0;
+                @include mediaDesctop($w768) {
+                    margin: 45px 0 0;
+                }
+
+                &.visible {
+                    display: flex;
+                }
+
+                .mod-button {
+                    padding: 16px 77px;
+                    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
+                    border-radius: 28px;
+                    background-color: #000000;
+                    cursor: pointer;
+                    @include mediaDesctop($w1024) {
+                        padding: 14px 70px;
+                    }
+                    @include mediaDesctop($w425) {
+                        padding: 12px 60px;
+                    }
+
+                    span {
+                        color: #ffffff;
+                        font-size: 24px;
+                        font-weight: 300;
+                        @include mediaDesctop($w1024) {
+                            font-size: 22px;
+                        }
+                        @include mediaDesctop($w425) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
         }
 
 		.profile-info-container {
@@ -418,10 +455,10 @@ button {
                         padding: 7px 10px;
                         box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
                     }
-                    
                 }
             }
             //END of profile-data-wrapper styles
+
 
             //left data container
 			.profile-main-data {
@@ -454,7 +491,7 @@ button {
                     height: 410px;
                     background-color: #d7d7d7;
                     @include mediaDesctop($w1024) {
-                        height: 370px;
+                        height: 310px;
                     }
                     @include mediaDesctop($w768) {
                         content: none;
@@ -477,6 +514,7 @@ button {
                         }
                         @include mediaDesctop($w360) {
                             flex-flow: column nowrap;
+                            align-items: flex-start;
                         }
 
                         div, input {
@@ -567,21 +605,7 @@ button {
 					}
                 }
                 
-                .modificate-btn-container {
-                    display: none;
-                    margin: 55px 0 0;
-                    padding: 16px 77px;
-                    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
-                    border-radius: 28px;
-                    background-color: #000000;
-                    cursor: pointer;
-
-                    span {
-                        color: #ffffff;
-                        font-size: 24px;
-                        font-weight: 300;
-                    }
-                }
+                
 			}
 
             //right data container
