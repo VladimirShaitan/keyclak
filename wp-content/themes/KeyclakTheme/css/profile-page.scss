@@ -430,6 +430,7 @@ button {
                 // display: flex;
                 // flex-flow: column nowrap;
                 // align-items: center;
+
                 @include mediaDesctop($w1840) {
                     padding: 0 66px 0 0;
                 }
@@ -2245,6 +2246,7 @@ button {
                                 padding: 11px 51px 7px;
                                 margin: 0 24px 0 0;
                                 transition: all ease .4s;
+
                                 @include mediaDesctop($w1400) {
                                     margin: 0 24px 0px 0;
                                 }
