@@ -3334,10 +3334,10 @@ button {
                             margin: 0px 10px 60px;
                         }
                         @include mediaDesctop($w850) {
-                            margin: 0px 4px 60px;
+                            margin: 0px 0px 60px;
+                            width: 30%;
                         }
                         @include mediaDesctop($w768) {
-                            margin: 0px 0px 60px;
                             max-width: 100%;
                             width: 50%;
                         }
