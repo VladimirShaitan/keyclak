@@ -38,7 +38,7 @@ button {
 
 .main-content-container {
  
-	.sub-header { 
+	.sub-header {
         display: flex;
         flex-flow: column nowrap;
         padding: 63px 75px 19px;
@@ -120,11 +120,16 @@ button {
                 font-size: 24px;
                 color: inherit;
                 font-weight: 400;
+                transition: all ease .4s;
                 @include mediaDesctop($w1024) {
                     font-size: 20px;
                 }
                 @include mediaDesctop($w568) {
                     font-size: 18px;
+                }
+
+                &:hover {
+                    // color: #ccc9c9;
                 }
             }
         }
@@ -900,7 +905,12 @@ button {
                             }
 
                             .info-container {
+                                @include mediaDesctop($w568) {
+                                    width: 90%;
+                                }
+
                                 ul {
+                                    
                                     .info-text {
                                         margin-bottom: 19px;
                                         text-align: right;
@@ -1015,6 +1025,10 @@ button {
                                     @include mediaDesctop($w950) {
                                         width: 300px;
                                     }
+                                    @include mediaDesctop($w850) {
+                                        max-width: 100%;
+                                        width: 100%;
+                                    }
                                 }
                             }
 
@@ -1060,6 +1074,7 @@ button {
                 background-color: #000000;
                 padding: 11px 30px 9px;
                 margin: 0 45px;
+                transition: all ease .4s;
                 @include mediaDesctop($w1024) {
                     margin: 0 30px;
                 }
@@ -1077,8 +1092,6 @@ button {
                 // &:last-child {
                 //     margin: 0;//TODO need to change
                 // }
-
-
                 span {
                     color: #ffffff;
                     font-size: 24px;
@@ -1099,6 +1112,14 @@ button {
                     @include mediaDesctop($w768) {
                         font-size: 16px;
                         line-height: 18px;
+                    }
+                }
+
+                &:hover {
+                    background-color: #ffffff;
+
+                    span {
+                        color: #000000;
                     }
                 }
             }
@@ -1438,14 +1459,18 @@ button {
                             padding: 15px;
                             margin: 0 0 6px;
                             border-radius: 50%;
+                            transition: all ease .4s;
                             background-color: #ebebeb;
+
+                            &:hover {
+                                background-color: #b7b3b3;
+                            }
 
                             .icon {
                                 &.close {
                                     width: 19px;
                                     height: 19px;
                                     opacity: 1;//hotfix for bootstrap in wp-site
-                                    // background-image: url('../images/icons/close-file-ico.png');
                                     background-image: url('/wp-content/uploads/2019/04/close-file-ico.png');
 
                                     @include mediaDesctop($w1366) {
@@ -1529,6 +1554,7 @@ button {
                             box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
                             border-radius: 28px;
                             background-color: #000000;
+                            transition: all ease .4s;
                             @include mediaDesctop($w640) {
                                 width: 97%;
                                 padding: 11px 25px 9px;
@@ -1550,6 +1576,13 @@ button {
                                 @include mediaDesctop($w568) {
                                     font-size: 16px;
                                     line-height: 20px;
+                                }
+                            }
+
+                            &:hover {
+                                background-color: #ffffff;
+                                span {
+                                    color: #000000;
                                 }
                             }
                         }
@@ -2598,6 +2631,7 @@ button {
                     font-weight: 300;
                     line-height: 24px;
                     text-decoration: underline;
+                    transition: all ease .4s;
                     @include mediaDesctop($w640) {
                         font-size: 22px;
                     }
@@ -2606,6 +2640,10 @@ button {
                     }
                     @include mediaDesctop($w425) {
                         font-size: 20px;
+                    }
+
+                    &:hover {
+                        text-decoration: none;
                     }
                 }
             }
@@ -2877,6 +2915,7 @@ button {
                     border-radius: 28px;
                     background-color: #000000;
                     margin: 0 111px 0 0;
+                    transition: all ease .4s;
                     @include mediaDesctop($w568) {
                         margin: 0 71px 0 0;
                     }
@@ -2892,6 +2931,14 @@ button {
                         @include mediaDesctop($w568) {
                             font-size: 22px;
                             line-height: 30px;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: #ffffff;
+
+                        span {
+                            color: #000000;
                         }
                     }
                 }
@@ -2950,45 +2997,26 @@ button {
                 }
             }
         }
-        
-        
-        
-        //global style for navigate button and document-list container
-        .document-hidden-list, .document-download {
-            display: flex; 
-            flex-flow: row nowrap;
-            align-items: flex-end;
-            cursor: pointer;
-            @include mediaDesctop($w768) {
-                align-items: center;
-            }
+       
+    }
 
-            .upload-file {
-                margin: 0;
+    //global style for navigate button and document-list container
+    .document-hidden-list, .document-download {
+        display: flex; 
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        cursor: pointer;
+        @include mediaDesctop($w768) {
+            align-items: center;
+        }
 
-                span { 
-                    font-size: 18px;
-                    line-height: 18px;
-                    @include mediaDesctop($w1024) {
-                        font-size: 20px;
-                    }
-                    @include mediaDesctop($w768) {
-                        font-size: 16px;
-                    }
-                    @include mediaDesctop($w425) {
-                        font-size: 14px;
-                    }
-                }
-            }
+        .upload-file {
+            margin: 0;
 
-            span {
-                margin-right: 22px;
-                font-size: 24px;
-                line-height: 24px;
-                font-weight: 300;
-                text-decoration: underline;
+            span { 
+                font-size: 18px;
+                line-height: 18px;
                 @include mediaDesctop($w1024) {
-                    margin-right: 8px;
                     font-size: 20px;
                 }
                 @include mediaDesctop($w768) {
@@ -2998,146 +3026,352 @@ button {
                     font-size: 14px;
                 }
             }
+        }
 
-            .icon {
-                display: inline-block;
-                background-repeat: no-repeat;
-                background-position: center;
-                @include mediaDesctop($w1024) {
-                    background-size: 60%;
-                }
-
-                &.arrow {
-                    width: 26px;
-                    height: 14px;
-                    // background-image: url('../images/icons/arrow-ico.png');
-                    background-image: url('/wp-content/uploads/2019/03/arrow-ico.png');
-                }
-                &.upload {
-                    width: 39px;
-                    height: 36px;
-                    // background-image: url('../images/icons/upload-ico.png');
-                    background-image: url('/wp-content/uploads/2019/03/upload-ico.png');
-                }
+        span {
+            margin-right: 22px;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 300;
+            text-decoration: underline;
+            @include mediaDesctop($w1024) {
+                margin-right: 8px;
+                font-size: 20px;
+            }
+            @include mediaDesctop($w768) {
+                font-size: 16px;
+            }
+            @include mediaDesctop($w425) {
+                font-size: 14px;
             }
         }
 
-        .document-list-container {
+        .icon {
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            @include mediaDesctop($w1024) {
+                background-size: 60%;
+            }
+
+            &.arrow {
+                width: 26px;
+                height: 14px;
+                // background-image: url('../images/icons/arrow-ico.png');
+                background-image: url('/wp-content/uploads/2019/03/arrow-ico.png');
+            }
+            &.upload {
+                width: 39px;
+                height: 36px;
+                // background-image: url('../images/icons/upload-ico.png');
+                background-image: url('/wp-content/uploads/2019/03/upload-ico.png');
+            }
+        }
+    }
+
+    .document-list-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        margin: 27px 0 0 7px;
+        transition: all ease .4s;
+        @include mediaDesctop($w1024) {
+            margin: 27px 0 0 0px;
+        }
+
+        .document-item {
             display: flex;
-            flex-flow: row nowrap;
-            align-items: flex-start;
-            margin: 27px 0 0 7px;
+            flex-flow: column nowrap;
+            align-items: center;
+            max-width: 125px;
+            margin: 0 72px 0 0px;
+            text-align: center;
             transition: all ease .4s;
             @include mediaDesctop($w1024) {
-                margin: 27px 0 0 0px;
+                margin: 0 40px 0 0px;
+                align-items: center;
             }
 
-            .document-item {
+            &:last-child {
+                margin: 0;
+            }
+
+            .doc-icon-container {
                 display: flex;
-                flex-flow: column nowrap;
-                max-width: 125px;
-                text-align: center;
-                margin: 0 72px 0 0px;
-                transition: all ease .4s;
+                justify-content: center;
+                align-items: center;
+                width: 125px;
+                height: 126px;
+                margin: 0 0 16px;
+                border-radius: 50%;
+                border: 1px solid #8d8d8d;
+                background-color: #d8d8d8;
                 @include mediaDesctop($w1024) {
-                    margin: 0 40px 0 0px;
-                    align-items: center;
+                    width: 105px;
+                    height: 106px;
+                }
+                @include mediaDesctop($w768) {
+                    width: 85px;
+                    height: 86px;
+                }
+                @include mediaDesctop($w425) {
+                    width: 65px;
+                    height: 66px;
                 }
 
-                &:last-child {
-                    margin: 0;
-                }
-
-                .doc-icon-container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 125px;
-                    height: 126px;
-                    margin: 0 0 16px;
-                    border-radius: 50%;
-                    border: 1px solid #8d8d8d;
-                    background-color: #d8d8d8;
+                .icon { 
+                    display: inline-block;
+                    height: 95px;
+                    width: 79px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 100%;
                     @include mediaDesctop($w1024) {
-                        width: 105px;
-                        height: 106px;
+                        background-size: 80%;
                     }
                     @include mediaDesctop($w768) {
-                        width: 85px;
-                        height: 86px;
+                        background-size: 60%;
                     }
                     @include mediaDesctop($w425) {
-                        width: 65px;
-                        height: 66px;
+                        background-size: 50%;
                     }
 
-                    .icon { 
-                        display: inline-block;
-                        height: 95px;
-                        width: 79px;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: 100%;
-                        @include mediaDesctop($w1024) {
-                            background-size: 80%;
-                        }
-                        @include mediaDesctop($w768) {
-                            background-size: 60%;
-                        }
-                        @include mediaDesctop($w425) {
-                            background-size: 50%;
-                        }
+                    &.doc-1 {
+                        width: 76px;
+                        height: 91px;
+                        background-image: url('/wp-content/uploads/2019/03/doc-1.png');
+                    }
+                    &.doc-2 {
+                        width: 91px;
+                        height: 58px;
+                        background-image: url('/wp-content/uploads/2019/03/doc-2.png');
+                    }
+                    &.doc-3 {
+                        width: 74px;
+                        height: 94px;
+                        background-image: url('/wp-content/uploads/2019/03/doc-3.png');
+                    }
+                    &.doc-4 {
+                        height: 93px;
+                        background-image: url('/wp-content/uploads/2019/03/doc-4.png');
+                    }
+                    &.doc-5 {
+                        background-image: url('/wp-content/uploads/2019/03/doc-5.png');
+                    }
+                    &.doc-6 {
+                        width: 80px;
+                        background-image: url('/wp-content/uploads/2019/03/doc-6.png');
+                    }
+                    &.dots {
+                        width: 51px;
+                        height: 9px;
+                        background-image: url('/wp-content/uploads/2019/05/dots-ico.png');
+                    }
+                }
+            }
 
-                        &.doc-1 {
-                            width: 76px;
-                            height: 91px;
-                            // background-image: url('../images/icons/doc-1.png');
-                            background-image: url('/wp-content/uploads/2019/03/doc-1.png');
-                        }
-                        &.doc-2 {
-                            width: 91px;
-                            height: 58px;
-                            // background-image: url('../images/icons/doc-2.png');
-                            background-image: url('/wp-content/uploads/2019/03/doc-2.png');
-                        }
-                        &.doc-3 {
-                            width: 74px;
-                            height: 94px;
-                            // background-image: url('../images/icons/doc-3.png');
-                            background-image: url('/wp-content/uploads/2019/03/doc-3.png');
-                        }
-                        &.doc-4 {
-                            height: 93px;
-                            // background-image: url('../images/icons/doc-4.png');
-                            background-image: url('/wp-content/uploads/2019/03/doc-4.png');
-                        }
-                        &.doc-5 {
-                            // background-image: url('../images/icons/doc-5.png');
-                            background-image: url('/wp-content/uploads/2019/03/doc-5.png');
-                        }
-                        &.doc-6 {
-                            width: 80px;
-                            // background-image: url('../images/icons/doc-6.png');
-                            background-image: url('/wp-content/uploads/2019/03/doc-6.png');
-                        }
+            .document-name { 
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 24.06px;
+                @include mediaDesctop($w425) {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                &.center-phrase {
+                    margin: 14px 0 0; 
+                }
+            }
+        }
+    }
+    
+    .modal-main-wrapper {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+
+        .modal-content-wrapper {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 15px 40px;
+            border: 2px solid #e1e1e1;
+            border-radius: 38px;
+            width: 70%;
+            position: relative;
+            @include mediaDesctop($w1024) {
+                width: 85%;
+            }
+
+            .close-modal {
+                position: absolute;
+                top: 25px;
+                right: 45px;
+                cursor: pointer;
+                width: 25px;
+                height: 25px;
+                background-image: url('/wp-content/uploads/2019/05/close-ico.png');
+                @include mediaDesctop($w1024) {
+                    width: 20px;
+                    height: 20px;
+                }
+                @include mediaDesctop($w568) {
+                    right: 25px;
+                }
+                @include mediaDesctop($w360) {
+                    top: 20px;
+                    right: 20px;
+                }
+            }
+
+            .top-filters-container {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: center;
+                @include mediaDesctop($w768) {
+                    flex-flow: column nowrap;
+                }
+
+                .year-container {
+                    margin: 0 80px 0 0;
+                    @include mediaDesctop($w1150) {
+                        margin: 0 40px 0 0;
+                    }
+                    @include mediaDesctop($w768) {
+                        margin: 0 0 30px 0;
                     }
                 }
 
-                .document-name { 
-                    font-size: 18px;
-                    font-weight: 400;
-                    line-height: 24.06px;
-                    @include mediaDesctop($w425) {
-                        font-size: 16px;
-                        line-height: 20px;
+                .year-container, .month-container {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+
+                    .icon {
+                        &.filter {
+                            width: 35px;
+                            height: 35px;
+                            margin: 0 11px 0 0;
+                            background-image: url('/wp-content/uploads/2019/05/filter-ico.png');
+
+                            @include mediaDesctop($w1280) {
+                                width: 30px;
+                                height: 30px;
+                            }
+                            @include mediaDesctop($w1024) {
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
                     }
 
-                    &.center-phrase {
-                        margin: 14px 0 0; 
+                    .filter-field {
+                        padding: 10px 22px 9px;
+                        border-radius: 26px;
+                        border: 1px solid #75ff71;
+                        @include mediaDesctop($w1150) {
+                            padding: 6px 22px 5px;
+                        }
+                        @include mediaDesctop($w425) {
+                            padding: 6px 18px 5px;
+                        }
+                        
+                        span {
+                            color: #000000;
+                            font-size: 30px;
+                            font-weight: 300;
+                            line-height: 30px;
+                            @include mediaDesctop($w1280) {
+                                font-size: 27px;
+                            }
+                            @include mediaDesctop($w1150) {
+                                font-size: 24px;
+                            }
+                            @include mediaDesctop($w568) {
+                                font-size: 20px;
+                            }
+                            @include mediaDesctop($w425) {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .modal-content {
+                width: 85%;
+                margin: 0 auto;
+                @include mediaDesctop($w1366) {
+                    width: 90%;
+                }
+                @include mediaDesctop($w1200) {
+                    width: 95%;
+                }
+                @include mediaDesctop($w1150) {
+                    width: 100%;
+                }
+
+                .document-list-container {
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    margin: 40px 0 0 0px;
+
+                    .document-item {
+                        margin: 0px 30px 60px;
+                        @include mediaDesctop($w1680) {
+                            margin: 0px 15px 60px;
+                        }
+                        @include mediaDesctop($w1440) {
+                            margin: 0px 10px 60px;
+                        }
+                        @include mediaDesctop($w850) {
+                            margin: 0px 4px 60px;
+                        }
+                        @include mediaDesctop($w768) {
+                            margin: 0px 0px 60px;
+                            max-width: 100%;
+                            width: 50%;
+                        }
+
+                        .doc-icon-container {
+                            @include mediaDesctop($w1366) {
+                                width: 105px;
+                                height: 106px;
+                            }
+                            @include mediaDesctop($w1280) {
+                                width: 95px;
+                                height: 96px;
+                            }
+                            @include mediaDesctop($w425) {
+                                width: 65px;
+                                height: 66px;
+                            }
+                            .icon {
+                                @include mediaDesctop($w1366) {
+                                    background-size: 80%;
+                                }
+                                @include mediaDesctop($w1280) {
+                                    background-size: 70%;
+                                }
+                                @include mediaDesctop($w425) {
+                                    background-size: 50%;
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
-	}
+    }
 }
+
 

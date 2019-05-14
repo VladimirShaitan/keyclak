@@ -28,6 +28,27 @@ window.onload = function() {
             }
         })
     }
+
+    //modal window
+    const modalWindow = document.querySelector('#modal_wrapper');
+    var openModal = document.querySelector('.document-hidden-list');
+    var closeModal = document.querySelector('.close-modal')
+
+    // When the user clicks the button, open the modal 
+    openModal.onclick = function() {
+        modalWindow.style.display = 'block';
+    }
+    // When the user clicks on <span> (x), close the modal
+    closeModal.onclick = function() {
+        modalWindow.style.display = 'none';
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(e) {
+        if (e.target == modalWindow) {
+            modalWindow.style.display = 'none';
+        }
+    }
+
 }
 
 /************************************* CUSTOM SELECT ********************************************/
@@ -112,6 +133,8 @@ function EtageSelectAppartment(){
 
 
 }
+
+
 
 
 
@@ -339,6 +362,5 @@ jQuery('#save_modification').click(function () {
     jQuery('.profile-info-container .user-field').removeClass('active-field').attr('readonly', 'true');
     jQuery('.profile-wrapper .modificate-btn-container').removeClass('visible');
 })
-
 
 
