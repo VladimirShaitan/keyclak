@@ -1337,64 +1337,62 @@ button {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 1680px) {
-  .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container {
-    max-width: 590px;
-  }
-}
-
-@media only screen and (max-width: 1550px) {
-  .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container {
-    max-width: 550px;
-  }
-}
-
-@media only screen and (max-width: 1440px) {
-  .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container {
-    max-width: 500px;
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container {
-    max-width: 450px;
-  }
-}
-
-@media only screen and (max-width: 1150px) {
-  .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container {
-    max-width: 400px;
-    height: 350px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container {
-    max-width: 350px;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container {
-    max-width: 300px;
-  }
-}
-
 @media only screen and (max-width: 850px) {
   .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container {
-    max-width: 90%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container {
-    height: 300px;
+    width: 90%;
   }
 }
 
 @media only screen and (max-width: 640px) {
   .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container {
-    max-width: 75%;
+    width: 75%;
+  }
+}
+
+.main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container .map-iframe {
+  width: 622px;
+}
+
+@media only screen and (max-width: 1680px) {
+  .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container .map-iframe {
+    width: 590px;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container .map-iframe {
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container .map-iframe {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container .map-iframe {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container .map-iframe {
+    width: 400px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container .map-iframe {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .main-content-container .content-container-wrapper .main-slider-wrapper .content-slider-wrapper .main-gallery .gallery-cell .slider-info-wrapper .map-container .map-iframe {
+    width: 300px;
   }
 }
 

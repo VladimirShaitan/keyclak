@@ -983,36 +983,38 @@ button {
                             .map-container {
                                 max-width: 622px;
                                 overflow: hidden;
-                                @include mediaDesctop($w1680) {
-                                    max-width: 590px;
-                                }
-                                @include mediaDesctop($w1550) {
-                                    max-width: 550px;
-                                }
-                                @include mediaDesctop($w1440) {
-                                    max-width: 500px;
-                                }
-                                @include mediaDesctop($w1280) {
-                                    max-width: 450px;
-                                }
-                                @include mediaDesctop($w1150) {
-                                    max-width: 400px;
-                                    height: 350px;
-                                }
-                                @include mediaDesctop($w1024) {
-                                    max-width: 350px;
-                                }
-                                @include mediaDesctop($w950) {
-                                    max-width: 300px;
-                                }
                                 @include mediaDesctop($w850) {
-                                    max-width: 90%;
-                                }
-                                @include mediaDesctop($w768) {
-                                    height: 300px;
+                                    width: 90%;
                                 }
                                 @include mediaDesctop($w640) {
-                                    max-width: 75%;
+                                    width: 75%;
+                                }
+                                
+
+                                .map-iframe {
+                                    width: 622px;
+                                    @include mediaDesctop($w1680) {
+                                        width: 590px;
+                                    }
+                                    @include mediaDesctop($w1550) {
+                                        width: 550px;
+                                    }
+                                    @include mediaDesctop($w1440) {
+                                        width: 500px;
+                                    }
+                                    @include mediaDesctop($w1280) {
+                                        width: 450px;
+                                    }
+                                    @include mediaDesctop($w1150) {
+                                        width: 400px;
+                                        height: 350px;
+                                    }
+                                    @include mediaDesctop($w1024) {
+                                        width: 350px;
+                                    }
+                                    @include mediaDesctop($w950) {
+                                        width: 300px;
+                                    }
                                 }
                             }
 

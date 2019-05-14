@@ -44,13 +44,11 @@ get_header('profile');
                                     </ul>
                                 </div>
                                 <div class="photo-container">
-                                    <!-- <img src="../images/house.png" alt=""> -->
                                     <img src="/wp-content/uploads/2019/04/house.png" alt="">
                                 </div>
                             </div>
                             <div class="map-container">
-                                <!-- <img src="../images/map.png" alt=""> -->
-                                <img src="/wp-content/uploads/2019/04/map.png" alt="">
+                                <iframe class="map-iframe" src="https://snazzymaps.com/embed/140483" width="100%" height="100%" style="border:none;"></iframe>
                             </div>
                         </div>
                     </div>
@@ -71,13 +69,11 @@ get_header('profile');
                                     </ul>
                                 </div>
                                 <div class="photo-container">
-                                    <!-- <img src="../images/house.png" alt=""> -->
                                     <img src="/wp-content/uploads/2019/04/house.png" alt="">
                                 </div>
                             </div>
                             <div class="map-container">
-                                <!-- <img src="../images/map.png" alt=""> -->
-                                <img src="/wp-content/uploads/2019/04/map.png" alt="">
+                                 <iframe class="map-iframe" src="https://snazzymaps.com/embed/140483" width="100%" height="100%" style="border:none;"></iframe>
                             </div>
                         </div>
                     </div>
@@ -98,13 +94,11 @@ get_header('profile');
                                     </ul>
                                 </div>
                                 <div class="photo-container">
-                                    <!-- <img src="../images/house.png" alt=""> -->
                                     <img src="/wp-content/uploads/2019/04/house.png" alt="">
                                 </div>
                             </div>
                             <div class="map-container">
-                                <!-- <img src="../images/map.png" alt=""> -->
-                                <img src="/wp-content/uploads/2019/04/map.png" alt="">
+                                 <iframe class="map-iframe" src="https://snazzymaps.com/embed/140483" width="100%" height="100%" style="border:none;"></iframe>
                             </div>
                         </div>
                     </div>
@@ -125,14 +119,12 @@ get_header('profile');
                                     </ul>
                                 </div>
                                 <div class="photo-container">
-                                    <!-- <img src="../images/house.png" alt=""> -->
                                     <img src="/wp-content/uploads/2019/04/house.png" alt="">
                                 </div>
                             </div>
                             
                             <div class="map-container">
-                                <!-- <img src="../images/map.png" alt=""> -->
-                                <img src="/wp-content/uploads/2019/04/map.png" alt="">
+                                 <iframe class="map-iframe" src="https://snazzymaps.com/embed/140483" width="100%" height="100%" style="border:none;"></iframe>
                             </div>
                         </div>
                     </div>
