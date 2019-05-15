@@ -20,7 +20,6 @@ get_header('profile');
         <div class="apartments-info-wrapper">
             <div class="left-info-container">
                 <div class="apartmet-image">
-                    <!-- <img src="../images/apartment.jpg" alt=""> -->
                     <img src="/wp-content/uploads/2019/04/apartment.jpg" alt="">
                 </div>
                 <a href="" class="save-apartment">
@@ -29,7 +28,6 @@ get_header('profile');
                 </a>
                 <div class="user-info-modal">
                     <div class="user-pic">
-                        <!-- <img src="../images/icons/user-pic-2-small.png" alt=""> -->
                         <img src="/wp-content/uploads/2019/04/user-pic-2-small.png" alt="">
                     </div>
                     <div class="user-info non-owner">
@@ -217,8 +215,8 @@ get_header('profile');
         </div>
 
         <div class="apartments-map-wrapper">
-            <!-- <img src="../images/map.jpg" alt=""> -->
-            <img src="/wp-content/uploads/2019/04/map.jpg" alt="">
+            <!-- <img src="/wp-content/uploads/2019/04/map.jpg" alt=""> -->
+            <iframe class="map-iframe" src="https://snazzymaps.com/embed/140483" width="100%" height="100%" style="border:none;"></iframe>
         </div>
 
 
