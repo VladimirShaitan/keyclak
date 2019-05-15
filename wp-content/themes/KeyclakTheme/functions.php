@@ -4,6 +4,7 @@ add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 function themename_custom_logo_setup() {
     add_theme_support( 'custom-logo');
     add_theme_support( 'post-thumbnails' ); 
+    add_post_type_support( 'page', 'excerpt' );
 }
 //Styles
 
