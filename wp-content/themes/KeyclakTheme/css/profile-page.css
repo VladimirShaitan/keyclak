@@ -2254,6 +2254,29 @@ button {
   }
 }
 
+.main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields .custom-select {
+  width: 100%;
+  max-width: 211px;
+}
+
+@media only screen and (max-width: 950px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields .custom-select {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields .custom-select {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields .custom-select {
+    max-width: 300px;
+  }
+}
+
 .main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields label:nth-child(2) {
   width: 62%;
   max-width: 803px;
@@ -2292,25 +2315,87 @@ button {
   }
 }
 
-.main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields label:nth-child(1), .main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields label:nth-child(3) {
+.main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields label:last-child {
   width: 100%;
   max-width: 211px;
 }
 
 @media only screen and (max-width: 950px) {
-  .main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields label:nth-child(1), .main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields label:nth-child(3) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields label:last-child {
     max-width: 400px;
   }
 }
 
 @media only screen and (max-width: 568px) {
-  .main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields label:nth-child(1), .main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields label:nth-child(3) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields label:last-child {
     max-width: 350px;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  .main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields label:nth-child(1), .main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields label:nth-child(3) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields label:last-child {
+    max-width: 300px;
+  }
+}
+
+.main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select {
+  width: 100%;
+  max-width: 355px;
+  margin: 0 40px 0 0;
+}
+
+@media only screen and (max-width: 1550px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select {
+    margin: 0 30px 0 0;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select {
+    margin: 0 0px 30px 0;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select {
+    max-width: 300px;
+  }
+}
+
+.main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select:last-child {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 33px 0 0;
+}
+
+@media only screen and (max-width: 1550px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select:last-child {
+    margin: 0 25px 0 0;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select:last-child {
+    margin: 0 0 30px 0;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select:last-child {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select:last-child {
     max-width: 300px;
   }
 }
@@ -2319,64 +2404,33 @@ button {
   padding: 18px 15px 15px;
 }
 
-.main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:first-child {
-  width: 100%;
-  max-width: 355px;
-  margin: 0 40px 0 0;
-}
-
-@media only screen and (max-width: 1550px) {
-  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:first-child {
-    margin: 0 30px 0 0;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:first-child {
-    margin: 0 0px 30px 0;
-    max-width: 400px;
-  }
-}
-
-@media only screen and (max-width: 568px) {
-  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:first-child {
-    max-width: 350px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:first-child {
-    max-width: 300px;
-  }
-}
-
-.main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(2), .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(3), .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(4) {
+.main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(2), .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(3) {
   width: 100%;
   max-width: 200px;
   margin: 0 33px 0 0;
 }
 
 @media only screen and (max-width: 1550px) {
-  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(2), .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(3), .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(4) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(2), .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(3) {
     margin: 0 25px 0 0;
   }
 }
 
 @media only screen and (max-width: 950px) {
-  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(2), .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(3), .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(4) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(2), .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(3) {
     margin: 0 0 30px 0;
     max-width: 400px;
   }
 }
 
 @media only screen and (max-width: 568px) {
-  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(2), .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(3), .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(4) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(2), .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(3) {
     max-width: 350px;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(2), .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(3), .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(4) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(2), .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields label:nth-child(3) {
     max-width: 300px;
   }
 }
@@ -2484,6 +2538,12 @@ button {
 
 .main-content-container .content-container-wrapper .search-form-wrapper form label.search-button {
   cursor: pointer;
+}
+
+.main-content-container .content-container-wrapper .search-form-wrapper form .custom-select .select-selected {
+  padding: 14px 33px 10px 21px;
+  border-radius: 28px;
+  border: 1px solid #000000;
 }
 
 .main-content-container .content-container-wrapper .search-form-wrapper .additional-options-container .options-button {

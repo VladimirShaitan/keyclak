@@ -154,16 +154,24 @@ get_header('profile');
 
         <div class="search-form-wrapper">
             <div class="title">Rechercher un logement</div>
-            <form action="">
+            <form action="" id="add-advert">
                 <div class="top-searh-fields">
-                    <label for="">
+                    <div class="custom-select" >
+                        <select>
+                            <option value="0">Colocation</option>
+                            <option value="1">Friends</option>
+                            <option value="2">Partners</option>
+                            <option value="3">Familly</option>
+                        </select>
+                    </div>
+                    <!-- <label for="">
                         <select name="Colocation" id="">
                             <option value="сolocation">Colocation</option>
                             <option value="friends">Friends</option>
                             <option value="Partners">Partners</option>
                             <option value="familly">Familly</option>
                         </select>
-                    </label>
+                    </label> -->
 
                     <label for="">
                         <input type="text" placeholder="Paris 14 e arrondissement">
@@ -176,14 +184,22 @@ get_header('profile');
                     </label>
                 </div>
                 <div class="bot-searh-fields">
-                    <label for="">
+                    <div class="custom-select" >
+                        <select>
+                            <option value="0">Studio</option>
+                            <option value="1">Stalinka</option>
+                            <option value="2">Khrushchev</option>
+                            <option value="3">Hangar</option>
+                        </select>
+                    </div>
+                    <!-- <label for="">
                         <select name="quartet-type" id="">
                             <option value="studio">Studio</option>
                             <option value="stalinka">Stalinka</option>
                             <option value="khrushchev">Khrushchev</option>
                             <option value="hangar">Hangar</option>
                         </select>
-                    </label>
+                    </label> -->
                     <label for="">
                         <input type="text" placeholder="42">
                         <i class="icon metres"></i>
@@ -192,7 +208,16 @@ get_header('profile');
                         <input type="text" placeholder="1200">
                         <i class="icon price"></i>
                     </label>
-                    <label for="">
+                    <div class="custom-select" >
+                        <select>
+                            <option value="0">1</option>
+                            <option value="1">2</option>
+                            <option value="2">3</option>
+                            <option value="3">4</option>
+                            <option value="4">5</option>
+                        </select>
+                    </div>
+                    <!-- <label for="">
                         <select name="" id="">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -200,7 +225,7 @@ get_header('profile');
                             <option value="4">4</option>
                             <option value="5">5</option>
                         </select>
-                    </label>
+                    </label> -->
                     <label for="" class="search-save">
                         <i class="icon hearth"></i>
                         <span>Mettre cette recherche en favoris</span>

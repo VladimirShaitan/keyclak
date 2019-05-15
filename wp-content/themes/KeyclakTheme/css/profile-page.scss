@@ -1738,6 +1738,20 @@ button {
                         margin: 0 0 30px;
                     }
 
+                    .custom-select {
+                        width: 100%;
+                        max-width: 211px;
+                        @include mediaDesctop($w950) {
+                            max-width: 400px;
+                        }
+                        @include mediaDesctop($w568) {
+                            max-width: 350px;
+                        }
+                        @include mediaDesctop($w425) {
+                            max-width: 300px;
+                        }
+                    }
+
                     label {
                         &:nth-child(2) {
                             width: 62%;
@@ -1761,7 +1775,7 @@ button {
                                 max-width: 300px;
                             }
                         }
-                        &:nth-child(1), &:nth-child(3) {
+                        &:last-child {
                             width: 100%;
                             max-width: 211px;
                             @include mediaDesctop($w950) {
@@ -1778,18 +1792,34 @@ button {
                 }
 
                 .bot-searh-fields {
-                    label {
-                        padding: 18px 15px 15px;
+                    
+                    .custom-select {
+                        width: 100%;
+                        max-width: 355px;
+                        margin: 0 40px 0 0;
+                        @include mediaDesctop($w1550) {
+                            margin: 0 30px 0 0;
+                        }
+                        @include mediaDesctop($w950) {
+                            margin: 0 0px 30px 0;
+                            max-width: 400px;
+                        }
+                        @include mediaDesctop($w568) {
+                            max-width: 350px;
+                        }
+                        @include mediaDesctop($w425) {
+                            max-width: 300px;
+                        }
 
-                        &:first-child {
+                        &:last-child {
                             width: 100%;
-                            max-width: 355px;
-                            margin: 0 40px 0 0;
+                            max-width: 200px;
+                            margin: 0 33px 0 0;
                             @include mediaDesctop($w1550) {
-                                margin: 0 30px 0 0;
+                                margin: 0 25px 0 0;
                             }
                             @include mediaDesctop($w950) {
-                                margin: 0 0px 30px 0;
+                                margin: 0 0 30px 0;
                                 max-width: 400px;
                             }
                             @include mediaDesctop($w568) {
@@ -1799,8 +1829,12 @@ button {
                                 max-width: 300px;
                             }
                         }
+                    }
+
+                    label {
+                        padding: 18px 15px 15px;
                         
-                        &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+                        &:nth-child(2), &:nth-child(3) {
                             width: 100%;
                             max-width: 200px;
                             margin: 0 33px 0 0;
@@ -1926,6 +1960,17 @@ button {
 
                     &.search-button {
                         cursor: pointer;
+                    }
+                }
+
+                .custom-select {
+                    
+
+                    .select-selected {
+                        padding: 14px 33px 10px 21px;
+                        border-radius: 28px;
+                        border: 1px solid #000000;
+                        
                     }
                 }
             }

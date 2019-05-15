@@ -179,7 +179,7 @@ Selects.forEach(function(item){
     item.appendChild(divItems);
 });
 
-if(addAdvert) {
+if (addAdvert) {
     addAdvert.addEventListener('click', function (e) {
         var inputWrap = document.getElementById('input_wrap');
         var SelectWrap = document.getElementById('select_wrap');
