@@ -1,10 +1,10 @@
 <div class="form-black-bg">
+            <div class="preloader hidden">
+                <img class="loader" src="<?php echo get_stylesheet_directory_uri(); ?>/preloader.svg">
+            </div>
     <form id="locataire-registration" class="inscription-form">
 
         <div class="form-rows-wrapper">
-            <div class="preloader">
-                <i class="fa fa-spinner fa-pulse fa-3x fa-fw" ></i>
-            </div>
             <div class="left-field-blocks">
                 <div class="input-main">
                     <label>Nom</label>
@@ -20,7 +20,7 @@
 
                 <div class="input-main">
                     <label>Adresse email</label>
-                    <input name="email" type="email" required>
+                    <input name="email" type="email" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
                     <div class="error"></div>
                 </div>
 
@@ -51,7 +51,7 @@
             <div class="right-field-blocks">
                 <div class="input-main">
                     <label>Numéro de téléphone</label>
-                    <input type="tel" class="right-first-input" required>
+                    <input type="tel" class="right-first-input" pattern="[0-9]{1,}" required>
                     <div class="error"></div>
                 </div>
 
@@ -110,6 +110,7 @@
                                 + ajoter une vidéo de présentation
                             </span>
                             <input type="hidden" id="upload-btn-right" name="file-video">
+                            <div class="error"></div>
                         </label>
                     </div>
                 </div>

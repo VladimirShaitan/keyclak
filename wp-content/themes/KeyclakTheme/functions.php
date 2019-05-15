@@ -4,6 +4,7 @@ add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 function themename_custom_logo_setup() {
     add_theme_support( 'custom-logo');
     add_theme_support( 'post-thumbnails' ); 
+    add_post_type_support( 'page', 'excerpt' );
 }
 //Styles
 
@@ -138,15 +139,15 @@ function register_user(){
         $overrides = [ 'test_form' => false ];
         $movefile = wp_handle_upload($file, $overrides, null );
         if(!empty($movefile['error'])){
-            $errors['file'] = "Cannot upload file";
+            $errors['errors']['file'] = "Impossible de télécharger le fichier";
         }
     }
 
     if(!is_email($_POST['email'])){
-        $errors['email'] =  'address is incorrect';
+        $errors['errors']['email'] =  'L\'adresse E-mail est incorrecte';
     } else {
         if(email_exists($_POST['email'])){
-            $errors['email'] =  'This email already registered';
+            $errors['errors']['email'] =  'Cet email est déjà enregistré';
         }
     }
 
@@ -166,15 +167,43 @@ function register_user(){
         'last_name'       => $_POST['last-name'],
         'rich_editing'    => 'false',
         'role'            => $_POST['user_role'],
-        'show_admin_bar_front' => false,
+        'show_admin_bar_front' => true,
         'use_ssl' => true,
     );
     $user_id = wp_insert_user($userdata);
 
     if(!is_wp_error($user_id)){
         update_user_meta($user_id, 'profile_picture', $movefile['url']);
-    }
-    print_r($user_id);
-    wp_die();
-    // 
+        $login_user = wp_signon(array(
+            'user_login'    => $userdata['user_login'],
+            'user_password' => $userdata['user_pass'],
+            'remember'      => true,
+        ));
+        if(!is_wp_error($login_user)){
+            $responce = array('success' => true);
+            switch ($userdata['role']) {
+                case 'locataire':
+                    $responce['url'] = '/account/locataire/';
+                    break;
+                case 'proprietaire':
+                    $responce['url'] = '/account/proprietaire/';
+                    break;
+            }
+        } else {
+            $responce = array('success' => true);
+            switch ($userdata['role']) {
+                case 'locataire':
+                    $responce['url'] = '/login/locataire/';
+                    break;
+                case 'proprietaire':
+                    $responce['url'] = '/login/proprietaire/';
+                    break;
+            }
+        }
+     } else {
+        $errors['errors']['general'] = 'Désolé, une erreur s\'est produite lors de l\'inscription, veuillez réessayer plus tard.';
+        wp_send_json($errors);
+     }
+
+    wp_send_json($responce);
 }
