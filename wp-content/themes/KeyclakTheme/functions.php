@@ -126,7 +126,7 @@ add_role(
     )
 );
 
-
+// registration
 add_action('wp_ajax_nopriv_register_user', 'register_user');
 add_action('wp_ajax_register_user', 'register_user');
 function register_user(){
@@ -206,4 +206,16 @@ function register_user(){
      }
 
     wp_send_json($responce);
+}
+
+// login
+
+add_action('wp_ajax_nopriv_login_user', 'login_user');
+add_action('wp_ajax_login_user', 'login_user');
+function login_user(){
+    if(!is_wp_error(wp_signon($_POST))){
+        wp_send_json(wp_signon($_POST));
+    } else {
+        wp_send_json(array('errors' => 'Le nom d\'utilisateur ou le mot de passe sont incorrects'));
+    }
 }

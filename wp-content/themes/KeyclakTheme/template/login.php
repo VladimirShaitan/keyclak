@@ -22,9 +22,10 @@
                 <div class="right-content">
                     <div class="text-container">
                         <div class="form-title">Se connecter :</div>
-                        <form class="se-connecter-form">
-                            <input type="email" placeholder="Adresse e-mail">
-                            <input type="email" placeholder="Mot de passe">
+                        <form id="login" class="se-connecter-form">
+                            <input type="text" name="user_login" placeholder="Adresse e-mail" required>
+                            <input type="password" name="user_password" placeholder="Mot de passe" required>
+                            <div class="error"></div>
                             <input type="submit" class="se-connecte-submit" value="Connexion">
                         </form>
                        <!--  <div class="p-facebook-under-form">
@@ -41,5 +42,4 @@
 
 <?php
     get_footer();
-
 ?>

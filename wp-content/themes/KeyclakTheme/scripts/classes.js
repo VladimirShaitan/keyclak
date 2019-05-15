@@ -32,7 +32,7 @@ class registration {
 			e.preventDefault();
 			const self = this;
 			self.loader.show();
-			ajax_handler(this.form_id, 'register_user', (data) => {
+			ajax_handler(this.form_id, self.backend_handler, (data) => {
 
 				if(data.errors != undefined){
 					for(let error in data.errors){
@@ -118,5 +118,33 @@ class registration {
 			}
 		})
 	};
+
+}
+
+class login {
+
+	constructor(form_id, backend_handler){
+		if(qs(form_id) === null){return false;}
+		this.form_id = form_id;
+		this.form = qs(form_id);
+		this.backend_handler = backend_handler;
+		this.setEvent();
+	}
+
+	setEvent = () => {
+		this.form.addEventListener('submit', (e) => {
+			const self = this;
+			e.preventDefault();
+			console.log(this);
+			ajax_handler(this.form_id, self.backend_handler, (data) => {
+				if(data.errors != undefined){
+					self.form.qs('.error').innerHTML = data.errors;
+				} else {
+					console.log(data);
+				}
+			})
+		});
+	}
+
 
 }
