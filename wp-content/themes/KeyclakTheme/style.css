@@ -108,7 +108,8 @@ h2.medium{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 21px 81px 32px 42px;
+    align-items: center;
+    padding: 21px 81px 32px 42px; 
 }
 
 
@@ -241,6 +242,7 @@ input,
 
 .logo-span a {
     display: inline-block;
+    width: 100%;
 }
 
 .img-top,
@@ -944,6 +946,22 @@ input:checked+i:before{
     .contact-info {
         font-size: 27px;
     }
+
+    .header-container {
+        padding: 21px 50px 32px 42px;
+    }
+
+    .logo-span img {
+        width: 90%;
+    }
+
+    .user-name {
+        font-size: 27px;
+    }
+
+    .user-progress {
+        width: 85%;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .header-container {
@@ -968,17 +986,34 @@ input:checked+i:before{
     }
 
     .logo-span img {
-        width: 80%;
+        width: inherit;
+        min-width: 250px;
     }
     
     .round-notifications {
         right: 0px;
     }
 }
-
 @media only screen and (max-width: 950px){
     .contact-info {
         font-size: 24px;
+    }
+
+    .user-info {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .user-name {
+        width: 220px;
+    }
+
+    .user-name-block {
+        margin: 20px 0 0;
+    }
+
+    .logo-span {
+        max-width: 300px;
     }
 }
 @media only screen and (max-width: 768px){
@@ -998,8 +1033,12 @@ input:checked+i:before{
     .map-info {
         width: 100%;
     }
+
+    .header-container {
+        padding: 21px 30px 32px;
+    }
 }
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 680px) {
     .header-container {
         flex-flow: column nowrap;
         align-items: center;
@@ -1036,6 +1075,11 @@ input:checked+i:before{
         right: -19px;
     }
 
+    .user-progress {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 568px) {
     .contact-form-block .wpcf7-submit {
         max-width: 250px;
         padding: 18px 0 14px;
@@ -1043,7 +1087,6 @@ input:checked+i:before{
     }
 
 }
-
 @media only screen and (max-width: 425px) {
     .sub-header {
         padding: 54px 40px 42px;

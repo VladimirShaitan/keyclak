@@ -28,27 +28,31 @@ window.onload = function() {
             }
         })
     }
+}
 
-    //modal window
+//modal window
+if (qs('.document-hidden-list') != null) {
+    
     const modalWindow = document.querySelector('#modal_wrapper');
     var openModal = document.querySelector('.document-hidden-list');
-    var closeModal = document.querySelector('.close-modal')
+    var closeModal = document.querySelector('.close-modal');
+
+    console.log(openModal)
 
     // When the user clicks the button, open the modal 
-    openModal.onclick = function() {
+    openModal.onclick = function () {
         modalWindow.style.display = 'block';
     }
     // When the user clicks on <span> (x), close the modal
-    closeModal.onclick = function() {
+    closeModal.onclick = function () {
         modalWindow.style.display = 'none';
     }
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(e) {
+    window.onclick = function (e) {
         if (e.target == modalWindow) {
             modalWindow.style.display = 'none';
         }
     }
-
 }
 
 /************************************* CUSTOM SELECT ********************************************/
@@ -241,23 +245,35 @@ jQuery( "#clickme" ).click(function() {
 });
 
 // Slider on Agenda
-if(qs('.main-gallery') != null) {
-    const mgs = document.getElementsByClass('main-gallery');
-
-    for(let i = 0; i < mgs.length; i++) {
-        mgs[i].setAttribute('id', i);
-        // document.getElementById('main-gallery' + i)
-
-        new Flickity(document.getElementById('main-gallery' + i), {
-            cellAlign: 'left',
-            contain: true,
-            wrapAround: true,
-            draggable: false,
-            adaptiveHeight: true
-        });
-    }
+if (qs('.main-gallery') != null) {
+    const flkty = new Flickity('.main-gallery', {
+        cellAlign: 'left',
+        contain: true,
+        wrapAround: true,
+        draggable: false,
+        adaptiveHeight: true
+    });
 }
 
+// if(qs('.main-gallery') != null) {
+//     const mgs = document.querySelector('.main-gallery');
+    
+    
+//     for(let i = 0; i < mgs.length; i++) {
+//         mgs[i].setAttribute('id', i);
+//         // document.getElementById('main-gallery' + i)
+//         console.log(mgs); 
+
+//         const flkty = new Flickity(document.getElementById('main-gallery' + i), {
+//             cellAlign: 'left',
+//             contain: true,
+//             wrapAround: true,
+//             draggable: false,
+//             adaptiveHeight: true
+//         });
+//     }
+// }
+ 
 
 //Init the Calendar
 let today = new Date();

@@ -20,6 +20,7 @@ get_header('profile');
             <a href="http://">Mon agenda</a>
         </div>
     </header>
+    
     <div class="content-container-wrapper">
         <div class="profile-wrapper">
             <div class="profile-info-container">

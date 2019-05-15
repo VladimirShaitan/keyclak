@@ -33,10 +33,7 @@ get_header('profile');
                             <img src="/wp-content/uploads/2019/03/linkedin.png" alt="">
                         </a>
                     </div>
-                    <div class="user-navigation-panel">
-                        <a href="#" class="navigation-link">Me déconnecter</a>
-                        <a href="#" class="navigation-link">Modifier mes informations</a>
-                    </div>
+                    
                 </div>
                 <div class="profile-data-wrapper">
                     <div class="profile-main-data">
@@ -70,16 +67,16 @@ get_header('profile');
                     <div class="profile-sub-data">
                         <div class="sub-data-wrapper">
                             <div class="sub-data-string">
-                                Statut : <span>Salarié en CDD</span>
+                                <span>Statut : </span><input class="user-field" type="text" value="Salarié en CDD" readonly>
                             </div>
                             <div class="sub-data-string">
-                                Revenu : <span>1500€</span>
+                                <span>Revenu :</span> <input class="user-field" type="text" value="1500€" readonly>
                             </div>
                             <div class="sub-data-string">
-                                Garant : <span>CDI</span>
+                                <span>Garant : </span><input class="user-field" type="text" value="CDI" readonly>
                             </div>
                             <div class="sub-data-string">
-                                Revenu garant : <span>3600€</span>
+                                <span>Revenu garant :</span> <input class="user-field" type="text" value="3600€" readonly>
                             </div>
                         </div>
 
@@ -120,10 +117,7 @@ get_header('profile');
                             <img src="/wp-content/uploads/2019/03/linkedin.png" alt="">
                         </a>
                     </div>
-                    <div class="user-navigation-panel">
-                        <a href="#" class="navigation-link">Me déconnecter</a>
-                        <a href="#" class="navigation-link">Modifier mes informations</a>
-                    </div>
+                    
                 </div>
                 <div class="profile-data-wrapper">
                     <div class="profile-main-data">
@@ -157,16 +151,16 @@ get_header('profile');
                     <div class="profile-sub-data">
                         <div class="sub-data-wrapper">
                             <div class="sub-data-string">
-                                Statut : <span>Salarié en CDD</span>
+                                <span>Statut : </span><input class="user-field" type="text" value="Salarié en CDD" readonly>
                             </div>
                             <div class="sub-data-string">
-                                Revenu : <span>1500€</span>
+                                <span>Revenu :</span> <input class="user-field" type="text" value="1500€" readonly>
                             </div>
                             <div class="sub-data-string">
-                                Garant : <span>CDI</span>
+                                <span>Garant : </span><input class="user-field" type="text" value="CDI" readonly>
                             </div>
                             <div class="sub-data-string">
-                                Revenu garant : <span>3600€</span>
+                                <span>Revenu garant :</span> <input class="user-field" type="text" value="3600€" readonly>
                             </div>
                         </div>
 
@@ -196,6 +190,100 @@ get_header('profile');
             </div>
         </div>
         
+    </div>
+
+    <div class="modal-main-wrapper" id="modal_wrapper">
+        <div class="modal-content-wrapper">
+            <i class="icon close-modal"></i>
+            <div class="top-filters-container">
+                <div class="year-container">
+                    <i class="icon filter"></i>
+                    <div class="filter-field">
+                        <span>Année : 2019</span>
+                    </div>
+                </div>
+                <div class="month-container">
+                    <i class="icon filter"></i>
+                    <div class="filter-field">
+                        <span>Mois : January</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-content">
+                <ul class="document-list-container">
+                    <li class="document-item">
+                        <div class="doc-icon-container">
+                            <i class="icon doc-1"></i>
+                        </div>
+                        <div class="document-name">Fiche<br /> de paies</div>
+                    </li>
+                
+                    <li class="document-item">
+                        <div class="doc-icon-container">
+                            <i class="icon doc-2"></i>
+                        </div>
+                        <div class="document-name center-phrase">CNI</div>
+                    </li>
+                
+                    <li class="document-item">
+                        <div class="doc-icon-container">
+                            <i class="icon doc-3"></i>
+                        </div>
+                        <div class="document-name">Dernière quittance</div>
+                    </li>
+                
+                    <li class="document-item">
+                        <div class="doc-icon-container">
+                            <i class="icon doc-5"></i>
+                        </div>
+                        <div class="document-name">Contrat de travail</div>
+                    </li>
+                
+                    <li class="document-item">
+                        <div class="doc-icon-container">
+                            <i class="icon doc-1"></i>
+                        </div>
+                        <div class="document-name">Fiche<br /> de paies</div>
+                    </li>
+                
+                    <li class="document-item">
+                        <div class="doc-icon-container">
+                            <i class="icon doc-2"></i>
+                        </div>
+                        <div class="document-name center-phrase">CNI</div>
+                    </li>
+                
+                    <li class="document-item">
+                        <div class="doc-icon-container">
+                            <i class="icon doc-3"></i>
+                        </div>
+                        <div class="document-name">Dernière quittance</div>
+                    </li>
+                
+                    <li class="document-item">
+                        <div class="doc-icon-container">
+                            <i class="icon doc-4"></i>
+                        </div>
+                        <div class="document-name">Dernier avis d’imposition</div>
+                    </li>
+                
+                    <li class="document-item">
+                        <div class="doc-icon-container">
+                            <i class="icon doc-5"></i>
+                        </div>
+                        <div class="document-name">Contrat de travail</div>
+                    </li>
+                
+                    <li class="document-item">
+                        <div class="doc-icon-container">
+                            <i class="icon dots"></i>
+                        </div>
+                        <div class="document-name">Afficher plus de Quittances</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 

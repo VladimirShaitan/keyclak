@@ -214,8 +214,8 @@ get_header('profile');
         </div>
 
         <div class="apartments-map-wrapper">
-            <!-- <img src="../images/map.jpg" alt=""> -->
-            <img src="/wp-content/uploads/2019/04/map.jpg" alt="">
+            <!-- <img src="/wp-content/uploads/2019/04/map.jpg" alt=""> -->
+            <iframe class="map-iframe" src="https://snazzymaps.com/embed/140483" width="100%" height="100%" style="border:none;"></iframe>
         </div>
 
 

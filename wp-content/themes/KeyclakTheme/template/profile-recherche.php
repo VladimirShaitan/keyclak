@@ -64,7 +64,8 @@ get_header('profile');
                                 </div>
                             </div>
                             <div class="map-container">
-                                <img src="/wp-content/uploads/2019/04/map.png" alt="">
+                                <!-- <img src="/wp-content/uploads/2019/04/map.png" alt=""> -->
+                                <iframe class="map-iframe" src="https://snazzymaps.com/embed/140483" width="100%" height="100%" style="border:none;"></iframe>
                             </div>
                         </div>
                     </div>
@@ -89,7 +90,8 @@ get_header('profile');
                                 </div>
                             </div>
                             <div class="map-container">
-                                <img src="/wp-content/uploads/2019/04/map.png" alt="">
+                                <!-- <img src="/wp-content/uploads/2019/04/map.png" alt=""> -->
+                                <iframe class="map-iframe" src="https://snazzymaps.com/embed/140483" width="100%" height="100%" style="border:none;"></iframe>
                             </div>
                         </div>
                     </div>
@@ -114,7 +116,8 @@ get_header('profile');
                                 </div>
                             </div>
                             <div class="map-container">
-                                <img src="/wp-content/uploads/2019/04/map.png" alt="">
+                                <!-- <img src="/wp-content/uploads/2019/04/map.png" alt=""> -->
+                                <iframe class="map-iframe" src="https://snazzymaps.com/embed/140483" width="100%" height="100%" style="border:none;"></iframe>
                             </div>
                         </div>
                     </div>
@@ -140,7 +143,8 @@ get_header('profile');
                             </div>
                             
                             <div class="map-container">
-                                <img src="/wp-content/uploads/2019/04/map.png" alt="">
+                                <!-- <img src="/wp-content/uploads/2019/04/map.png" alt=""> -->
+                                <iframe class="map-iframe" src="https://snazzymaps.com/embed/140483" width="100%" height="100%" style="border:none;"></iframe>
                             </div>
                         </div>
                     </div>
