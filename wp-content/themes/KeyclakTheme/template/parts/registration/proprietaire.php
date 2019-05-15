@@ -1,8 +1,8 @@
 <div class="form-black-bg form-proprietaire">
+            <div class="preloader hidden">
+                <img class="loader" src="<?php echo get_stylesheet_directory_uri(); ?>/preloader.svg">
+            </div>
     <form id="proprietaire" class="inscription-form">
-        <div class="preloader">
-            <img class="loader" src="">
-        </div>
         <div class="form-rows-wrapper">
             <div class="central-field-blocks">
                 <div class="input-main">
@@ -49,7 +49,7 @@
         </div>
 
         <div class="inscription-form-submit">
-            <input type="submit" value="Inscription" class="submit-btn-green">
+            <input type="submit" value="Inscription" class="submit-btn-green" disabled>
         </div>
         <input type="hidden" name="user_role" value="proprietaire">
     </form>
