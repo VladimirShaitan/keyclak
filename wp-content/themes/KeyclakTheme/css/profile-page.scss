@@ -68,11 +68,9 @@ button {
         }
 
         &.profile-compte {
-            // background-image: url('../images/profile-bg-4.jpg');
             background-image: url('/wp-content/uploads/2019/03/profile-bg-4.jpg');
         }
         &.profile-agenda {
-            // background-image: url('../images/profile-bg-5.jpg');
             background-image: url('/wp-content/uploads/2019/03/profile-bg-5.jpg');
         }
         &.profile-agenda-two {
@@ -881,6 +879,7 @@ button {
                         min-width: 100%;
 
                         .slider-info-wrapper {
+                            width: 90%;
                             display: flex;
                             flex-flow: row nowrap;
                             @include mediaDesctop($w850) {
@@ -890,6 +889,7 @@ button {
                             }
 
                             .tablet-container {
+                                width: 50%;
                                 display: flex;
                                 flex-flow: row nowrap;
                                 @include mediaDesctop($w850) {
@@ -948,8 +948,11 @@ button {
                             }
 
                             .photo-container {
+                                width: 100%;
+                                height: 62.25vw;
                                 max-width: 530px;
                                 overflow: hidden;
+                                position: relative;
                                 margin: 0 36px 0 30px;
                                 @include mediaDesctop($w1680) {
                                     max-width: 500px;
@@ -985,53 +988,61 @@ button {
                                 }
 
                                 img {
-                                    width: inherit;
+                                    width: 100%;
                                     height: 100%;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    margin: auto;
+                                    object-fit: cover;
                                 }
                             }
 
                             .map-container {
-                                max-width: 622px;
+                                width: 50%;
                                 overflow: hidden;
                                 @include mediaDesctop($w850) {
                                     width: 90%;
                                 }
                                 @include mediaDesctop($w640) {
-                                    width: 75%;
+                                    // width: 75%;
                                 }
                                 
 
                                 .map-iframe {
-                                    width: 622px;
-                                    @include mediaDesctop($w1680) {
-                                        width: 590px;
-                                    }
-                                    @include mediaDesctop($w1550) {
-                                        width: 550px;
-                                    }
-                                    @include mediaDesctop($w1440) {
-                                        width: 500px;
-                                    }
-                                    @include mediaDesctop($w1280) {
-                                        width: 450px;
-                                    }
-                                    @include mediaDesctop($w1150) {
-                                        width: 400px;
-                                        height: 350px;
-                                    }
-                                    @include mediaDesctop($w1024) {
-                                        width: 350px;
-                                    }
-                                    @include mediaDesctop($w950) {
-                                        width: 300px;
-                                    }
-                                    @include mediaDesctop($w850) {
-                                        max-width: 100%;
-                                        width: 100%;
-                                    }
+                                    width: 100%;
+                                    // width: 622px;
+                                    // @include mediaDesctop($w1680) {
+                                    //     width: 590px;
+                                    // }
+                                    // @include mediaDesctop($w1550) {
+                                    //     width: 550px;
+                                    // }
+                                    // @include mediaDesctop($w1440) {
+                                    //     width: 500px;
+                                    // }
+                                    // @include mediaDesctop($w1280) {
+                                    //     width: 450px;
+                                    // }
+                                    // @include mediaDesctop($w1150) {
+                                    //     width: 400px;
+                                    //     height: 350px;
+                                    // }
+                                    // @include mediaDesctop($w1024) {
+                                    //     width: 350px;
+                                    // }
+                                    // @include mediaDesctop($w950) {
+                                    //     width: 300px;
+                                    // }
+                                    // @include mediaDesctop($w850) {
+                                    //     max-width: 100%;
+                                    //     width: 100%;
+                                    // }
                                 }
                             }
-
+                            //OLD STYLE BELOW
                             .close-slider-container {
                                 margin-left: 20px;
                                 .close-btn {

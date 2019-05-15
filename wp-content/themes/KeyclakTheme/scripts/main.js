@@ -240,17 +240,22 @@ jQuery( "#clickme" ).click(function() {
     });
 });
 
-/************************************* CUSTOM SELECT ********************************************/
+// Slider on Agenda
+if(qs('.main-gallery') != null) {
+    const mgs = document.getElementsByClass('main-gallery');
 
-//Slider on Agenda
-if(qs('.main-gallery') != null){
-    const flkty = new Flickity('.main-gallery', {
-        cellAlign: 'left',
-        contain: true,
-        wrapAround: true,
-        draggable: false,
-        adaptiveHeight: true
-    });
+    for(let i = 0; i < mgs.length; i++) {
+        mgs[i].setAttribute('id', i);
+        // document.getElementById('main-gallery' + i)
+
+        new Flickity(document.getElementById('main-gallery' + i), {
+            cellAlign: 'left',
+            contain: true,
+            wrapAround: true,
+            draggable: false,
+            adaptiveHeight: true
+        });
+    }
 }
 
 
