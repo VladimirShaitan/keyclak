@@ -164,14 +164,6 @@ get_header('profile');
                             <option value="3">Familly</option>
                         </select>
                     </div>
-                    <!-- <label for="">
-                        <select name="Colocation" id="">
-                            <option value="сolocation">Colocation</option>
-                            <option value="friends">Friends</option>
-                            <option value="Partners">Partners</option>
-                            <option value="familly">Familly</option>
-                        </select>
-                    </label> -->
 
                     <label for="">
                         <input type="text" placeholder="Paris 14 e arrondissement">
@@ -192,14 +184,7 @@ get_header('profile');
                             <option value="3">Hangar</option>
                         </select>
                     </div>
-                    <!-- <label for="">
-                        <select name="quartet-type" id="">
-                            <option value="studio">Studio</option>
-                            <option value="stalinka">Stalinka</option>
-                            <option value="khrushchev">Khrushchev</option>
-                            <option value="hangar">Hangar</option>
-                        </select>
-                    </label> -->
+                    
                     <label for="">
                         <input type="text" placeholder="42">
                         <i class="icon metres"></i>
@@ -208,7 +193,7 @@ get_header('profile');
                         <input type="text" placeholder="1200">
                         <i class="icon price"></i>
                     </label>
-                    <div class="custom-select" >
+                    <div class="custom-select second-select">
                         <select>
                             <option value="0">1</option>
                             <option value="1">2</option>
@@ -217,15 +202,7 @@ get_header('profile');
                             <option value="4">5</option>
                         </select>
                     </div>
-                    <!-- <label for="">
-                        <select name="" id="">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    </label> -->
+                    
                     <label for="" class="search-save">
                         <i class="icon hearth"></i>
                         <span>Mettre cette recherche en favoris</span>

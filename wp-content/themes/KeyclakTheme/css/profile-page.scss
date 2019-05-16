@@ -1739,7 +1739,6 @@ button {
                     }
 
                     .custom-select {
-                        width: 100%;
                         max-width: 211px;
                         @include mediaDesctop($w950) {
                             max-width: 400px;
@@ -1794,7 +1793,6 @@ button {
                 .bot-searh-fields {
                     
                     .custom-select {
-                        width: 100%;
                         max-width: 355px;
                         margin: 0 40px 0 0;
                         @include mediaDesctop($w1550) {
@@ -1809,25 +1807,6 @@ button {
                         }
                         @include mediaDesctop($w425) {
                             max-width: 300px;
-                        }
-
-                        &:last-child {
-                            width: 100%;
-                            max-width: 200px;
-                            margin: 0 33px 0 0;
-                            @include mediaDesctop($w1550) {
-                                margin: 0 25px 0 0;
-                            }
-                            @include mediaDesctop($w950) {
-                                margin: 0 0 30px 0;
-                                max-width: 400px;
-                            }
-                            @include mediaDesctop($w568) {
-                                max-width: 350px;
-                            }
-                            @include mediaDesctop($w425) {
-                                max-width: 300px;
-                            }
                         }
                     }
 
@@ -1863,6 +1842,7 @@ button {
                     padding: 14px 33px 10px 21px;
                     border-radius: 28px;
                     border: 1px solid #000000;
+                    max-height: 56px;
 
                     input, select {
                         width: 90%;
@@ -1941,6 +1921,10 @@ button {
                             max-width: 250px;
                             width: 100%;
                         }
+                        @include mediaDesctop($w950) {
+                            max-width: 300px;
+                        }
+
                         span {
                             color: #010101;
                             font-size: 16px;
@@ -1964,13 +1948,48 @@ button {
                 }
 
                 .custom-select {
-                    
+                    width: 100%;
+
+                    &.second-select {
+                        max-width: 200px;
+                        margin: 0 33px 0 0;
+                        @include mediaDesctop($w1550) {
+                            margin: 0 25px 0 0;
+                        }
+                        @include mediaDesctop($w950) {
+                            margin: 0 0px 30px 0;
+                            max-width: 400px;
+                        }
+                        @include mediaDesctop($w568) {
+                            max-width: 350px;
+                        }
+                        @include mediaDesctop($w425) {
+                            max-width: 300px;
+                        }
+                    }
 
                     .select-selected {
-                        padding: 14px 33px 10px 21px;
+                        padding: 16px 33px 14px 21px;
                         border-radius: 28px;
                         border: 1px solid #000000;
-                        
+                        line-height: 24px;
+                        @include mediaDesctop($w1024) {
+                            font-size: 20px;
+                        }
+                        @include mediaDesctop($w568) {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .select-items {
+                        border: 1px solid #000000;
+
+                        div {
+                            &:hover {
+                                background-color: rgba(23, 23, 23, 0.8);
+                                color: #ffffff;
+                            }
+                        }
                     }
                 }
             }

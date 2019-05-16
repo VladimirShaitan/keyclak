@@ -2255,7 +2255,6 @@ button {
 }
 
 .main-content-container .content-container-wrapper .search-form-wrapper form .top-searh-fields .custom-select {
-  width: 100%;
   max-width: 211px;
 }
 
@@ -2339,7 +2338,6 @@ button {
 }
 
 .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select {
-  width: 100%;
   max-width: 355px;
   margin: 0 40px 0 0;
 }
@@ -2365,37 +2363,6 @@ button {
 
 @media only screen and (max-width: 425px) {
   .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select {
-    max-width: 300px;
-  }
-}
-
-.main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select:last-child {
-  width: 100%;
-  max-width: 200px;
-  margin: 0 33px 0 0;
-}
-
-@media only screen and (max-width: 1550px) {
-  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select:last-child {
-    margin: 0 25px 0 0;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select:last-child {
-    margin: 0 0 30px 0;
-    max-width: 400px;
-  }
-}
-
-@media only screen and (max-width: 568px) {
-  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select:last-child {
-    max-width: 350px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .main-content-container .content-container-wrapper .search-form-wrapper form .bot-searh-fields .custom-select:last-child {
     max-width: 300px;
   }
 }
@@ -2443,6 +2410,7 @@ button {
   padding: 14px 33px 10px 21px;
   border-radius: 28px;
   border: 1px solid #000000;
+  max-height: 56px;
 }
 
 .main-content-container .content-container-wrapper .search-form-wrapper form label input, .main-content-container .content-container-wrapper .search-form-wrapper form label select {
@@ -2525,6 +2493,12 @@ button {
   }
 }
 
+@media only screen and (max-width: 950px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form label.search-save {
+    max-width: 300px;
+  }
+}
+
 .main-content-container .content-container-wrapper .search-form-wrapper form label.search-save span {
   color: #010101;
   font-size: 16px;
@@ -2540,10 +2514,66 @@ button {
   cursor: pointer;
 }
 
+.main-content-container .content-container-wrapper .search-form-wrapper form .custom-select {
+  width: 100%;
+}
+
+.main-content-container .content-container-wrapper .search-form-wrapper form .custom-select.second-select {
+  max-width: 200px;
+  margin: 0 33px 0 0;
+}
+
+@media only screen and (max-width: 1550px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .custom-select.second-select {
+    margin: 0 25px 0 0;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .custom-select.second-select {
+    margin: 0 0px 30px 0;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .custom-select.second-select {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .custom-select.second-select {
+    max-width: 300px;
+  }
+}
+
 .main-content-container .content-container-wrapper .search-form-wrapper form .custom-select .select-selected {
-  padding: 14px 33px 10px 21px;
+  padding: 16px 33px 14px 21px;
   border-radius: 28px;
   border: 1px solid #000000;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .custom-select .select-selected {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content-container .content-container-wrapper .search-form-wrapper form .custom-select .select-selected {
+    font-size: 18px;
+  }
+}
+
+.main-content-container .content-container-wrapper .search-form-wrapper form .custom-select .select-items {
+  border: 1px solid #000000;
+}
+
+.main-content-container .content-container-wrapper .search-form-wrapper form .custom-select .select-items div:hover {
+  background-color: rgba(23, 23, 23, 0.8);
+  color: #ffffff;
 }
 
 .main-content-container .content-container-wrapper .search-form-wrapper .additional-options-container .options-button {
