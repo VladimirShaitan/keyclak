@@ -1,34 +1,30 @@
 <?php
 
 /*
-
-Template name: Profile page
-
+Template name: Profile locataire
 */
 
-
-
+check_user_loggedout();
 get_header('profile');
-
+$linkedin = '';
+if(!empty($GLOBALS['user_meta']['linkedin'][0])){
+    $linkedin = $GLOBALS['user_meta']['linkedin'][0];
+}
 ?>
+<!-- <pre>
+    <?php // print_r($GLOBALS['user_meta']);?> 
+    <?php // print_r($GLOBALS['user_data']);?> 
+</pre> -->
 
-<div class="main-content-container">
-    <header class="sub-header">
-        <span class="sub-title-page">Mon profil</span>
-        <div class="sub-header-navigation">
-            <a href="http://">Mon recherche</a>
-            <a href="http://">Mon agenda</a>
-        </div>
-    </header>
     
     <div class="content-container-wrapper">
         <div class="profile-wrapper">
             <div class="profile-info-container">
                 <div class="profile-photo-container">
                     <div class="user-profile-photo">
-                        <img src="/wp-content/uploads/2019/03/user-pic.png" alt="">
+                        <img class="profile_img" src="<?php echo $GLOBALS['user_meta']['profile_picture'][0]; ?>" alt="<?php echo $GLOBALS['user_data']->data->display_name; ?>" title="<?php echo $GLOBALS['user_data']->data->display_name; ?>">
                         <a href="https://www.linkedin.com" target="_blank" class="social-link">
-                            <img src="/wp-content/uploads/2019/03/linkedin.png" alt="">
+                            <img src="/wp-content/uploads/2019/03/linkedin.png" alt="linkedin" title="linkedin">
                         </a>
                     </div>
                     <div class="user-navigation-panel">
@@ -43,43 +39,47 @@ get_header('profile');
                         <ul>
                             <li>
                                 <div class="left-side">Nom</div>
-                                <input class="right-side user-field" type="text" readonly value="Vanne">
+                                <input class="right-side user-field" type="text" readonly value="<?php echo $GLOBALS['user_meta']['last_name'][0]; ?>">
                             </li>
                             <li>
                                 <div class="left-side">Prénom</div>
-                                <input class="right-side user-field" type="text" readonly value="Grégoire">
+                                <input class="right-side user-field" type="text" readonly value="<?php echo $GLOBALS['user_meta']['first_name'][0]; ?>">
                             </li>
                             <li>
                                 <div class="left-side">Adresse e-mail</div>
-                                <input class="right-side user-field" type="email" readonly value="gregoire@gmail.com">
+                                <input class="right-side user-field" type="email" readonly value="<?php echo $GLOBALS['user_data']->data->user_email; ?>">
                             </li>
                             <li>
                                 <div class="left-side">Numéro de téléphone</div>
-                                <input class="right-side user-field" type="tel" readonly value="+33 6 59 08 61 43">
+                                <input class="right-side user-field" type="tel" readonly value="<?php echo $GLOBALS['user_meta']['phone'][0]; ?>">
                             </li>
                             <li>
                                 <div class="left-side">Mot de passe</div>
-                                <input class="right-side user-field" type="password" readonly value="somepassword">
+                                <input class="right-side user-field" type="password" readonly value="<?php echo base64_decode($GLOBALS['user_meta']['pwd'][0]); ?>">
                             </li>
                             <li>
                                 <div class="left-side">Vidéo de présentation</div>
-                                <input class="right-side user-field" type="text" readonly value="myvideo.mov">
+                                <input class="right-side user-field" type="text" readonly value="<?php echo $GLOBALS['user_meta']['file-video'][0]; ?>">
+                            </li>
+                            <li>
+                                <div class="left-side">Linkedin</div>
+                                <input class="right-side user-field" type="text" readonly placeholder="Lien profil LinkedIn" value="<?php echo $linkedin; ?>">
                             </li>
                         </ul>
                     </div>
                     <div class="profile-sub-data">
                         <div class="sub-data-wrapper">
                             <div class="sub-data-string">
-                                <span>Statut : </span><input class="user-field" type="text" value="Salarié en CDD" readonly>
+                                <span>Statut : </span><input class="user-field" type="text" placeholder="Salarié en CDD" value="<?php echo $GLOBALS['user_meta']['statut'][0]; ?>" readonly>
                             </div>
                             <div class="sub-data-string">
-                                <span>Revenu :</span> <input class="user-field" type="text" value="1500€" readonly>
+                                <span>Revenu :</span> <input class="user-field" type="text" placeholder="€" value="<?php echo $GLOBALS['user_meta']['revenu'][0]; ?>" readonly>
                             </div>
                             <div class="sub-data-string">
-                                <span>Garant : </span><input class="user-field" type="text" value="CDI" readonly>
+                                <span>Garant: </span><input class="user-field" type="text" placeholder="Exemple - CDI" value="<?php echo $GLOBALS['user_meta']['statut_du_garant'][0]; ?>" readonly>
                             </div>
                             <div class="sub-data-string">
-                                <span>Revenu garant :</span> <input class="user-field" type="text" value="3600€" readonly>
+                                <span>Revenu garant :</span> <input class="user-field" type="text" placeholder="€" value="<?php echo $GLOBALS['user_meta']['revenu_du_garant'][0]; ?>" readonly>
                             </div>
                         </div>
                     </div>
@@ -192,11 +192,9 @@ get_header('profile');
             </div>
         </div>
     </div>
-</div>
-
 <?php
 
-    get_footer();
+    get_footer('profile');
 
 ?>
 

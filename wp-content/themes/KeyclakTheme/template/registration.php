@@ -2,7 +2,7 @@
 /*
  Template name: Registration
 */
-check_user();
+check_user_loggedin();
 get_header();
 $form_type = get_post_meta($post->ID, 'reg_form', true);
 $template = 'template/parts/registration/';

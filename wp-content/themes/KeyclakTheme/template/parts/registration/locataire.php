@@ -8,13 +8,13 @@
             <div class="left-field-blocks">
                 <div class="input-main">
                     <label>Nom</label>
-                    <input name="lastname" type="text" required>
+                    <input name="last-name" type="text" required>
                     <div class="error"></div>
                 </div>
 
                 <div class="input-main">
                     <label>Prènom</label>
-                    <input name="firstname" type="text" required>
+                    <input name="first-name" type="text" required>
                     <div class="error"></div>
                 </div>
 
@@ -51,19 +51,19 @@
             <div class="right-field-blocks">
                 <div class="input-main">
                     <label>Numéro de téléphone</label>
-                    <input type="tel" class="right-first-input" pattern="[0-9]{1,}" required>
+                    <input type="tel" class="right-first-input" name="phone" pattern="[0-9]{1,}" required>
                     <div class="error"></div>
                 </div>
 
                 <div class="input-main">
                     <label>Statut</label>
-                    <input name="statut" type="text"  required>
+                    <input name="statut" type="text" name="statut"  required>
                     <div class="error"></div>
                 </div>
 
                 <div class="input-main">
                     <label>Revenu (net mensuel)</label>
-                    <input name="revenu" type="text"  required>
+                    <input name="revenu" type="text" name="revenu"  required>
                     <div class="error"></div>
                 </div>
 
@@ -72,7 +72,7 @@
                     <div class="radio-block-wp">
                         <div class="radio-oui">
                             <label>
-                                <input type="radio" name="garant" data-eneabled="true" checked="checked" />
+                                <input type="radio" name="garant" value="true" data-eneabled="true" checked="checked" />
                                 <i></i>
                                 <span>oui</span>
                             </label>
@@ -81,7 +81,7 @@
 
                         <div class="radio-non">
                             <label>
-                                <input type="radio" name="garant" data-eneabled="false"/>
+                                <input type="radio" name="garant" value="false" data-eneabled="false"/>
                                 <i></i>
                                 <span>non</span>
                             </label>
@@ -93,13 +93,13 @@
 
                 <div class="input-main">
                     <label>Statut du Garant</label>
-                    <input name="statut_du_garant" type="text"  required>
+                    <input name="statut_du_garant" type="text"  name="garant_statut" required>
                     <div class="error"></div>
                 </div>
 
                 <div class="input-main last-input">
                     <label>Revenu du garant (net mensuel)</label>
-                    <input name="revenu_du_garant" type="text" required>
+                    <input name="revenu_du_garant" type="text" name="garant_revenu" required>
                     <div class="error"></div>
                 </div>
 

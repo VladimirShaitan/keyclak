@@ -27,7 +27,10 @@ h2.medium{
     font-weight: 500;
     font-size: 48px;
 }
-
+.profile_photo_header{
+    max-width: 104px;
+    border-radius: 50%;
+}
 
 .full-header{
     /*

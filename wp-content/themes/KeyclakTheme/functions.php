@@ -1,10 +1,14 @@
 <?php
-
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 function themename_custom_logo_setup() {
     add_theme_support( 'custom-logo');
     add_theme_support( 'post-thumbnails' ); 
     add_post_type_support( 'page', 'excerpt' );
+    register_nav_menus(array(
+        'locataire'    => 'Locataire account menu',
+        'proprietaire' => 'Proprietaire account menu',
+        'footer-menu'  => 'Footer menu',
+    ) );
 }
 //Styles
 
@@ -132,6 +136,7 @@ add_action('wp_ajax_register_user', 'register_user');
 function register_user(){
     $file_exist = false;
     $errors = array();
+    $dep_fields = array('email', 'first-name', 'last-name', 'user_role');
     if($_FILES['file-photo']['size'] > 0){$file_exist = true;}
 
     if($file_exist){
@@ -171,9 +176,16 @@ function register_user(){
         'use_ssl' => true,
     );
     $user_id = wp_insert_user($userdata);
-
     if(!is_wp_error($user_id)){
         update_user_meta($user_id, 'profile_picture', $movefile['url']);
+        foreach ($_POST as $f_name => $f_val) {
+            if(!in_array($f_name, $dep_fields) && $f_name != 'password'){
+                update_user_meta($user_id, $f_name, $f_val);
+            } else if($f_name === 'password'){
+                update_user_meta($user_id, 'pwd', base64_encode($f_val));
+            }
+        }
+
         $login_user = wp_signon(array(
             'user_login'    => $userdata['user_login'],
             'user_password' => $userdata['user_pass'],
@@ -231,7 +243,7 @@ function login_user(){
     }
 }
 
-function check_user(){
+function check_user_loggedin(){
     if(is_user_logged_in()){
         $user_info = wp_get_current_user();
         if(in_array('proprietaire', $user_info->roles)){
@@ -239,5 +251,11 @@ function check_user(){
         } elseif(in_array('locataire', $user_info->roles)) {
             wp_safe_redirect('/account/locataire/');
         }
+    }
+}
+
+function check_user_loggedout(){
+    if(!is_user_logged_in()){
+        wp_safe_redirect('/');
     }
 }

@@ -2,7 +2,7 @@
 /*
 	Template name: Login
 */
-    check_user();
+    check_user_loggedin();
 	get_header();
 ?>
 <div class="main-content-container" style="background: url(<?php echo get_the_post_thumbnail_url($post->id); ?>)">

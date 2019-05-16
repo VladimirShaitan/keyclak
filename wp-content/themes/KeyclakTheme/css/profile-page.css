@@ -547,8 +547,10 @@ button {
   }
 }
 
-.main-content-container .content-container-wrapper .profile-info-container .profile-photo-container .user-profile-photo img {
+.main-content-container .content-container-wrapper .profile-info-container .profile-photo-container .user-profile-photo img.profile_img {
   width: inherit;
+  max-width: 260px;
+  border-radius: 50%;
 }
 
 .main-content-container .content-container-wrapper .profile-info-container .profile-photo-container .user-profile-photo .social-link {
