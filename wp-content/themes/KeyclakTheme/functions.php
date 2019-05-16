@@ -213,9 +213,20 @@ function register_user(){
 add_action('wp_ajax_nopriv_login_user', 'login_user');
 add_action('wp_ajax_login_user', 'login_user');
 function login_user(){
+    $er_mes = 'Le nom d\'utilisateur ou le mot de passe sont incorrects';
     if(!is_wp_error(wp_signon($_POST))){
-        wp_send_json(wp_signon($_POST));
+        $user_data = wp_signon($_POST)->roles;
+        $responce = array('success' => true);
+        if(in_array('locataire', $user_data)){
+            $responce['url'] = '/account/locataire/';
+        } else if(in_array('proprietaire', $user_data)){
+            $responce['url'] = '/account/proprietaire/';
+        } else {
+            wp_logout();
+            wp_send_json(array('errors' => $er_mes));
+        }
+        wp_send_json($responce);
     } else {
-        wp_send_json(array('errors' => 'Le nom d\'utilisateur ou le mot de passe sont incorrects'));
+        wp_send_json(array('errors' => $er_mes));
     }
 }

@@ -126,7 +126,6 @@ class registration {
 }
 
 class login {
-
 	constructor(form_id, backend_handler){
 		if(qs(form_id) === null){return false;}
 		this.form_id = form_id;
@@ -134,21 +133,24 @@ class login {
 		this.backend_handler = backend_handler;
 		this.setEvent();
 	}
-
 	setEvent = () => {
 		this.form.addEventListener('submit', (e) => {
 			const self = this;
 			e.preventDefault();
-			console.log(this);
+			loader.show();
 			ajax_handler(this.form_id, self.backend_handler, (data) => {
 				if(data.errors != undefined){
 					self.form.qs('.error').innerHTML = data.errors;
+					loader.hide();
+				} else if(data.success != undefined) {
+					window.location.href = data.url;
 				} else {
-					console.log(data);
+					loader.hide();
 				}
 			})
 		});
+		this.form.addEventListener('input', (e) => {
+			this.form.qs('.error').innerHTML = '';
+		});	
 	}
-
-
 }
