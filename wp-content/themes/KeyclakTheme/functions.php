@@ -157,8 +157,8 @@ function register_user(){
     
 
     $userdata = array(
-        'user_pass'       => $_POST['password'], // обязательно
-        'user_login'      => $_POST['email'], // обязательно
+        'user_pass'       => $_POST['password'],
+        'user_login'      => $_POST['email'],
         'user_nicename'   => $_POST['first-name'] . ' ' . $_POST['last-name'],
         'user_email'      => $_POST['email'],
         'display_name'    => $_POST['first-name'] . ' ' . $_POST['last-name'],

@@ -110,6 +110,13 @@ img.loader {
   margin: 0 0 60px;
 }
 
+#login{
+  position: relative;
+}
+#login .preloader img{
+  width: 75px;
+}
+
 .main-content-container .content-container-wrapper .login-page-container .title, .main-content-container .content-container-wrapper .register-page-container .title {
   font-size: 2.5vw;
   font-weight: 500;

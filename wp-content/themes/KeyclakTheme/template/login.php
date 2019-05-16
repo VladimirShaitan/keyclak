@@ -23,6 +23,9 @@
                     <div class="text-container">
                         <div class="form-title">Se connecter :</div>
                         <form id="login" class="se-connecter-form">
+                            <div class="preloader hidden">
+                                <img class="loader" src="<?php echo get_stylesheet_directory_uri(); ?>/preloader.svg">
+                            </div>
                             <input type="text" name="user_login" placeholder="Adresse e-mail" required>
                             <input type="password" name="user_password" placeholder="Mot de passe" required>
                             <div class="error"></div>

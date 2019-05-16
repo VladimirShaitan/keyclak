@@ -6,6 +6,21 @@ const messages = {
 	upload_text: 'Mettez votre lien ici',
 }
 
+
+let loader = {
+	loader_el: qs('.preloader'),
+	show: function() {
+		this.loader_el.classList.remove('hidden');
+		this.loader_el.style.animationName = 'preloader_show';
+	},
+	hide: function() {
+		this.loader_el.style.animationName = 'preloader_hide';
+		setTimeout(() => {this.loader_el.classList.add('hidden')}, 200);
+	}
+};
+
+
+
 class registration {
 	constructor(form_id, backend_handler){
 		if(qs(form_id) === null){return false;}
@@ -14,24 +29,13 @@ class registration {
 		this.backend_handler = backend_handler;
 		this.setEvent();
 		this.pass_handler();
-		this.loader_el = qs('.preloader');
-		this.loader = {
-			show: () => {
-				this.loader_el.classList.remove('hidden');
-				this.loader_el.style.animationName = 'preloader_show';
-			},
-			hide: () => {
-				this.loader_el.style.animationName = 'preloader_hide';
-				setTimeout(() =>{this.loader_el.classList.add('hidden')}, 200);
-			}
-		};
 	};
 
 	setEvent = () => {
 		this.form.addEventListener('submit', (e) => {
 			e.preventDefault();
 			const self = this;
-			self.loader.show();
+			loader.show();
 			ajax_handler(this.form_id, self.backend_handler, (data) => {
 
 				if(data.errors != undefined){
@@ -39,13 +43,13 @@ class registration {
 						self.form.qs('[name='+error+']').parentElement.qs('.error').innerHTML = data.errors[error];
 						if(error === 'general'){alert(data.errors[error]);}
 					}
-					self.loader.hide();
+					loader.hide();
 				} else{
 					window.location.href = data.url;
 				}
 
 			}, (data) => {
-				self.loader.hide();
+				loader.hide();
 				alert(messages.er_aj_registration);
 			});
 		});
