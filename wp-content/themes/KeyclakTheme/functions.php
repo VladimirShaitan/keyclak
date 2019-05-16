@@ -230,3 +230,14 @@ function login_user(){
         wp_send_json(array('errors' => $er_mes));
     }
 }
+
+function check_user(){
+    if(is_user_logged_in()){
+        $user_info = wp_get_current_user();
+        if(in_array('proprietaire', $user_info->roles)){
+            wp_safe_redirect('/account/proprietaire/');
+        } elseif(in_array('locataire', $user_info->roles)) {
+            wp_safe_redirect('/account/locataire/');
+        }
+    }
+}

@@ -138,7 +138,7 @@ class login {
 			const self = this;
 			e.preventDefault();
 			loader.show();
-			ajax_handler(this.form_id, self.backend_handler, (data) => {
+			ajax_handler(self.form_id, self.backend_handler, (data) => {
 				if(data.errors != undefined){
 					self.form.qs('.error').innerHTML = data.errors;
 					loader.hide();
@@ -154,3 +154,4 @@ class login {
 		});	
 	}
 }
+
