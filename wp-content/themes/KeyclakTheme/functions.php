@@ -10,6 +10,17 @@ function themename_custom_logo_setup() {
         'footer-menu'  => 'Footer menu',
     ) );
 }
+
+
+// Menus
+add_filter( 'wp_nav_menu_items', 'filter_function_name_4792', 10, 2 );
+function filter_function_name_4792( $items, $args ){
+    echo '<pre>';
+        print_r($items);
+    echo '</pre>';
+    return $items;
+}
+
 //Styles
 
 add_action('wp_enqueue_scripts', 'include_styles');
