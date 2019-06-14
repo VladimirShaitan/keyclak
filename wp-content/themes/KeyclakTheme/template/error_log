@@ -2,3 +2,5 @@
 [02-May-2019 14:04:39 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/npowe150/keyclak.html-studio.net/wp-content/themes/KeyclakTheme/template/user-varification.php on line 11
 [08-May-2019 07:49:23 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/npowe150/keyclak.html-studio.net/wp-content/themes/KeyclakTheme/template/user-varification.php on line 11
 [14-May-2019 19:30:42 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/npowe150/keyclak.html-studio.net/wp-content/themes/KeyclakTheme/template/user-varification.php on line 11
+[18-May-2019 19:09:41 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/npowe150/keyclak.html-studio.net/wp-content/themes/KeyclakTheme/template/user-varification.php on line 11
+[18-May-2019 19:09:43 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/npowe150/keyclak.html-studio.net/wp-content/themes/KeyclakTheme/template/user-varification.php on line 11
